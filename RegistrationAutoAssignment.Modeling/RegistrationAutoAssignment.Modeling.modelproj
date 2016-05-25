@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{da37a4d6-a3d3-4d12-90a6-bb4851eeda88}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>RegistrationAutoAssignment.Modeling</Name>
+    <RootNamespace>RegistrationAutoAssignment.Modeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\RegistrationAutoAssignment.Modeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RegistrationAndAutoAssignment.Services\RegistrationAutoAssignment.Services.csproj">
+      <Name>RegistrationAutoAssignment.Services</Name>
+      <Project>{2b3fb6b1-c117-4fda-933e-3564aaa7154e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Entities.Tests\RegistrationAutoAssignment.Entities.Tests.csproj">
+      <Name>RegistrationAutoAssignment.Entities.Tests</Name>
+      <Project>{e2c570a9-70ba-4f19-86b9-65b02717bf6a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
+      <Name>RegistrationAutoAssignment.Entities</Name>
+      <Project>{16387f70-970f-43bd-959c-0d6ccba56c6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories.Test\RegistrationAutoAssignment.Repositories.Tests.csproj">
+      <Name>RegistrationAutoAssignment.Repositories.Tests</Name>
+      <Project>{ed1bf100-5313-43f7-a347-7484503adf6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
+      <Name>RegistrationAutoAssignment.Repositories</Name>
+      <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Services.Tests\RegistrationAutoAssignment.Services.Tests.csproj">
+      <Name>RegistrationAutoAssignment.Services.Tests</Name>
+      <Project>{af9864bb-b760-416e-b468-86de47fdc636}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Tests\RegistrationAutoAssignment.Tests.csproj">
+      <Name>RegistrationAutoAssignment.Tests</Name>
+      <Project>{9f1c6c43-07ce-451e-a050-b3f3db0e42ed}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Units.Tests\RegistrationAutoAssignment.Units.Tests.csproj">
+      <Name>RegistrationAutoAssignment.Units.Tests</Name>
+      <Project>{fe41d717-e158-4c4e-a4f6-4696d9e536e5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Units\RegistrationAutoAssignment.Units.csproj">
+      <Name>RegistrationAutoAssignment.Units</Name>
+      <Project>{b2c65760-4810-4aca-b3ea-c7ad596aa6e8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment\RegistrationAutoAssignment.csproj">
+      <Name>RegistrationAutoAssignment</Name>
+      <Project>{fc3d318a-49e0-4a1c-b9e5-3d8329dc4b8a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

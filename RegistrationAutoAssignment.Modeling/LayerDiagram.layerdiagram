@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="207a4ded-97c7-422b-8f26-3776a744ff19" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="7810124a-b68b-4240-9d20-1f87fd7572a2" name="RegistrationAutoAssignment.Entities">
+      <references>
+        <reference Id="a9e669a0-11b1-4c9f-a875-46ddaeeb23b2" name="RegistrationAutoAssignment.Entities">
+          <ArtifactNode Label="RegistrationAutoAssignment.Entities" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Entities/RegistrationAutoAssignment.Entities.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Entities)" Label="RegistrationAutoAssignment.Entities.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="b7532cb1-6341-4255-a5f6-a46485847185" name="RegistrationAutoAssignment">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c0b6d96d-0380-45f8-9899-a9d1cc9dd8be" direction="Forward">
+          <layerMoniker Id="ec1ab43c-53e0-46b2-a6b0-0b83276dcbc3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="d053289d-c298-4821-a70d-9c3aab7a592c" name="RegistrationAutoAssignment">
+          <ArtifactNode Label="RegistrationAutoAssignment" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment/RegistrationAutoAssignment.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment)" Label="RegistrationAutoAssignment.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="ec1ab43c-53e0-46b2-a6b0-0b83276dcbc3" name="RegistrationAndAutoAssignment.Services">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="895cc436-a3b9-43a8-aabe-2fbdf5982a74" direction="Forward">
+          <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="eb3d8a37-059c-448a-8efb-f93afa24881a" name="RegistrationAndAutoAssignment.Services">
+          <ArtifactNode Label="RegistrationAndAutoAssignment.Services" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAndAutoAssignment.Services/RegistrationAndAutoAssignment.Services.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAndAutoAssignment.Services)" Label="RegistrationAndAutoAssignment.Services.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="791b6039-b6cc-492d-941d-70c854282956" name="RegistrationAutoAssignment.Repositories">
+      <references>
+        <reference Id="9c3724e7-4f42-4966-bea0-c2051930e303" name="RegistrationAutoAssignment.Repositories">
+          <ArtifactNode Label="RegistrationAutoAssignment.Repositories" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Repositories/RegistrationAutoAssignment.Repositories.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Repositories)" Label="RegistrationAutoAssignment.Repositories.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" name="RegistrationAutoAssignment.Units">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0ef34702-2cdc-4bf4-933b-d349dea6d580" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6d353024-7432-45b1-b9f3-de2d00983d36" direction="Forward">
+          <layerMoniker Id="791b6039-b6cc-492d-941d-70c854282956" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="843efd4f-ecb8-4d30-890d-fb8dbdfbd4e7" name="RegistrationAutoAssignment.Units">
+          <ArtifactNode Label="RegistrationAutoAssignment.Units" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Units/RegistrationAutoAssignment.Units.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Units)" Label="RegistrationAutoAssignment.Units.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="44d8a1d2-c6e3-41df-9b8f-98c7f3cc23b9" name="RegistrationAutoAssignment.Entities.Tests">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="26e360c1-6534-4d3e-ad95-28695020d372" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="f04fecf3-91fb-4bd5-b667-a2996f00b2eb" name="RegistrationAutoAssignment.Entities.Tests">
+          <ArtifactNode Label="RegistrationAutoAssignment.Entities.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Entities.Tests/RegistrationAutoAssignment.Entities.Tests.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Entities.Tests)" Label="RegistrationAutoAssignment.Entities.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="94384256-e987-45e3-bd75-19f47cb2a0e5" name="RegistrationAutoAssignment.Repositories.Tests">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="47125d57-e87d-4e4f-be02-e7b12f53cbd8" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="883c5097-66a6-499b-b114-a85c478eada6" direction="Forward">
+          <layerMoniker Id="791b6039-b6cc-492d-941d-70c854282956" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="8b8d5712-90b8-49e9-889c-432edd48e7d2" name="RegistrationAutoAssignment.Repositories.Tests">
+          <ArtifactNode Label="RegistrationAutoAssignment.Repositories.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Repositories.Test/RegistrationAutoAssignment.Repositories.Tests.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Repositories.Tests)" Label="RegistrationAutoAssignment.Repositories.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="eda3335c-e234-49a2-b8a5-f94c12a6e51b" name="RegistrationAutoAssignment.Units.Tests">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2684e7f4-da15-477b-a5b3-f0f17204b0ab" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="39e77ca9-f80c-4c67-9e5a-36e71b179629" direction="Forward">
+          <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2ed4810f-bc77-44ef-bf67-e963c86748c9" name="RegistrationAutoAssignment.Units.Tests">
+          <ArtifactNode Label="RegistrationAutoAssignment.Units.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Units.Tests/RegistrationAutoAssignment.Units.Tests.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Units.Tests)" Label="RegistrationAutoAssignment.Units.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="dd96107e-8220-4224-adeb-4bc3ba93fc29" name="RegistrationAutoAssignment.Tests">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="73233cf8-5119-4303-bce5-ee64890a751e" direction="Forward">
+          <layerMoniker Id="b7532cb1-6341-4255-a5f6-a46485847185" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="d5b29638-069d-4046-9794-55fa3e9f2501" name="RegistrationAutoAssignment.Tests">
+          <ArtifactNode Label="RegistrationAutoAssignment.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Tests/RegistrationAutoAssignment.Tests.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Tests)" Label="RegistrationAutoAssignment.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="5df3fa4e-f3d1-4b7f-8ea5-407405d9d773" name="RegistrationAutoAssignment.Services.Tests">
+      <references>
+        <reference Id="77c7b8f8-28a2-4d83-a24e-b66a49e4b02f" name="RegistrationAutoAssignment.Services.Tests">
+          <ArtifactNode Label="RegistrationAutoAssignment.Services.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Services.Tests/RegistrationAutoAssignment.Services.Tests.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Services.Tests)" Label="RegistrationAutoAssignment.Services.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

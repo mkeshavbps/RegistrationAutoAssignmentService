@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSchoolSelectionsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForAspen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="schoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="geo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MyGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Schools" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dob" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isAWC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBilingual" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BilCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SnCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBAS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isSifeProgram" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForAspenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSchoolSelectionsForAspenResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGeoListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoListNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoListNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGeoListNewResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentWalkEligibilityStatusByGeoCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GeoCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentWalkEligibilityStatusByGeoCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAssignmentWalkEligibilityStatusByGeoCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentWalkEligibilityStatusByAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentWalkEligibilityStatusByAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAssignmentWalkEligibilityStatusByAddressResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForStudents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="schoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GeoCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dob" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isAWC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBAS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LEPStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ELDScore" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SifeLevel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstLanguage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SNCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AssignSchForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AssignGradeForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AsignProgramForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IncludeIntHigh" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForStudentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSchoolSelectionsForStudentsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="schoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GeoCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dob" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isAWC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isBAS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LEPStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ELDScore" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SifeLevel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstLanguage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SNCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AssignSchForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AssignGradeForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AsignProgramForGuarantee" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IncludeIntHigh" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolSelectionsForStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSchoolSelectionsForStudentResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCodeFromEnrollmentFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="School" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SeiCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SNCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isAWC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Voced" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isExtendedDay" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isTwoWay" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isSpedIntegrated" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isMontessori" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isSife" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isHybrid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramCodeFromEnrollmentFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetProgramCodeFromEnrollmentFieldsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewSchoolChoicesForStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CaseID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AddressID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GeoParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GradeParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DOBparam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProgramCodeList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsAWCParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsBASParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SNCodeParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LepStatusParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ELDLevelParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SifeStatusParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstLangParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SiblingsList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TierVersion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewSchoolChoicesForStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetNewSchoolChoicesForStudentResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewSchoolInterestListForStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CaseID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AddressID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GeoParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GradeParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DOBparam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProgramCodeList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsAWCParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsBASParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SNCodeParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LepStatusParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ELDLevelParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SifeStatusParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstLangParam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SiblingsList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TierVersion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNewSchoolInterestListForStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetNewSchoolInterestListForStudentResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMySiblings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StudentNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMySiblingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMySiblingsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetermineTransEligibilityByAddressID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SchoolYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AddressID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sch" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SEICode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetermineTransEligibilityByAddressIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DetermineTransEligibilityByAddressIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendClosestFacility">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddressID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendClosestFacilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendClosestFacilityResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

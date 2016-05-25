@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BPSAspen" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:46820/BPS.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:46820/BPS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelections" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForAspen_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForAspen" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForAspen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForAspenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGeoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGeoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGeoListNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoListNew" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGeoListNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoListNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAssignmentWalkEligibilityStatusByGeoCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentWalkEligibilityStatusByGeoCode" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAssignmentWalkEligibilityStatusByGeoCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentWalkEligibilityStatusByGeoCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAssignmentWalkEligibilityStatusByAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentWalkEligibilityStatusByAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAssignmentWalkEligibilityStatusByAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentWalkEligibilityStatusByAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForStudent" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetSchoolSelectionsForStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolSelectionsForStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetProgramCodeFromEnrollmentFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCodeFromEnrollmentFields" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetProgramCodeFromEnrollmentFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramCodeFromEnrollmentFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetNewSchoolChoicesForStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewSchoolChoicesForStudent" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetNewSchoolChoicesForStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewSchoolChoicesForStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetNewSchoolInterestListForStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewSchoolInterestListForStudent" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetNewSchoolInterestListForStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewSchoolInterestListForStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetMySiblings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySiblings" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetMySiblings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySiblingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DetermineTransEligibilityByAddressID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetermineTransEligibilityByAddressID" />
+  </wsdl:message>
+  <wsdl:message name="IService_DetermineTransEligibilityByAddressID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetermineTransEligibilityByAddressIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SendClosestFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendClosestFacility" />
+  </wsdl:message>
+  <wsdl:message name="IService_SendClosestFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendClosestFacilityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetData" message="tns:IService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataResponse" message="tns:IService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSchoolSelections" message="tns:IService_GetSchoolSelections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsResponse" message="tns:IService_GetSchoolSelections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForAspen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForAspen" message="tns:IService_GetSchoolSelectionsForAspen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForAspenResponse" message="tns:IService_GetSchoolSelectionsForAspen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetGeoList" message="tns:IService_GetGeoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetGeoListResponse" message="tns:IService_GetGeoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoListNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetGeoListNew" message="tns:IService_GetGeoListNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetGeoListNewResponse" message="tns:IService_GetGeoListNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentWalkEligibilityStatusByGeoCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByGeoCode" message="tns:IService_GetAssignmentWalkEligibilityStatusByGeoCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByGeoCodeResponse" message="tns:IService_GetAssignmentWalkEligibilityStatusByGeoCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentWalkEligibilityStatusByAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByAddress" message="tns:IService_GetAssignmentWalkEligibilityStatusByAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByAddressResponse" message="tns:IService_GetAssignmentWalkEligibilityStatusByAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForStudents" message="tns:IService_GetSchoolSelectionsForStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForStudentsResponse" message="tns:IService_GetSchoolSelectionsForStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForStudent" message="tns:IService_GetSchoolSelectionsForStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSchoolSelectionsForStudentResponse" message="tns:IService_GetSchoolSelectionsForStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCodeFromEnrollmentFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetProgramCodeFromEnrollmentFields" message="tns:IService_GetProgramCodeFromEnrollmentFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetProgramCodeFromEnrollmentFieldsResponse" message="tns:IService_GetProgramCodeFromEnrollmentFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewSchoolChoicesForStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetNewSchoolChoicesForStudent" message="tns:IService_GetNewSchoolChoicesForStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetNewSchoolChoicesForStudentResponse" message="tns:IService_GetNewSchoolChoicesForStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewSchoolInterestListForStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetNewSchoolInterestListForStudent" message="tns:IService_GetNewSchoolInterestListForStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetNewSchoolInterestListForStudentResponse" message="tns:IService_GetNewSchoolInterestListForStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMySiblings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetMySiblings" message="tns:IService_GetMySiblings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetMySiblingsResponse" message="tns:IService_GetMySiblings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetermineTransEligibilityByAddressID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DetermineTransEligibilityByAddressID" message="tns:IService_DetermineTransEligibilityByAddressID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DetermineTransEligibilityByAddressIDResponse" message="tns:IService_DetermineTransEligibilityByAddressID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendClosestFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SendClosestFacility" message="tns:IService_SendClosestFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SendClosestFacilityResponse" message="tns:IService_SendClosestFacility_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelections">
+      <soap:operation soapAction="http://tempuri.org/IService/GetSchoolSelections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForAspen">
+      <soap:operation soapAction="http://tempuri.org/IService/GetSchoolSelectionsForAspen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetGeoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoListNew">
+      <soap:operation soapAction="http://tempuri.org/IService/GetGeoListNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentWalkEligibilityStatusByGeoCode">
+      <soap:operation soapAction="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByGeoCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentWalkEligibilityStatusByAddress">
+      <soap:operation soapAction="http://tempuri.org/IService/GetAssignmentWalkEligibilityStatusByAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForStudents">
+      <soap:operation soapAction="http://tempuri.org/IService/GetSchoolSelectionsForStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolSelectionsForStudent">
+      <soap:operation soapAction="http://tempuri.org/IService/GetSchoolSelectionsForStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramCodeFromEnrollmentFields">
+      <soap:operation soapAction="http://tempuri.org/IService/GetProgramCodeFromEnrollmentFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewSchoolChoicesForStudent">
+      <soap:operation soapAction="http://tempuri.org/IService/GetNewSchoolChoicesForStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewSchoolInterestListForStudent">
+      <soap:operation soapAction="http://tempuri.org/IService/GetNewSchoolInterestListForStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMySiblings">
+      <soap:operation soapAction="http://tempuri.org/IService/GetMySiblings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetermineTransEligibilityByAddressID">
+      <soap:operation soapAction="http://tempuri.org/IService/DetermineTransEligibilityByAddressID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendClosestFacility">
+      <soap:operation soapAction="http://tempuri.org/IService/SendClosestFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BPSAspen">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:46820/BPS.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
