@@ -76,8 +76,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         [TestMethod]
         public void TestUnitOfWorkWithFakeRepository_InvokingWebServiceCall()
         {
-            IFakeRepository studentSchoolChoiceRepository;
-            using (studentSchoolChoiceRepository = Mocked.Object.Repository as IFakeRepository)
+            using (Mocked.Object.Repository as IFakeRepository)
             {
                 var paramMock = new Mock<StudentSchoolChoicesParameters>(MockBehavior.Loose);
                 paramMock.Object.AddressId = "326371";
@@ -103,7 +102,7 @@ namespace RegistrationAutoAssignment.Units.Tests
                 fakeRepository.Setup(m => m.GetNewSchoolChoicesForStudent(paramMock.Object))
                     .Returns("<NewDataSet><StudentId></StudentId><SchoolId></SchoolId></NewDataSet>");
 
-                studentSchoolChoiceRepository = fakeRepository.Object;
+                var studentSchoolChoiceRepository = fakeRepository.Object;
                  var returned = studentSchoolChoiceRepository?.GetNewSchoolChoicesForStudent(paramMock.Object);
                 Assert.IsNotNull(returned);
             }
@@ -114,6 +113,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         {
             ContextUsingEntityConnect.Dispose();
             ContextUsingDbConnect.Dispose();
+            UnitOfWork.Dispose();
         }
 
 
