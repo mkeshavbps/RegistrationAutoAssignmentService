@@ -34,11 +34,9 @@ namespace RegistrationAutoAssignment.Controllers
         }
         #endregion
 
-
         /// <summary>
         /// Get the school Choices for new student
         /// </summary>
-        /// <param name="request"></param>
         /// <returns></returns>
         [Obsolete]
         [ResponseType(typeof(string))]

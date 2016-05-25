@@ -139,6 +139,9 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         {
             Repository.Dispose();
             FakeStudentSchoolChoiceMock.Object.Dispose();
+
+            ContextUsingEntityConnect.Dispose();
+            ContextUsingDbConnect.Dispose();
         }
 
         public void AddStudent(STUDENT student)

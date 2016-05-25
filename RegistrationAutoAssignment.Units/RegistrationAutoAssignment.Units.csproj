@@ -61,8 +61,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Interfaces\ILogMessageUnitOfWork.cs" />
     <Compile Include="Interfaces\IStudentSchoolChoicesUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\LogMessageUnitOfWork.cs" />
     <Compile Include="UnitOfWork\StudentSchoolChoicesUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

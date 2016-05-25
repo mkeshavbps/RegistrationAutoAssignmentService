@@ -19,37 +19,30 @@ namespace RegistrationAutoAssignment.Services
         /// <summary>
         /// Access all unit of works that the StudentChoicesService service uses to access.
         /// </summary>
-        internal Hashtable AllUnitOfWorks { get; private set; }
+        internal Hashtable AllUnitOfWorks { get; set; } = new Hashtable();
 
 
         /// <summary>
         /// Access all repositories that the StudentChoicesService service uses to access.
         /// </summary>
-        internal Hashtable AllRepositories { get; private set; }
+        internal Hashtable AllRepositories { get; set; } = new Hashtable();
 
         /// <summary>
         /// Specific unit of work 
         /// </summary>
         public IUnitOfWork UnitOfWork { get; }
 
-        public StudentSchoolChoicesService(IUnitOfWork unitOfWork, IRepository schoolChoicesRepository )
+        public StudentSchoolChoicesService(IUnitOfWork unitOfWork )
         {
             UnitOfWork = unitOfWork;
-            UnitOfWork.Repository = schoolChoicesRepository;
+            UnitOfWork.Repository = unitOfWork.Repository;
 
-            AllUnitOfWorks.Add(unitOfWork.GetType(), unitOfWork);
-            AllRepositories.Add(schoolChoicesRepository.GetType(), schoolChoicesRepository);
+            AllUnitOfWorks?.Add(unitOfWork.GetType(), unitOfWork);
+            AllRepositories?.Add(UnitOfWork.Repository.GetType(), UnitOfWork.Repository);
 
             //AddUnitOfWork(unitOfWork.GetType());
             //AddRepository(schoolChoicesRepository.GetType());
-        }
 
-        public StudentSchoolChoicesService(IUnitOfWork unitOfWork)
-        {
-            UnitOfWork = unitOfWork;
-
-            AllUnitOfWorks.Add(unitOfWork.GetType(), unitOfWork);
-        
             //AddUnitOfWork(typeof(IStudentSchoolChoicesUnitOfWork));
             //AddRepository(typeof(ISchoolChoicesRepository));
 

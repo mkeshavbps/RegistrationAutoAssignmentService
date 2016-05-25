@@ -1,0 +1,1108 @@
+﻿<NewDataSet>  
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4272</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>2</Tier>
+        <Eligibility>Closest Tier 2+:Closest Tier 3+</Eligibility>
+        <StraightLineDistance>1.18</StraightLineDistance>
+        <SortClause>2_Curley K-8 School</SortClause>
+        <Longitude>-71.113360115288472</Longitude>
+        <Latitude>42.318734289324631</Latitude>
+        <X>760733</X>
+        <Y>2941412</Y>
+        <SchoolName>Curley K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>8:30am - 2:30pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4272BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4272</Sch>
+        <SchName>(R) Curley K-8 School</SchName>
+        <ShortSchName>(R) Curley K-8 School - BLS</ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>8:30am - 2:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4240</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>K</TransEligible>
+        <Tier>4</Tier>
+        <Eligibility>ClusterSEI</Eligibility>
+        <StraightLineDistance>1.54</StraightLineDistance>
+        <SortClause>2_Ellis Elementary</SortClause>
+        <Longitude>-71.093102660484931</Longitude>
+        <Latitude>42.316183681090195</Latitude>
+        <X>766216</X>
+        <Y>2940508</Y>
+        <SchoolName>Ellis Elementary</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4240BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4240</Sch>
+        <SchName>(R) Ellis Elementary</SchName>
+        <ShortSchName>(R) Ellis Elementary - BLS</ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch>4240</WalkEligibleSch>
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4230</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>4</Tier>
+        <Eligibility>1 Mile:Option Sch</Eligibility>
+        <StraightLineDistance>0.66</StraightLineDistance>
+        <SortClause>2_Hennigan K-8 School</SortClause>
+        <Longitude>-71.1067774493183</Longitude>
+        <Latitude>42.326033229038352</Latitude>
+        <X>762501</X>
+        <Y>2944080</Y>
+        <SchoolName>Hennigan K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4230BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4230</Sch>
+        <SchName>(R) Hennigan K-8 School</SchName>
+        <ShortSchName>(R) Hennigan K-8 School - BLS</ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLM</ProgramCode>
+        <School>4620</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>2</Tier>
+        <Eligibility>Region Sch</Eligibility>
+        <StraightLineDistance>1.9300000000000002</StraightLineDistance>
+        <SortClause>2_Jackson/Mann K-8 School</SortClause>
+        <Longitude>-71.1374934111657</Longitude>
+        <Latitude>42.353094893102707</Latitude>
+        <X>754153</X>
+        <Y>2953905</Y>
+        <SchoolName>Jackson/Mann K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>BLM</SubProgramCode>
+        <DataKey>4620BLMBLM</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4620</Sch>
+        <SchName>(R) Jackson/Mann K-8 School</SchName>
+        <ShortSchName>(R) Jackson/Mann K-8 School - </ShortSchName>
+        <SubProgCode>BLM</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4270</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>1</Tier>
+        <Eligibility>1 Mile:Closest Tier 1:Closest Tier 2+:Closest Tier 3+</Eligibility>
+        <StraightLineDistance>0.95</StraightLineDistance>
+        <SortClause>2_Kennedy John F Elementary</SortClause>
+        <Longitude>-71.10583461780638</Longitude>
+        <Latitude>42.32185072872737</Latitude>
+        <X>762763</X>
+        <Y>2942557</Y>
+        <SchoolName>Kennedy John F Elementary</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>8:20am - 3:05pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4270BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4270</Sch>
+        <SchName>(R) Kennedy John F Elementary</SchName>
+        <ShortSchName>(R) Kennedy John F Elementary </ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>8:20am - 3:05pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4680</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>2</Tier>
+        <Eligibility>Closest Tier 3+</Eligibility>
+        <StraightLineDistance>1.6099999999999999</StraightLineDistance>
+        <SortClause>2_Orchard Gardens K-8 School</SortClause>
+        <Longitude>-71.077533312929589</Longitude>
+        <Latitude>42.330503891636063</Latitude>
+        <X>770401</X>
+        <Y>2945747</Y>
+        <SchoolName>Orchard Gardens K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>7:25am - 5:15pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4680BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4680</Sch>
+        <SchName>(R) Orchard Gardens K-8 School</SchName>
+        <ShortSchName>(R) Orchard Gardens K-8 School</ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>7:25am - 5:15pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>BLS</ProgramCode>
+        <School>4570</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>4</Tier>
+        <Eligibility>1 Mile:Option Sch</Eligibility>
+        <StraightLineDistance>0.53</StraightLineDistance>
+        <SortClause>2_Tobin K-8 School</SortClause>
+        <Longitude>-71.0986351520803</Longitude>
+        <Latitude>42.332917480035341</Latitude>
+        <X>764691</X>
+        <Y>2946599</Y>
+        <SchoolName>Tobin K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>BLS</SubProgramCode>
+        <DataKey>4570BLSBLS</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4570</Sch>
+        <SchName>(R) Tobin K-8 School</SchName>
+        <ShortSchName>(R) Tobin K-8 School - BLS</ShortSchName>
+        <SubProgCode>BLS</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4123</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>K</TransEligible>
+        <Tier>NR</Tier>
+        <Eligibility>Citywide</Eligibility>
+        <StraightLineDistance>2</StraightLineDistance>
+        <SortClause>3_Dudley Street Neighborhood School</SortClause>
+        <Longitude>-71.072735818808312</Longitude>
+        <Latitude>42.323505150055567</Latitude>
+        <X>771711</X>
+        <Y>2943203</Y>
+        <SchoolName>Dudley Street Neighborhood School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>true</IsSpecAdmissions>
+        <SchHours1>8:30am - 4:30pm</SchHours1>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4123REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4123</Sch>
+        <SchName>Dudley Street Neighborhood School</SchName>
+        <ShortSchName>Dudley Street Neighborhood Sch</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <SchHours2>8:30am - 4:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch>4123</WalkEligibleSch>
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4113</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>1</Tier>
+        <Eligibility>Closest Tier 1:Closest Tier 2+:Closest Tier 3+</Eligibility>
+        <StraightLineDistance>1.12</StraightLineDistance>
+        <SortClause>3_Hale Elementary</SortClause>
+        <Longitude>-71.091134443392164</Longitude>
+        <Latitude>42.325525873389843</Latitude>
+        <X>766732</X>
+        <Y>2943915</Y>
+        <SchoolName>Hale Elementary</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>8:30am - 2:30pm</SchHours1>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4113REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4113</Sch>
+        <SchName>Hale Elementary</SchName>
+        <ShortSchName>Hale Elementary - REG</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <SchHours2>8:30am - 2:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4370</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>3</Tier>
+        <Eligibility>Closest Tier 3+</Eligibility>
+        <StraightLineDistance>1.34</StraightLineDistance>
+        <SortClause>3_Mendell Elementary</SortClause>
+        <Longitude>-71.101462965875868</Longitude>
+        <Latitude>42.316706916066948</Latitude>
+        <X>763954</X>
+        <Y>2940688</Y>
+        <SchoolName>Mendell Elementary</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4370REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4370</Sch>
+        <SchName>Mendell Elementary</SchName>
+        <ShortSchName>Mendell Elementary - REG</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4285</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>2</Tier>
+        <Eligibility>MH Option</Eligibility>
+        <StraightLineDistance>2</StraightLineDistance>
+        <SortClause>3_Mission Hill K-8 School</SortClause>
+        <Longitude>-71.114146276816129</Longitude>
+        <Latitude>42.306835727676535</Latitude>
+        <X>760540</X>
+        <Y>2937075</Y>
+        <SchoolName>Mission Hill K-8 School</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>9:30am - 3:30pm</SchHours1>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4285REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4285</Sch>
+        <SchName>Mission Hill K-8 School</SchName>
+        <ShortSchName>Mission Hill K-8 School - REG</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <SchHours2>9:30am - 3:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4530</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>N</TransEligible>
+        <Tier>3</Tier>
+        <Eligibility>Student Sch</Eligibility>
+        <StraightLineDistance>2.71</StraightLineDistance>
+        <SortClause>3_Russell Elementary</SortClause>
+        <Longitude>-71.059546017345767</Longitude>
+        <Latitude>42.320244751338215</Latitude>
+        <X>775284</X>
+        <Y>2942033</Y>
+        <SchoolName>Russell Elementary</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>false</IsSpecAdmissions>
+        <SchHours1>8:30am - 2:30pm</SchHours1>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4530REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4530</Sch>
+        <SchName>Russell Elementary</SchName>
+        <ShortSchName>Russell Elementary - REG</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <SchHours2>8:30am - 2:30pm</SchHours2>
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>true</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <Table>    
+        <AssignmentWalkEligibilityStatus>N/A</AssignmentWalkEligibilityStatus>
+        <Grade>03</Grade>
+        <ProgramCode>REG</ProgramCode>
+        <School>4345</School>
+        <SchoolYear>2016-2017</SchoolYear>
+        <TransEligible>C</TransEligible>
+        <Tier>NR</Tier>
+        <Eligibility>Citywide</Eligibility>
+        <StraightLineDistance>3.11</StraightLineDistance>
+        <SortClause>3_UP Academy Dorchester</SortClause>
+        <Longitude>-71.071017064574832</Longitude>
+        <Latitude>42.299932272224112</Latitude>
+        <X>772219</X>
+        <Y>2934615</Y>
+        <SchoolName>UP Academy Dorchester</SchoolName>
+        <IsExamSchool>false</IsExamSchool>
+        <IsSpecAdmissions>true</IsSpecAdmissions>
+        <SubProgramCode>REG</SubProgramCode>
+        <DataKey>4345REGREG</DataKey>
+        <SchoolYearMyBPS>2016</SchoolYearMyBPS>
+        <Sch>4345</Sch>
+        <SchName>UP Academy Dorchester</SchName>
+        <ShortSchName>UP Academy Dorchester - REG</ShortSchName>
+        <SubProgCode>REG</SubProgCode>
+        <SchDescription />
+        <WalkPrefAssignSch />
+        <WalkEligibleSch />
+        <SchSortOrder>1</SchSortOrder>
+        <ELLLevel />
+        <IsTwoWayInterest>false</IsTwoWayInterest>
+        <IsGuarantee>false</IsGuarantee>
+        <WalkEligible>N</WalkEligible>
+    </Table>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027wdya</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004272</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>15</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>16</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4272 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600647974</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027we4n</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004240</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>20</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>16</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4240 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600642686</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weCi</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004230</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>20</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>18</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4230 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600639472</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weGG</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004620</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLM</SCA_PROGRAM_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>20</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>20</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4620 | BLM | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600680485</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weIG</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004270</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>15</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>15</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4270 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600647382</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027wegB</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004680</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>10</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>13</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4680 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600689096</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027wewT</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004570</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>BLS</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>20</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>15</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>16</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDA_003>1</SCA_FIELDA_003>
+        <SCA_FIELDC_001>4570 | BLS | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600673948</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027we14</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>SKL000000DPz5x</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>44</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>0</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>43</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4123 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600629972</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weAM</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004113</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>25</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>25</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>23</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4113 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600627398</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weRL</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004370</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>32</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>32</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>32</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4370 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600664744</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weSO</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004285</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>27</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>25</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>19</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4285 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600652530</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027wekq</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>sklX2000004530</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_SORT_CODE>G</SCA_SORT_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>25</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>35</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>62</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4530 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600670298</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+    <SCHOOL_CAPACITY>    
+        <SCA_OID>SCA0000027weze</SCA_OID>
+        <SCA_CTX_OID>CTX000001yyi6V</SCA_CTX_OID>
+        <SCA_SKL_OID>SKL000000KqKIi</SCA_SKL_OID>
+        <SCA_PROGRAM_CODE>REG</SCA_PROGRAM_CODE>
+        <SCA_GRADE_LEVEL>03</SCA_GRADE_LEVEL>
+        <SCA_CAPACITY>75</SCA_CAPACITY>
+        <SCA_ASSIGN_LIMIT>0</SCA_ASSIGN_LIMIT>
+        <SCA_PROJECTION>89</SCA_PROJECTION>
+        <SCA_AFRICAN_ASSIGN>0</SCA_AFRICAN_ASSIGN>
+        <SCA_AFRICAN_ACTUAL>0</SCA_AFRICAN_ACTUAL>
+        <SCA_AFRICAN_WAITLIST>0</SCA_AFRICAN_WAITLIST>
+        <SCA_ASIAN_ASSIGN>0</SCA_ASIAN_ASSIGN>
+        <SCA_ASIAN_ACTUAL>0</SCA_ASIAN_ACTUAL>
+        <SCA_ASIAN_WAITLIST>0</SCA_ASIAN_WAITLIST>
+        <SCA_CAUCASIAN_ASSIGN>0</SCA_CAUCASIAN_ASSIGN>
+        <SCA_CAUCASIAN_ACTUAL>0</SCA_CAUCASIAN_ACTUAL>
+        <SCA_CAUCASIAN_WAITLIST>0</SCA_CAUCASIAN_WAITLIST>
+        <SCA_NATIVE_AMERICAN_ASSIGN>0</SCA_NATIVE_AMERICAN_ASSIGN>
+        <SCA_NATIVE_AMERICAN_ACTUAL>0</SCA_NATIVE_AMERICAN_ACTUAL>
+        <SCA_NATIVE_AMERICAN_WAITLIST>0</SCA_NATIVE_AMERICAN_WAITLIST>
+        <SCA_PACIFIC_ISLANDS_ASSIGN>0</SCA_PACIFIC_ISLANDS_ASSIGN>
+        <SCA_PACIFIC_ISLANDS_ACTUAL>0</SCA_PACIFIC_ISLANDS_ACTUAL>
+        <SCA_PACIFIC_ISLANDS_WAITLIST>0</SCA_PACIFIC_ISLANDS_WAITLIST>
+        <SCA_HISPANIC_ASSIGN>0</SCA_HISPANIC_ASSIGN>
+        <SCA_HISPANIC_ACTUAL>0</SCA_HISPANIC_ACTUAL>
+        <SCA_HISPANIC_WAITLIST>0</SCA_HISPANIC_WAITLIST>
+        <SCA_ELD_NONE>0</SCA_ELD_NONE>
+        <SCA_ELD_1>0</SCA_ELD_1>
+        <SCA_ELD_2>0</SCA_ELD_2>
+        <SCA_ELD_3>0</SCA_ELD_3>
+        <SCA_ELD_4>0</SCA_ELD_4>
+        <SCA_ELD_5>0</SCA_ELD_5>
+        <SCA_FIELDC_001>4345 | REG | 03</SCA_FIELDC_001>
+        <SCA_LAST_MODIFIED>1454600660938</SCA_LAST_MODIFIED>
+        <SCA_DISABLE_WAITLIST_IND>0</SCA_DISABLE_WAITLIST_IND>
+        <SCA_ASSIGN_TOTAL>0</SCA_ASSIGN_TOTAL>
+        <SCA_ACTUAL_TOTAL>0</SCA_ACTUAL_TOTAL>
+        <SCA_WAITLIST_TOTAL>0</SCA_WAITLIST_TOTAL>
+        <SCA_WALK_ZONE_COUNT>0</SCA_WALK_ZONE_COUNT>
+        <SCA_WALK_ZONE_LIMIT>0</SCA_WALK_ZONE_LIMIT>
+        <SCA_LEP>0</SCA_LEP>
+        <SCA_NEVER_LEP>0</SCA_NEVER_LEP>
+        <SCA_FLEP>0</SCA_FLEP>
+        <SCA_MULTI_RACE_ASSIGN>0</SCA_MULTI_RACE_ASSIGN>
+        <SCA_MULTI_RACE_ACTUAL>0</SCA_MULTI_RACE_ACTUAL>
+        <SCA_MULTI_RACE_WAITLIST>0</SCA_MULTI_RACE_WAITLIST>
+    </SCHOOL_CAPACITY>
+</NewDataSet>

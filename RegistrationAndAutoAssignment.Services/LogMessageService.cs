@@ -18,19 +18,21 @@ namespace RegistrationAutoAssignment.Services
     public class LogMessageService : ILogMessageService, IDisposable, IServiceLayer
     {
         private bool _disposed;
-        internal Hashtable UnitOfWorks { get; private set; }
+
+        internal Hashtable AllUnitOfWorks { get; } = new Hashtable();
 
         public IUnitOfWork UnitOfWork { get; }
+
+        public LogMessageService()
+        { }
 
 
         public LogMessageService(IUnitOfWork unitOfWork)
         {
             UnitOfWork = unitOfWork;
+            AllUnitOfWorks?.Add(unitOfWork.GetType(), unitOfWork);
         }
-
-        public LogMessageService()
-        { }
-
+        
         #region "IDisposable pattern"
         public void Dispose()
         {
@@ -65,15 +67,16 @@ namespace RegistrationAutoAssignment.Services
                 {
 
                     stream.WriteLine(
-                        $"StudentId: {logRequest?.StudentId}, AssignedSchoolId: {logRequest?.AssignedSchoolId} and TransferSchoolId:{logRequest?.TransferSchoolId}");
+                        $"DateTime: {DateTime.Now.ToLongTimeString()},StudentId: {logRequest?.StudentId}, AssignedSchoolId: {logRequest?.AssignedSchoolId} and TransferSchoolId:{logRequest?.TransferSchoolId}");
                 }
             }
             else
             {
-                var stream = fileInfo.OpenWrite();
-                var info = new UTF8Encoding(true).GetBytes($"StudentId: {logRequest?.StudentId}, AssignedSchoolId: {logRequest?.AssignedSchoolId} and TransferSchoolId:{logRequest?.TransferSchoolId}");
-
-                stream.Write(info,0,info.Length);
+                using (var stream = fileInfo.AppendText())
+                {
+                    var info = new UTF8Encoding(true).GetBytes($" {stream.NewLine} DateTime: {DateTime.Now.ToLongTimeString()}, StudentId: {logRequest?.StudentId}, AssignedSchoolId: {logRequest?.AssignedSchoolId} and TransferSchoolId:{logRequest?.TransferSchoolId}");
+                    stream.WriteAsync(Encoding.Default.GetString(info));
+                }
             }
             return HttpStatusCode.OK.ToString();
         }

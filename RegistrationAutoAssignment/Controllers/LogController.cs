@@ -19,10 +19,10 @@ namespace RegistrationAutoAssignment.Controllers
             LogService = service as IServiceLayer;
         }
 
-        //public LogController(IRequest logMessageRequest)
-        //{
-        //    MessageRequest = logMessageRequest;
-        //}
+        public LogController(IRequest logMessageRequest)
+        {
+            MessageRequest = logMessageRequest;
+        }
 
         [HttpPost, ActionName("LogMessage")]
         public IHttpActionResult LogMessage([FromBody]LogMessageRequest request)

@@ -11,7 +11,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
     /// <summary>
     /// Student Choice unit of work.
     /// </summary>
-    public class StudentSchoolChoicesUnitOfWork : IStudentSchoolChoicesUnitOfWork
+    public class LogMessageUnitOfWork : ILogMessageUnitOfWork
     {
         private bool _disposed;
 
@@ -31,9 +31,9 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// </summary>
         internal Hashtable Repositories { get; set; } = new Hashtable();
 
-        #endregion
+    #endregion
 
-        public StudentSchoolChoicesUnitOfWork(ExtractAspenEntities context)
+    public LogMessageUnitOfWork(ExtractAspenEntities context)
         {
             Context = context;
             Repository = new SchoolChoiceRepository(context);
@@ -43,7 +43,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// <summary>
         /// Creates an instance of the unit of work along with concrete context and repository implementations.
         /// </summary>
-        public StudentSchoolChoicesUnitOfWork()
+        public LogMessageUnitOfWork()
         {
             Repository = AddRepository(typeof(SchoolChoiceRepository));
             Context = Repository.AspenDbContext;
@@ -55,7 +55,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// Creates an instance using the DbConnection.
         /// </summary>
         /// <param name="cntxDbConnect"></param>
-        public StudentSchoolChoicesUnitOfWork(DbConnection cntxDbConnect)
+        public LogMessageUnitOfWork(DbConnection cntxDbConnect)
         {
             CntxDbConnect = cntxDbConnect;
             Repository = new SchoolChoiceRepository(CntxDbConnect);
@@ -66,11 +66,12 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// Creates an instance using the repository
         /// </summary>
         /// <param name="repository"></param>
-        public StudentSchoolChoicesUnitOfWork(IRepository repository)
+        public LogMessageUnitOfWork(IRepository repository)
         {
             Context = repository.AspenDbContext;
             Repository = repository;
             Repositories?.Add("ISchoolChoicesRepository", Repository);
+            
         }
 
 
@@ -102,10 +103,31 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// <summary>
         /// Adds the repositories to the read only collection.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <returns></returns>
+        //public IRepository AddRepository<T>() where T : class
+        //{
+        //    if (Repositories == null)
+        //        Repositories = new Hashtable();
+
+        //    var type = typeof(T).Name;
+
+        //    if (Repositories.ContainsKey(type)) return (IRepository) Repositories[type];
+        //    var repositoryType = typeof(IRepository);
+
+        //    var repositoryInstance =
+        //        Activator.CreateInstance(repositoryType
+        //            .MakeGenericType(typeof(T)), Context);
+
+        //    Repositories.Add(type, repositoryInstance);
+
+        //    return (IRepository)Repositories[type];
+        //}
+
         /// <summary>
         /// Adds the Unit of work to the read only collection.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         //public IUnitOfWork AddUnitOfWork<T>() where T : class
         //{
@@ -127,6 +149,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         //}
 
         #endregion
+
         public IRepository AddRepository(Type typeOfRepository)
         {
             if (Repositories == null)

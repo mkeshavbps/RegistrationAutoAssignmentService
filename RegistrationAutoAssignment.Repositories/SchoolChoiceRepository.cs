@@ -11,7 +11,7 @@ namespace RegistrationAutoAssignment.Repositories
     public class SchoolChoiceRepository : ISchoolChoicesRepository
     {
         private bool _disposedValue;
-        private DbConnection _cntxDbConnect;
+        public DbConnection CntxDbConnect { get; }
 
         /// <summary>
         /// Creates entity context internally.
@@ -30,7 +30,8 @@ namespace RegistrationAutoAssignment.Repositories
         /// <param name="cntxDbConnect"></param>
         public SchoolChoiceRepository(DbConnection cntxDbConnect)
         {
-            _cntxDbConnect = cntxDbConnect;
+            CntxDbConnect = cntxDbConnect;
+            AspenDbContext = new ExtractAspenEntities(cntxDbConnect);
         }
 
         public ExtractAspenEntities AspenDbContext { get; set; }

@@ -1,1 +1,28 @@
-StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3
+ 
+ DateTime: 1:06:41 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:06:48 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:06:52 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:06:55 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:04 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:06 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:08 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:09 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:10 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:07:11 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 1:30:49 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:19 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:24 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:25 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:25 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:25 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:25 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:26 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:26 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:26 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:26 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3 
+ DateTime: 5:09:26 PM, StudentId: 1, AssignedSchoolId: 2 and TransferSchoolId:3
