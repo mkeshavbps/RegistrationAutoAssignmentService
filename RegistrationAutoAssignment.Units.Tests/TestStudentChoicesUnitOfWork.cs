@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.Common;
-using RegistrationAutoAssignment.Entities;
 using System.Data.SqlClient;
 using System.Data.EntityClient;
 using Moq;
 using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
+using RegistrationAutoAssignment.Entities;
 using RegistrationAutoAssignment.Units.UnitOfWork;
 
 namespace RegistrationAutoAssignment.Units.Tests
@@ -74,9 +74,10 @@ namespace RegistrationAutoAssignment.Units.Tests
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestUnitOfWorkWithFakeRepository_InvokingWebServiceCall()
         {
-            using (var studentSchoolChoiceRepository = Mocked.Object.Repository as IFakeRepository)
+            IFakeRepository studentSchoolChoiceRepository;
+            using (studentSchoolChoiceRepository = Mocked.Object.Repository as IFakeRepository)
             {
                 var paramMock = new Mock<StudentSchoolChoicesParameters>(MockBehavior.Loose);
                 paramMock.Object.AddressId = "326371";
@@ -101,7 +102,8 @@ namespace RegistrationAutoAssignment.Units.Tests
                 var fakeRepository = new Mock<IFakeRepository>();
                 fakeRepository.Setup(m => m.GetNewSchoolChoicesForStudent(paramMock.Object))
                     .Returns("<NewDataSet><StudentId></StudentId><SchoolId></SchoolId></NewDataSet>");
-             
+
+                studentSchoolChoiceRepository = fakeRepository.Object;
                  var returned = studentSchoolChoiceRepository?.GetNewSchoolChoicesForStudent(paramMock.Object);
                 Assert.IsNotNull(returned);
             }
@@ -119,10 +121,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         /// Mock interface to invoke the service call.
         /// </summary>
         public interface IFakeRepository : ISchoolChoicesRepository
-        {
-            
-            
-        }
+        { }
 
         
     }
