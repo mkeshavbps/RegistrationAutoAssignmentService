@@ -127,11 +127,11 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             paramMock.Object.TierVersion = "V2";
             paramMock.Object.Type = "Testing";
 
-            if (FakeStudentSchoolChoiceMock.Object != null)
-            {
-                var returnedString = FakeStudentSchoolChoiceMock.Object.GetNewSchoolChoicesForStudent(paramMock.Object);
-                Assert.IsNotNull(returnedString);
-            }
+            FakeStudentSchoolChoiceMock.Setup(m => m.GetNewSchoolChoicesForStudent(paramMock.Object))
+                .Returns("<NewDataSet><StudentId></StudentId><SchoolId></SchoolId></NewDataSet>");
+
+            var returnedString = FakeStudentSchoolChoiceMock.Object?.GetNewSchoolChoicesForStudent(paramMock.Object);
+            Assert.IsNotNull(returnedString);
         }
 
         [TestCleanup]
