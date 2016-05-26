@@ -90,7 +90,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         {
             if (!_disposed)
                 if (disposing)
-                    Context.Dispose();
+                    Context?.Dispose();
 
             _disposed = true;
         }
@@ -153,6 +153,4 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             return returnedInt;
         }
     }
-
-   
 }

@@ -91,7 +91,9 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         {
             if (!_disposed)
                 if (disposing)
-                    Context.Dispose();
+                {
+                    Context?.Dispose();
+                }
 
             _disposed = true;
         }
@@ -103,31 +105,10 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// <summary>
         /// Adds the repositories to the read only collection.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        //public IRepository AddRepository<T>() where T : class
-        //{
-        //    if (Repositories == null)
-        //        Repositories = new Hashtable();
-
-        //    var type = typeof(T).Name;
-
-        //    if (Repositories.ContainsKey(type)) return (IRepository) Repositories[type];
-        //    var repositoryType = typeof(IRepository);
-
-        //    var repositoryInstance =
-        //        Activator.CreateInstance(repositoryType
-        //            .MakeGenericType(typeof(T)), Context);
-
-        //    Repositories.Add(type, repositoryInstance);
-
-        //    return (IRepository)Repositories[type];
-        //}
-
         /// <summary>
         /// Adds the Unit of work to the read only collection.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         //public IUnitOfWork AddUnitOfWork<T>() where T : class
         //{
@@ -149,7 +130,6 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         //}
 
         #endregion
-
         public IRepository AddRepository(Type typeOfRepository)
         {
             if (Repositories == null)
@@ -176,6 +156,4 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             return returnedInt;
         }
     }
-
-   
 }
