@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37274e3bbdfb464cb597496111c2b460" Name="Diagram1">
+        <EntityTypeShape EntityType="BPSInterface.RoundDetail" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.School" Width="1.5" PointX="1.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolTier" Width="1.5" PointX="3.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Student" Width="1.5" PointX="1.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.usrUserSession" Width="1.5" PointX="1.5" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.AddressFile" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.AddressFileClosestFacility" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolAcademicProgram" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolLanguage" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SubProgram" Width="1.5" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.xmlTPassRule" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.LogGetSchoolInterestList" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.LogValidSchoolChoice" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.LogWebServiceCall" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolCapacity" Width="1.5" PointX="3.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolChoicesForStudentCallInfo" Width="1.5" PointX="3.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolChoicesForStudentCallResult" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.scrSchoolChoicesForStudentCallRank" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentChoiceCase" Width="1.5" PointX="3.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentSchoolChoice" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.vcsValidateChoice" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolHoursSimple" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolLanguagesNew" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.AddressFileAttribute" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Assignmentwalk" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ClosestFacilityAllResultsForMatch" Width="1.5" PointX="5.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.GeoHzone" Width="1.5" PointX="7.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.GeoSchMatrix" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.NeighborhoodCode" Width="1.5" PointX="16.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Number" Width="1.5" PointX="16.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.schoolAddressFiltered_temp" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolCalendar" Width="1.5" PointX="9.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolclusterAvailable" Width="1.5" PointX="11.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolHour" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.schoollocation" Width="1.5" PointX="13.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.schoolphoto" Width="1.5" PointX="15.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Schoolswithtier" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SpedMiddleSchoolPathway" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentYearForXYSetup" Width="1.5" PointX="18.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.tempTierV1" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.tempTierV2" Width="1.5" PointX="5.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.walkeligible" Width="1.5" PointX="7.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ziptable" Width="1.5" PointX="9.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.LogGetAddressMatch" Width="1.5" PointX="19.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolChoicesForStudentCallRank" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolInterestListForStudentCallInfo" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolAward" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolCompleted" Width="1.5" PointX="11.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.schooldescription" Width="1.5" PointX="13.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolExtraCurricular" Width="1.5" PointX="21.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolFacility" Width="1.5" PointX="21.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolGrade" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.schoolpartner" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolProfileLog" Width="1.5" PointX="15.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolProgram" Width="1.5" PointX="7.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchoolSport" Width="1.5" PointX="23.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchStudentSupport" Width="1.5" PointX="17.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Security" Width="1.5" PointX="19.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.AssignmentEligibleSchool" Width="1.5" PointX="23.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.CapacityFile" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.Contact" Width="1.5" PointX="9.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ContChoiceFormChoice" Width="1.5" PointX="25.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ContChoiceFormChoices05_FirstLangCorrection" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ContChoiceFormSibling" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.DW_STUDENTSCHEDULE" Width="1.5" PointX="25.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.PreviousYear_English_Math_Grade5_Transcript" Width="1.5" PointX="25.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SchSelection" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.SibApp" Width="1.5" PointX="26.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentDir" Width="1.5" PointX="19.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentELLSchedule" Width="1.5" PointX="27.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.studentneedmonitor" Width="1.5" PointX="27.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentYear" Width="1.5" PointX="15.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentYearFut" Width="1.5" PointX="27.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.StudentYearProgramFut" Width="1.5" PointX="27.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.studentyearsch" Width="1.5" PointX="27.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.TransCodeDataFromAspen" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewContinousChoice" Width="1.5" PointX="28.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewOnlineChoice" Width="1.5" PointX="5.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchool" Width="1.5" PointX="7.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchoolCapacity" Width="1.5" PointX="29.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSubProgramCode" Width="1.5" PointX="9.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewTPassRule" Width="1.5" PointX="29.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewStudentSchoolChoice" Width="1.5" PointX="29.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.GetSchoolDescriptionReport" Width="1.5" PointX="29.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchoolDescriptionsReport" Width="1.5" PointX="29.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchoolFacilitiesReport" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchoolPartnersReport" Width="1.5" PointX="31.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BPSInterface.ViewSchoolProfileUser" Width="1.5" PointX="31.75" PointY="15.75" IsExpanded="true" />
+        <AssociationConnector Association="BPSInterface.FK_SchoolCapacity_School" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_SchoolTiers_School_SchID" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_BPSusrUserSession_STD_RankedChoicesUsrID" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_Student_SchoolCapacity" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_Student_SchoolCapacity1" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_StudentChoiceCase_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_EligibilitySchoolCapacity" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_EligibilitySchoolChoicesForStudentCallInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_EligibilitySchoolChoicesForStudentCallResult" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_SchoolChoicesForStudentCallRank_SchoolChoicesForStudentCallResults" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_scrSchoolChoicesForStudentCallRank_SchoolChoicesForStudentCallResults" ManuallyRouted="false" />
+        <AssociationConnector Association="BPSInterface.FK_StudentSchoolChoice_StudentChoiceCase" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
