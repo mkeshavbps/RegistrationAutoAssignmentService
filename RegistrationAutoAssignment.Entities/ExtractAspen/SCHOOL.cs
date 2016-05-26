@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace RegistrationAutoAssignment.Entities.ExtractAspen
 {
     using System;

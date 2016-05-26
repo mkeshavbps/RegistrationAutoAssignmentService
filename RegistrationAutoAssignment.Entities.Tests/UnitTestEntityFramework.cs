@@ -24,7 +24,7 @@ namespace RegistrationAutoAssignment.Entities.Tests
             Initialize.ContextUsingDbConnect.SCHOOLs.Add(newSchool1);
             Initialize.ContextUsingDbConnect.SCHOOLs.Add(newSchool2);
 
-            Assert.IsTrue(Initialize.ContextUsingDbConnect.SCHOOLs.All(sch => sch.SKL_SCHOOL_NAME != null));
+            Assert.IsTrue(Initialize.ContextUsingDbConnect.SCHOOLs.Any(sch => sch.SKL_SCHOOL_NAME != null));
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace RegistrationAutoAssignment.Entities.Tests
 
             Assert.IsNotNull(expectedSchool);
             Assert.AreSame(expectedSchool, newSchool);
-            Assert.AreEqual((object) expectedSchool.SKL_OID, newSchool.SKL_OID);
+            Assert.AreEqual(expectedSchool.SKL_OID, newSchool.SKL_OID);
         }
 
 

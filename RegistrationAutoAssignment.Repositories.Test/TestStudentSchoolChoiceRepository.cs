@@ -13,7 +13,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
     {
         public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
 
-        public List<STUDENT> Students { get; set; }
+        public List<STUDENT> Students { get; set; } = new List<STUDENT>();
         public Mock<IFakeStudentSchoolChoiceRepository> FakeStudentSchoolChoiceMock { get; private set; }
 
 
@@ -41,7 +41,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             FakeStudentSchoolChoiceMock.Setup(x => x.AddStudent(It.IsAny<STUDENT>()))
                 .Callback((STUDENT s) =>
                     {
-                        Students.Add(s);
+                        Students?.Add(s);
                     });
             FakeStudentSchoolChoiceMock.Setup(x => x.GetAllStudents).Returns(Students);
             return FakeStudentSchoolChoiceMock;
@@ -56,6 +56,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         public void Test_StudentSchoolChoicesRepositoryFake()
         {
             var fakeRepository = StudentScoolChoicesRepositoryFake();
+            fakeRepository.Object.AddStudent(new STUDENT {STD_OID = "2345"});
             Assert.IsNotNull(fakeRepository.Object.GetAllStudents);
         }
 

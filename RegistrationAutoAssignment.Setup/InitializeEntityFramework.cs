@@ -31,6 +31,11 @@ namespace RegistrationAutoAssignment.Setup
         public Mock<IServiceLayer> MockedService { get; private set; }
 
 
+        public InitializeEntityFramework()
+        {
+            EntityFrameworkInitialize();
+        }
+
         [TestInitialize]
         public void EntityFrameworkInitialize()
         {
@@ -70,7 +75,7 @@ namespace RegistrationAutoAssignment.Setup
                 {
                     Provider = providerName,
                     ProviderConnectionString = providerString,
-                    Metadata = @"res://*/ExtractAspen.csdl|res://*/ExtractAspen.ssdl|res://*/ExtractAspen.msl"
+                    Metadata = @"res://*/ExtractAspen.ExtractAspen.csdl|res://*/ExtractAspen.ExtractAspen.ssdl|res://*/ExtractAspen.ExtractAspen.msl"
                 };
 
             CntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient(entityBuilder.ToString());
