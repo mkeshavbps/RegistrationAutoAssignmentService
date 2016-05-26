@@ -83,10 +83,17 @@
       <Project>{1779f0af-332d-46ff-816d-607e4045df2b}</Project>
       <Name>RegistrationAutoAssignment.Setup</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment\RegistrationAutoAssignment.csproj">
+      <Project>{fc3d318a-49e0-4a1c-b9e5-3d8329dc4b8a}</Project>
+      <Name>RegistrationAutoAssignment</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
