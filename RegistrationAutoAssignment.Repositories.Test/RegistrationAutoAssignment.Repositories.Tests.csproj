@@ -88,6 +88,10 @@
       <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
       <Name>RegistrationAutoAssignment.Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Setup\RegistrationAutoAssignment.Setup.csproj">
+      <Project>{1779F0AF-332D-46FF-816D-607E4045DF2B}</Project>
+      <Name>RegistrationAutoAssignment.Setup</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

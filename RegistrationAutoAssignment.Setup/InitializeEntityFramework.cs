@@ -1,8 +1,16 @@
 using System.Data.Common;
 using System.Data.Entity.Core.EntityClient;
 using System.Data.SqlClient;
-using RegistrationAutoAssignment.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using Moq;
+
+using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Repositories;
+using RegistrationAutoAssignment.Units.UnitOfWork;
+
+using RegistrationAutoAssignment.Repositories.Interfaces;
+using RegistrationAutoAssignment.Units.Interfaces;
 
 //using NMemory.Linq;
 //using Effort.DataLoaders;
@@ -16,6 +24,12 @@ namespace RegistrationAutoAssignment.Setup
         public System.Data.EntityClient.EntityConnection CntxEntityConnect { get; private set; }
         public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
 
+        public IUnitOfWork UnitOfWork { get; private set; }
+        public IRepository Repository { get; private set; }
+
+        public Mock<IFakeUnitOfWork> Mocked { get; private set; }
+
+
         [TestInitialize]
         public void EntityFrameworkInitialize()
         {
@@ -24,6 +38,9 @@ namespace RegistrationAutoAssignment.Setup
 
             CntxDbConnect = Effort.DbConnectionFactory.CreateTransient();
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
+
+            Mocked = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
+            UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect);
 
             // Specify the provider name, server and database.
             const string providerName = "System.Data.SqlClient";
@@ -57,10 +74,11 @@ namespace RegistrationAutoAssignment.Setup
             //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient("name=ExtractAspenEntities");
             //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient(new EntityConnectionStringBuilder().ToString());
             //_cntxEntityConnect =
-            //    Effort.EntityConnectionFactory.CreateTransient(BuildEntityConnString("localDb", "ExtractAspen",
+            //    Effort.EntityConnectionFactory.CreateTransient(BuildEntityConnString("ExtractAspen", "ExtractAspen",
             //        string.Empty));
 
             ContextUsingEntityConnect = new ExtractAspenEntities(CntxEntityConnect);
+            Repository = new SchoolChoiceRepository(CntxDbConnect);
         }
 
         /// <summary>
@@ -94,6 +112,7 @@ namespace RegistrationAutoAssignment.Setup
                
             }
         }
+      
 
         /// <summary>
         /// Disposes the connection and context objects.
@@ -105,6 +124,21 @@ namespace RegistrationAutoAssignment.Setup
             CntxEntityConnect.Dispose();
             ContextUsingEntityConnect.Dispose();
             ContextUsingDbConnect.Dispose();
+            Repository.Dispose();
+            UnitOfWork.Dispose();
         }
     }
+
+    #region "Interface"
+
+    /// <summary>
+    /// Mock interface to invoke the service call.
+    /// </summary>
+    public interface IFakeRepository : ISchoolChoicesRepository
+    { }
+
+    public interface IFakeUnitOfWork : IStudentSchoolChoicesUnitOfWork
+    { }
+
+    #endregion
 }

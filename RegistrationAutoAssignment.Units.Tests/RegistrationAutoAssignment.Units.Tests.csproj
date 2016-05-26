@@ -80,22 +80,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
-      <Project>{16387F70-970F-43BD-959C-0D6CCBA56C6B}</Project>
-      <Name>RegistrationAutoAssignment.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
-      <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
-      <Name>RegistrationAutoAssignment.Repositories</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Units\RegistrationAutoAssignment.Units.csproj">
-      <Project>{b2c65760-4810-4aca-b3ea-c7ad596aa6e8}</Project>
-      <Name>RegistrationAutoAssignment.Units</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
+      <Project>{F4923DDC-B39B-4524-9A2C-0AC00B628A79}</Project>
+      <Name>RegistrationAutoAssignment.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Setup\RegistrationAutoAssignment.Setup.csproj">
+      <Project>{1779f0af-332d-46ff-816d-607e4045df2b}</Project>
+      <Name>RegistrationAutoAssignment.Setup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Units\RegistrationAutoAssignment.Units.csproj">
+      <Project>{B2C65760-4810-4ACA-B3EA-C7AD596AA6E8}</Project>
+      <Name>RegistrationAutoAssignment.Units</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

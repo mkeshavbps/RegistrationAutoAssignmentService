@@ -43,6 +43,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NMemory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a46696d54971e6d, processorArchitecture=MSIL">
       <HintPath>..\packages\NMemory.1.1.0\lib\net45\NMemory.dll</HintPath>
       <Private>True</Private>
@@ -67,6 +71,14 @@
     <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
       <Project>{16387F70-970F-43BD-959C-0D6CCBA56C6B}</Project>
       <Name>RegistrationAutoAssignment.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
+      <Project>{F4923DDC-B39B-4524-9A2C-0AC00B628A79}</Project>
+      <Name>RegistrationAutoAssignment.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Units\RegistrationAutoAssignment.Units.csproj">
+      <Project>{B2C65760-4810-4ACA-B3EA-C7AD596AA6E8}</Project>
+      <Name>RegistrationAutoAssignment.Units</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

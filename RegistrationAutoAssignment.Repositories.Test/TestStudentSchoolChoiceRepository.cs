@@ -1,12 +1,9 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Data.Common;
-using System.Data.EntityClient;
-using System.Data.SqlClient;
 using Moq;
 using RegistrationAutoAssignment.Entities;
-using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Repositories.Tests.Interfaces;
+using RegistrationAutoAssignment.Setup;
 
 
 namespace RegistrationAutoAssignment.Repositories.Tests
@@ -14,68 +11,27 @@ namespace RegistrationAutoAssignment.Repositories.Tests
     [TestClass]
     public class TestStudentSchoolChoiceRepository 
     {
-        public DbConnection CntxDbConnect { get; private set; }
-        public ExtractAspenEntities ContextUsingDbConnect { get; private set; }
-        public EntityConnection CntxEntityConnect { get; private set; }
-        public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
-        public ISchoolChoicesRepository Repository { get; private set; }
-        public List<STUDENT> Students { get; private set; }
+        public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+
+        public List<STUDENT> Students { get; set; }
         public Mock<IFakeStudentSchoolChoiceRepository> FakeStudentSchoolChoiceMock { get; private set; }
 
-        [TestInitialize]
-        public void RepositoryInitialize()
+
+        #region "Implemented interface IFakeStudentSchoolChoiceRepository 
+
+        public void AddStudent(STUDENT student)
         {
-            Students = new List<STUDENT>();
-            CntxDbConnect = Effort.DbConnectionFactory.CreateTransient();
-            ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
-
-            // Specify the provider name, server and database.
-            const string providerName = "System.Data.SqlClient";
-            const string serverName = "APPSSQL";
-            const string databaseName = "ExtractAspen";
-
-            // Initialize the connection string builder for the
-            // underlying provider.
-            // Set the properties for the data source.
-            var sqlBuilder =
-                new SqlConnectionStringBuilder
-                {
-                    DataSource = serverName,
-                    InitialCatalog = databaseName,
-                    IntegratedSecurity = true
-                };
-
-            // Build the SqlConnection connection string.
-            var providerString = sqlBuilder.ToString();
-
-            // Initialize the EntityConnectionStringBuilder.
-            var entityBuilder =
-                new EntityConnectionStringBuilder
-                {
-                    Provider = providerName,
-                    ProviderConnectionString = providerString,
-                    Metadata = @"res://*/ExtractAspen.csdl|res://*/ExtractAspen.ssdl|res://*/ExtractAspen.msl"
-                };
-
-            CntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient(entityBuilder.ToString());
-
-            #region "Different implemenation"
-
-            //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient("name=ExtractAspenEntities");
-            //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient(new EntityConnectionStringBuilder().ToString());
-            //_cntxEntityConnect =
-            //    Effort.EntityConnectionFactory.CreateTransient(BuildEntityConnString("localDb", "ExtractAspen",
-            //        string.Empty));
-
-            #endregion
-
-            ContextUsingEntityConnect = new ExtractAspenEntities(CntxEntityConnect);
-            Repository = new SchoolChoiceRepository(CntxDbConnect);
-
+            FakeStudentSchoolChoiceMock.Object.AspenDbContext?.STUDENTs.Add(new STUDENT { STD_OID = "1234" });
         }
 
+        public IEnumerable<STUDENT> GetAllStudents { get; set; }
+
+        public ExtractAspenEntities AspenDbContext { get; set; }
+
+        #endregion
+
         /// <summary>
-        /// Mocking the repository pattern
+        /// Mocking the repository pattern (Arrage/configure repository
         /// by creating a new student and adding the student
         /// </summary>
         /// <returns></returns>
@@ -96,7 +52,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         /// Test to assert the fake repository instance creation.
         /// </summary>
         [TestMethod]
-        public void TestStudentSchoolRepositoryInstance()
+        public void Test_StudentSchoolRepositoryInstance()
         {
             FakeStudentSchoolChoiceMock = new Mock<IFakeStudentSchoolChoiceRepository>();
             Assert.IsNotNull(FakeStudentSchoolChoiceMock.Object);
@@ -106,7 +62,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         /// Testing the web service call using Mock
         /// </summary>
         [TestMethod]
-        public void TestStudentSchoolChoicesWebService()
+        public void Test_StudentSchoolChoicesWebService()
         {
             FakeStudentSchoolChoiceMock = new Mock<IFakeStudentSchoolChoiceRepository>();
             var paramMock = new Mock<StudentSchoolChoicesParameters>(MockBehavior.Loose);
@@ -135,32 +91,6 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             var returnedString = FakeStudentSchoolChoiceMock.Object?.GetNewSchoolChoicesForStudent(paramMock.Object);
             Assert.IsNotNull(returnedString);
         }
-
-        /// <summary>
-        /// Dispose all objects.
-        /// </summary>
-        [TestCleanup]
-        public void CleanUp()
-        {
-            Repository.Dispose();
-            FakeStudentSchoolChoiceMock.Object.Dispose();
-
-            ContextUsingEntityConnect.Dispose();
-            ContextUsingDbConnect.Dispose();
-        }
-
-        #region "Implemented interface IFakeStudentSchoolChoiceRepository 
-
-        public void AddStudent(STUDENT student)
-        {
-            FakeStudentSchoolChoiceMock.Object.AspenDbContext?.STUDENTs.Add(new STUDENT { STD_OID = "1234" });
-        }
-       
-        public IEnumerable<STUDENT> GetAllStudents { get; set; }
-
-        public ExtractAspenEntities AspenDbContext { get; set; }
-
-        #endregion
     }
 
    
