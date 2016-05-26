@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories.Tests.Interfaces

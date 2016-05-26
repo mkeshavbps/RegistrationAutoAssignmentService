@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
-using RegistrationAutoAssignment.Entities;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using System.Data.Common;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories;
 
 namespace RegistrationAutoAssignment.Units.UnitOfWork

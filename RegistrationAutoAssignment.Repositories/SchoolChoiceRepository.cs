@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.Common;
 using System.Linq;
-using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Repositories.Utilities;
 

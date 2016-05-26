@@ -61,43 +61,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ACADEMIC_TRACK.cs">
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ACADEMIC_TRACK_COURSE.cs">
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_COURSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ACADEMIC_TRACK_GRADE.cs">
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_GRADE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ACADEMIC_TRACK_SELECTION.cs">
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_SELECTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ACCESS_LOG.cs">
+    <Compile Include="ExtractAspen\ACCESS_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ADDRESS_GRID_CODE.cs">
+    <Compile Include="ExtractAspen\ADDRESS_GRID_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ANALYTIC_COLUMN_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ANALYTIC_COLUMN_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ANALYTIC_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ANALYTIC_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ANALYTIC_RESULT.cs">
+    <Compile Include="ExtractAspen\ANALYTIC_RESULT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ASSESSMENT_COLUMN_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ASSESSMENT_COLUMN_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ASSESSMENT_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ASSESSMENT_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ASSESSMENT_RESPONSE_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ASSESSMENT_RESPONSE_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ASSIGNMENT_REPOSITORY_ITEM.cs">
+    <Compile Include="ExtractAspen\ASSIGNMENT_REPOSITORY_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
     <Compile Include="BPSInterface\AddressFile.cs">
@@ -520,1331 +520,1331 @@
     <Compile Include="BPSInterface\ziptable.cs">
       <DependentUpon>BPSInterface.tt</DependentUpon>
     </Compile>
-    <Compile Include="CALENDAR.cs">
+    <Compile Include="ExtractAspen\CALENDAR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CALENDAR_SCHOOL.cs">
+    <Compile Include="ExtractAspen\CALENDAR_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CALENDAR_SCHOOL_DATE.cs">
+    <Compile Include="ExtractAspen\CALENDAR_SCHOOL_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CALENDAR_STAFF.cs">
+    <Compile Include="ExtractAspen\CALENDAR_STAFF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CALENDAR_STAFF_DATE.cs">
+    <Compile Include="ExtractAspen\CALENDAR_STAFF_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CLASS_SIZE_DEFINITION.cs">
+    <Compile Include="ExtractAspen\CLASS_SIZE_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CLASS_SIZE_DEFINITION_GRADE.cs">
+    <Compile Include="ExtractAspen\CLASS_SIZE_DEFINITION_GRADE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COMMENT_BANK_CODE.cs">
+    <Compile Include="ExtractAspen\COMMENT_BANK_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COMMENT_BANK_TABLE.cs">
+    <Compile Include="ExtractAspen\COMMENT_BANK_TABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTACT.cs">
+    <Compile Include="ExtractAspen\CONTACT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_FILE.cs">
+    <Compile Include="ExtractAspen\CONTENT_FILE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_FOLDER.cs">
+    <Compile Include="ExtractAspen\CONTENT_FOLDER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_GOOGLE_DOC.cs">
+    <Compile Include="ExtractAspen\CONTENT_GOOGLE_DOC.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_ITEM.cs">
+    <Compile Include="ExtractAspen\CONTENT_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_MERCURY.cs">
+    <Compile Include="ExtractAspen\CONTENT_MERCURY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_NODE.cs">
+    <Compile Include="ExtractAspen\CONTENT_NODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_NOTE.cs">
+    <Compile Include="ExtractAspen\CONTENT_NOTE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_PROPERTY.cs">
+    <Compile Include="ExtractAspen\CONTENT_PROPERTY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_PROPERTY_DESCRIPTOR.cs">
+    <Compile Include="ExtractAspen\CONTENT_PROPERTY_DESCRIPTOR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_STANDARDS.cs">
+    <Compile Include="ExtractAspen\CONTENT_STANDARDS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CONTENT_WEB_LINK.cs">
+    <Compile Include="ExtractAspen\CONTENT_WEB_LINK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE.cs">
+    <Compile Include="ExtractAspen\COURSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE_CERTIFICATION.cs">
+    <Compile Include="ExtractAspen\COURSE_CERTIFICATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE_REQUISITE.cs">
+    <Compile Include="ExtractAspen\COURSE_REQUISITE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE_SCHEDULE.cs">
+    <Compile Include="ExtractAspen\COURSE_SCHEDULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE_SCHOOL.cs">
+    <Compile Include="ExtractAspen\COURSE_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="COURSE_VISIBILITY.cs">
+    <Compile Include="ExtractAspen\COURSE_VISIBILITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_CONTENT.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_CONTENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_COURSE_LESSON.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_COURSE_LESSON.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_DOCUMENT_ELEMENT.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_DOCUMENT_ELEMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_DOCUMENT_STRUCTURE.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_DOCUMENT_STRUCTURE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_INSTANCE.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_INSTANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_INSTANCE_DATE.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_INSTANCE_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_LESSON_PLAN.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_LESSON_PLAN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_MAP.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_MAP.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_NARRATIVE.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_NARRATIVE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="CURRICULUM_STANDARD.cs">
+    <Compile Include="ExtractAspen\CURRICULUM_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_AUDIT.cs">
+    <Compile Include="ExtractAspen\DATA_AUDIT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_CALCULATE_FIELD.cs">
+    <Compile Include="ExtractAspen\DATA_CALCULATE_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_CALCULATE_FIELD_MEMBER.cs">
+    <Compile Include="ExtractAspen\DATA_CALCULATE_FIELD_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_DICTIONARY_EXTENDED.cs">
+    <Compile Include="ExtractAspen\DATA_DICTIONARY_EXTENDED.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_FIELD.cs">
+    <Compile Include="ExtractAspen\DATA_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_FIELD_CONFIG.cs">
+    <Compile Include="ExtractAspen\DATA_FIELD_CONFIG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_FIELD_EXTENDED.cs">
+    <Compile Include="ExtractAspen\DATA_FIELD_EXTENDED.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_FIELD_MASK.cs">
+    <Compile Include="ExtractAspen\DATA_FIELD_MASK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_INDEX.cs">
+    <Compile Include="ExtractAspen\DATA_INDEX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_RELATION.cs">
+    <Compile Include="ExtractAspen\DATA_RELATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_RELATION_DISTRICT.cs">
+    <Compile Include="ExtractAspen\DATA_RELATION_DISTRICT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_RELATION_PATH.cs">
+    <Compile Include="ExtractAspen\DATA_RELATION_PATH.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_RELATION_PATH_FIELD.cs">
+    <Compile Include="ExtractAspen\DATA_RELATION_PATH_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_REQUEST.cs">
+    <Compile Include="ExtractAspen\DATA_REQUEST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_TABLE.cs">
+    <Compile Include="ExtractAspen\DATA_TABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_TABLE_CONFIG.cs">
+    <Compile Include="ExtractAspen\DATA_TABLE_CONFIG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_TABLE_EXTENDED.cs">
+    <Compile Include="ExtractAspen\DATA_TABLE_EXTENDED.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_TRANSACTION.cs">
+    <Compile Include="ExtractAspen\DATA_TRANSACTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_VALIDATE_FIELD.cs">
+    <Compile Include="ExtractAspen\DATA_VALIDATE_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA_VALIDATION_RULE.cs">
+    <Compile Include="ExtractAspen\DATA_VALIDATION_RULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBVersion.cs">
+    <Compile Include="ExtractAspen\DBVersion.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="DISTRICT_SCHOOL_YEAR_CONTEXT.cs">
+    <Compile Include="ExtractAspen\DISTRICT_SCHOOL_YEAR_CONTEXT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EVENT.cs">
+    <Compile Include="ExtractAspen\EVENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_COMPONENT.cs">
+    <Compile Include="ExtractAspen\EXAM_COMPONENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_ENTRY.cs">
+    <Compile Include="ExtractAspen\EXAM_ENTRY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_ENTRY_CONTROL.cs">
+    <Compile Include="ExtractAspen\EXAM_ENTRY_CONTROL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_ENTRY_EXPORT.cs">
+    <Compile Include="ExtractAspen\EXAM_ENTRY_EXPORT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_OPTION.cs">
+    <Compile Include="ExtractAspen\EXAM_OPTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_OPTION_COMPONENT.cs">
+    <Compile Include="ExtractAspen\EXAM_OPTION_COMPONENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_RESULT.cs">
+    <Compile Include="ExtractAspen\EXAM_RESULT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_ROOM.cs">
+    <Compile Include="ExtractAspen\EXAM_ROOM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_SEASON.cs">
+    <Compile Include="ExtractAspen\EXAM_SEASON.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_SECTION_OPTION.cs">
+    <Compile Include="ExtractAspen\EXAM_SECTION_OPTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_SERIES.cs">
+    <Compile Include="ExtractAspen\EXAM_SERIES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_SYLLABUS.cs">
+    <Compile Include="ExtractAspen\EXAM_SYLLABUS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_TIMETABLE.cs">
+    <Compile Include="ExtractAspen\EXAM_TIMETABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_TIMETABLE_ROOM.cs">
+    <Compile Include="ExtractAspen\EXAM_TIMETABLE_ROOM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXAM_TRANSFER_FILE.cs">
+    <Compile Include="ExtractAspen\EXAM_TRANSFER_FILE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXPORT_FORMAT_DEFINITION.cs">
+    <Compile Include="ExtractAspen\EXPORT_FORMAT_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXPORT_FORMAT_FIELD.cs">
+    <Compile Include="ExtractAspen\EXPORT_FORMAT_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXPORT_FORMAT_RESULT.cs">
+    <Compile Include="ExtractAspen\EXPORT_FORMAT_RESULT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="EXPORT_FORMAT_ROW.cs">
+    <Compile Include="ExtractAspen\EXPORT_FORMAT_ROW.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ExtractAspen.Context.cs">
+    <Compile Include="ExtractAspen\ExtractAspen.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ExtractAspen.cs">
+    <Compile Include="ExtractAspen\ExtractAspen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ExtractAspen.Designer.cs">
+    <Compile Include="ExtractAspen\ExtractAspen.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
     </Compile>
-    <Compile Include="FAMILY.cs">
+    <Compile Include="ExtractAspen\FAMILY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FAMILY_MEMBER.cs">
+    <Compile Include="ExtractAspen\FAMILY_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FIELD_SET.cs">
+    <Compile Include="ExtractAspen\FIELD_SET.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FIELD_SET_MEMBER.cs">
+    <Compile Include="ExtractAspen\FIELD_SET_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FILTER.cs">
+    <Compile Include="ExtractAspen\FILTER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FindDataTypeMismatch_Result.cs">
+    <Compile Include="ExtractAspen\FindDataTypeMismatch_Result.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FOLDER_FILE.cs">
+    <Compile Include="ExtractAspen\FOLDER_FILE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FOLDER_FILE_PAGE.cs">
+    <Compile Include="ExtractAspen\FOLDER_FILE_PAGE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FORM_DEFINITION.cs">
+    <Compile Include="ExtractAspen\FORM_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FORM_INSTANCE.cs">
+    <Compile Include="ExtractAspen\FORM_INSTANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FORUM_POST.cs">
+    <Compile Include="ExtractAspen\FORUM_POST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FORUM_TOPIC.cs">
+    <Compile Include="ExtractAspen\FORUM_TOPIC.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FORUM_TOPIC_VIEW.cs">
+    <Compile Include="ExtractAspen\FORUM_TOPIC_VIEW.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="FUTURE_STUDENT_CAPACITY.cs">
+    <Compile Include="ExtractAspen\FUTURE_STUDENT_CAPACITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GENERIC_FORM_CHILD_DATA.cs">
+    <Compile Include="ExtractAspen\GENERIC_FORM_CHILD_DATA.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GENERIC_FORM_DATA.cs">
+    <Compile Include="ExtractAspen\GENERIC_FORM_DATA.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GOOGLE_DOCUMENT_INSTANCE.cs">
+    <Compile Include="ExtractAspen\GOOGLE_DOCUMENT_INSTANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_ACCESS_GRANT.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_ACCESS_GRANT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_ACCESS_TRACK.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_ACCESS_TRACK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_COLUMN_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_COLUMN_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_COLUMN_TYPE.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_COLUMN_TYPE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_COMMENT.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_COMMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_FOOTNOTE.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_FOOTNOTE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_PREF.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_PREF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_REMARK.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_REMARK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_SCORE.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_SCORE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_SEATING_CHART.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_SEATING_CHART.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_SEATING_POSITION.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_SEATING_POSITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_SPECIAL_CODE.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_SPECIAL_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_STUDENT_INFO.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_STUDENT_INFO.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADEBOOK_STUDENT_SUBMISSION.cs">
+    <Compile Include="ExtractAspen\GRADEBOOK_STUDENT_SUBMISSION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_GPA_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADE_GPA_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_GPA_HISTORY.cs">
+    <Compile Include="ExtractAspen\GRADE_GPA_HISTORY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_GPA_MEMBER_COURSE.cs">
+    <Compile Include="ExtractAspen\GRADE_GPA_MEMBER_COURSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_GPA_MEMBER_GRADE.cs">
+    <Compile Include="ExtractAspen\GRADE_GPA_MEMBER_GRADE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_POST.cs">
+    <Compile Include="ExtractAspen\GRADE_POST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_POST_CONTROL.cs">
+    <Compile Include="ExtractAspen\GRADE_POST_CONTROL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_SCALE.cs">
+    <Compile Include="ExtractAspen\GRADE_SCALE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_SCALE_GRADE_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADE_SCALE_GRADE_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_SCALE_POINTS.cs">
+    <Compile Include="ExtractAspen\GRADE_SCALE_POINTS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TERM.cs">
+    <Compile Include="ExtractAspen\GRADE_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TERM_DATE.cs">
+    <Compile Include="ExtractAspen\GRADE_TERM_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TERM_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADE_TERM_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TRANSCRIPT_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADE_TRANSCRIPT_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TRANS_COLUMN_DEFINITION.cs">
+    <Compile Include="ExtractAspen\GRADE_TRANS_COLUMN_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADE_TREND.cs">
+    <Compile Include="ExtractAspen\GRADE_TREND.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADUATION_COURSE_REQUIREMENT.cs">
+    <Compile Include="ExtractAspen\GRADUATION_COURSE_REQUIREMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADUATION_PROGRAM.cs">
+    <Compile Include="ExtractAspen\GRADUATION_PROGRAM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADUATION_REQUIREMENT.cs">
+    <Compile Include="ExtractAspen\GRADUATION_REQUIREMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADUATION_REQUIREMENT_HISTORY.cs">
+    <Compile Include="ExtractAspen\GRADUATION_REQUIREMENT_HISTORY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GRADUATION_STUDENT_PROGRAM.cs">
+    <Compile Include="ExtractAspen\GRADUATION_STUDENT_PROGRAM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP.cs">
+    <Compile Include="ExtractAspen\GROUP.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_EVENT.cs">
+    <Compile Include="ExtractAspen\GROUP_EVENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_MEMBER.cs">
+    <Compile Include="ExtractAspen\GROUP_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_MEMBER_ATTRIBUTE.cs">
+    <Compile Include="ExtractAspen\GROUP_MEMBER_ATTRIBUTE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_MEMBER_CACHE.cs">
+    <Compile Include="ExtractAspen\GROUP_MEMBER_CACHE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_BANNER.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_BANNER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_BLOG.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_BLOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_FORUM.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_FORUM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_LOG.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_PREFERENCE.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_PREFERENCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_TAB.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_TAB.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_PAGE_WIDGET.cs">
+    <Compile Include="ExtractAspen\GROUP_PAGE_WIDGET.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="GROUP_SET.cs">
+    <Compile Include="ExtractAspen\GROUP_SET.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_CONDITION.cs">
+    <Compile Include="ExtractAspen\HEALTH_CONDITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_IMMUNIZATION_DEFINITION.cs">
+    <Compile Include="ExtractAspen\HEALTH_IMMUNIZATION_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_IMMUNIZATION_DOSE.cs">
+    <Compile Include="ExtractAspen\HEALTH_IMMUNIZATION_DOSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_IMMUNIZATION_SERIES.cs">
+    <Compile Include="ExtractAspen\HEALTH_IMMUNIZATION_SERIES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_INVENTORY_TRANSACTION.cs">
+    <Compile Include="ExtractAspen\HEALTH_INVENTORY_TRANSACTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_JOB.cs">
+    <Compile Include="ExtractAspen\HEALTH_JOB.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_LOG.cs">
+    <Compile Include="ExtractAspen\HEALTH_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_LOG_ACTION.cs">
+    <Compile Include="ExtractAspen\HEALTH_LOG_ACTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_LOG_COMPLAINT.cs">
+    <Compile Include="ExtractAspen\HEALTH_LOG_COMPLAINT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_LOG_TREATMENT.cs">
+    <Compile Include="ExtractAspen\HEALTH_LOG_TREATMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_MEDICATION_ORDER.cs">
+    <Compile Include="ExtractAspen\HEALTH_MEDICATION_ORDER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="HEALTH_SCREENING.cs">
+    <Compile Include="ExtractAspen\HEALTH_SCREENING.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_ACCESS_LOG.cs">
+    <Compile Include="ExtractAspen\IEP_ACCESS_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_AMENDMENT.cs">
+    <Compile Include="ExtractAspen\IEP_AMENDMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_AMENDMENT_DETAIL.cs">
+    <Compile Include="ExtractAspen\IEP_AMENDMENT_DETAIL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_DATA.cs">
+    <Compile Include="ExtractAspen\IEP_DATA.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_GOAL.cs">
+    <Compile Include="ExtractAspen\IEP_GOAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_GOAL_BANK.cs">
+    <Compile Include="ExtractAspen\IEP_GOAL_BANK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_GOAL_BANK_OBJECTIVE.cs">
+    <Compile Include="ExtractAspen\IEP_GOAL_BANK_OBJECTIVE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_GOAL_OBJECTIVE.cs">
+    <Compile Include="ExtractAspen\IEP_GOAL_OBJECTIVE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_GOAL_PROGRESS.cs">
+    <Compile Include="ExtractAspen\IEP_GOAL_PROGRESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_MEETING.cs">
+    <Compile Include="ExtractAspen\IEP_MEETING.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_MEETING_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\IEP_MEETING_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_OTHER_SERVICE.cs">
+    <Compile Include="ExtractAspen\IEP_OTHER_SERVICE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_PERFORMANCE_LEVEL.cs">
+    <Compile Include="ExtractAspen\IEP_PERFORMANCE_LEVEL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_PERFORMANCE_SOURCE.cs">
+    <Compile Include="ExtractAspen\IEP_PERFORMANCE_SOURCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_PLACEMENT.cs">
+    <Compile Include="ExtractAspen\IEP_PLACEMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_PLACEMENT_PROGRAM.cs">
+    <Compile Include="ExtractAspen\IEP_PLACEMENT_PROGRAM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_SERVICE.cs">
+    <Compile Include="ExtractAspen\IEP_SERVICE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_SERVICE_FTE.cs">
+    <Compile Include="ExtractAspen\IEP_SERVICE_FTE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_SERVICE_GOAL_ALIGNMENT.cs">
+    <Compile Include="ExtractAspen\IEP_SERVICE_GOAL_ALIGNMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_SERVICE_LOG.cs">
+    <Compile Include="ExtractAspen\IEP_SERVICE_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IEP_TEAM_MEMBER.cs">
+    <Compile Include="ExtractAspen\IEP_TEAM_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="IMPORT_EXPORT_DEFINITION.cs">
+    <Compile Include="ExtractAspen\IMPORT_EXPORT_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOB_ENTRY.cs">
+    <Compile Include="ExtractAspen\JOB_ENTRY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOB_RESULT.cs">
+    <Compile Include="ExtractAspen\JOB_RESULT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOURNAL_CREDIT_ITEM.cs">
+    <Compile Include="ExtractAspen\JOURNAL_CREDIT_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOURNAL_DEBIT_ITEM.cs">
+    <Compile Include="ExtractAspen\JOURNAL_DEBIT_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOURNAL_ENTRY_CREDIT.cs">
+    <Compile Include="ExtractAspen\JOURNAL_ENTRY_CREDIT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="JOURNAL_ENTRY_DEBIT.cs">
+    <Compile Include="ExtractAspen\JOURNAL_ENTRY_DEBIT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="LEARNING_STANDARD.cs">
+    <Compile Include="ExtractAspen\LEARNING_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="LICENSE.cs">
+    <Compile Include="ExtractAspen\LICENSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="LOCAL_REPOSITORY.cs">
+    <Compile Include="ExtractAspen\LOCAL_REPOSITORY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="MESSAGE_RESOURCE.cs">
+    <Compile Include="ExtractAspen\MESSAGE_RESOURCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="OAUTH_TOKEN.cs">
+    <Compile Include="ExtractAspen\OAUTH_TOKEN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ORGANIZATION.cs">
+    <Compile Include="ExtractAspen\ORGANIZATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ORGANIZATION_ATTRIBUTES.cs">
+    <Compile Include="ExtractAspen\ORGANIZATION_ATTRIBUTES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ORGANIZATION_DEFINITION.cs">
+    <Compile Include="ExtractAspen\ORGANIZATION_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="ORGANIZATION_LOCALE.cs">
+    <Compile Include="ExtractAspen\ORGANIZATION_LOCALE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PAGE_MENU_ITEM.cs">
+    <Compile Include="ExtractAspen\PAGE_MENU_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PD_ACTIVITY_COURSE.cs">
+    <Compile Include="ExtractAspen\PD_ACTIVITY_COURSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PD_ACTIVITY_GOAL_ALIGNMENT.cs">
+    <Compile Include="ExtractAspen\PD_ACTIVITY_GOAL_ALIGNMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PD_ACTIVITY_SECTION.cs">
+    <Compile Include="ExtractAspen\PD_ACTIVITY_SECTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PD_ACTIVITY_SECTION_MEETING.cs">
+    <Compile Include="ExtractAspen\PD_ACTIVITY_SECTION_MEETING.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PD_GOAL.cs">
+    <Compile Include="ExtractAspen\PD_GOAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON.cs">
+    <Compile Include="ExtractAspen\PERSON.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON_ADDRESS.cs">
+    <Compile Include="ExtractAspen\PERSON_ADDRESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON_APPOINTMENT.cs">
+    <Compile Include="ExtractAspen\PERSON_APPOINTMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON_DOCUMENT.cs">
+    <Compile Include="ExtractAspen\PERSON_DOCUMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON_PHOTO.cs">
+    <Compile Include="ExtractAspen\PERSON_PHOTO.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PERSON_RACE.cs">
+    <Compile Include="ExtractAspen\PERSON_RACE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PLANNER_APPOINTMENT.cs">
+    <Compile Include="ExtractAspen\PLANNER_APPOINTMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PORTAL_LINK.cs">
+    <Compile Include="ExtractAspen\PORTAL_LINK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PORTAL_NOTICE.cs">
+    <Compile Include="ExtractAspen\PORTAL_NOTICE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PORTAL_NOTICE_VISIBILITY.cs">
+    <Compile Include="ExtractAspen\PORTAL_NOTICE_VISIBILITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="PROCEDURE_INFO.cs">
+    <Compile Include="ExtractAspen\PROCEDURE_INFO.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QUERY_OPERATOR.cs">
+    <Compile Include="ExtractAspen\QUERY_OPERATOR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_DEFINITION.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_INSTANCE.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_INSTANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_ITEM.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_ITEM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_QUESTION.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_QUESTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_QUESTION_CHOICE.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_QUESTION_CHOICE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_SET_RESPONSE.cs">
+    <Compile Include="ExtractAspen\QUESTION_SET_RESPONSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUESTION_STANDARD.cs">
+    <Compile Include="ExtractAspen\QUESTION_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="QUOTA_USAGE_ANALYSIS.cs">
+    <Compile Include="ExtractAspen\QUOTA_USAGE_ANALYSIS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RECOMMENDATION_CONTROLS.cs">
+    <Compile Include="ExtractAspen\RECOMMENDATION_CONTROLS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RECORD_SET.cs">
+    <Compile Include="ExtractAspen\RECORD_SET.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RECORD_SET_KEY.cs">
+    <Compile Include="ExtractAspen\RECORD_SET_KEY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_ATTENDANCE_STAFF.cs">
+    <Compile Include="ExtractAspen\REF_ATTENDANCE_STAFF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_ATTENDANCE_STUDENT.cs">
+    <Compile Include="ExtractAspen\REF_ATTENDANCE_STUDENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_CODE.cs">
+    <Compile Include="ExtractAspen\REF_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_CODE_HIDE.cs">
+    <Compile Include="ExtractAspen\REF_CODE_HIDE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_CODE_REQUIRED_FIELD.cs">
+    <Compile Include="ExtractAspen\REF_CODE_REQUIRED_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_QAN_CODE.cs">
+    <Compile Include="ExtractAspen\REF_QAN_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REF_TABLE.cs">
+    <Compile Include="ExtractAspen\REF_TABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REGEX_LIBRARY.cs">
+    <Compile Include="ExtractAspen\REGEX_LIBRARY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REMOTE_REPOSITORY.cs">
+    <Compile Include="ExtractAspen\REMOTE_REPOSITORY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REMOTE_REPOSITORY_ACCESS.cs">
+    <Compile Include="ExtractAspen\REMOTE_REPOSITORY_ACCESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REMOTE_REPOSITORY_TYPE.cs">
+    <Compile Include="ExtractAspen\REMOTE_REPOSITORY_TYPE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORT.cs">
+    <Compile Include="ExtractAspen\REPORT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORTING_STANDARD_ASSIGNMENT.cs">
+    <Compile Include="ExtractAspen\REPORTING_STANDARD_ASSIGNMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORTING_STANDARD_SCORE.cs">
+    <Compile Include="ExtractAspen\REPORTING_STANDARD_SCORE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORTING_STANDARD_WEIGHT.cs">
+    <Compile Include="ExtractAspen\REPORTING_STANDARD_WEIGHT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORT_DELIVERY_JOB.cs">
+    <Compile Include="ExtractAspen\REPORT_DELIVERY_JOB.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORT_DELIVERY_RECIPIENT.cs">
+    <Compile Include="ExtractAspen\REPORT_DELIVERY_RECIPIENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="REPORT_WIZARD.cs">
+    <Compile Include="ExtractAspen\REPORT_WIZARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_ASSESSMENT.cs">
+    <Compile Include="ExtractAspen\RUBRIC_ASSESSMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_ASSESSMENT_PERFORMANCE.cs">
+    <Compile Include="ExtractAspen\RUBRIC_ASSESSMENT_PERFORMANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_CRITERION.cs">
+    <Compile Include="ExtractAspen\RUBRIC_CRITERION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_DEFINITION.cs">
+    <Compile Include="ExtractAspen\RUBRIC_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_GRADE_LEVEL.cs">
+    <Compile Include="ExtractAspen\RUBRIC_GRADE_LEVEL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_LEARNING_STANDARD.cs">
+    <Compile Include="ExtractAspen\RUBRIC_LEARNING_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_PERFORMANCE_DESCRIPTOR.cs">
+    <Compile Include="ExtractAspen\RUBRIC_PERFORMANCE_DESCRIPTOR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_RATING_SCALE.cs">
+    <Compile Include="ExtractAspen\RUBRIC_RATING_SCALE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="RUBRIC_RATING_SCALE_POINTS.cs">
+    <Compile Include="ExtractAspen\RUBRIC_RATING_SCALE_POINTS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SAVED_QUERY.cs">
+    <Compile Include="ExtractAspen\SAVED_QUERY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE.cs">
+    <Compile Include="ExtractAspen\SCHEDULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BELL.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BELL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BELL_DAY.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BELL_DAY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BELL_PERIOD.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BELL_PERIOD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BUILD_CLASS.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BUILD_CLASS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BUILD_MASTER.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BUILD_MASTER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BUILD_ROOM.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BUILD_ROOM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BUILD_STUDENT.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BUILD_STUDENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_BUILD_TEACHER.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_BUILD_TEACHER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_CLASS.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_CLASS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_CLASS_MATRIX.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_CLASS_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_CLASS_TERM.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_CLASS_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_COMMIT.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_COMMIT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_COMMIT_CONTROL.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_COMMIT_CONTROL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_DAY.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_DAY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_FEEDBACK.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_FEEDBACK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MASTER.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MASTER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MASTER_MATRIX.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MASTER_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MASTER_TEACHER.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MASTER_TEACHER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MASTER_TEACHER_MATRIX.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MASTER_TEACHER_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MASTER_TERM.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MASTER_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_MATRIX.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PATTERN_LIBRARY.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PATTERN_LIBRARY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PATTERN_SET.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PATTERN_SET.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PATTERN_SET_MEMBER.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PATTERN_SET_MEMBER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PERIOD.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PERIOD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PREF.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PREF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_PREF_DEFINITION.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_PREF_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_ROTATION.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_ROTATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_ROTATION_MAP.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_ROTATION_MAP.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_RULE.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_RULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_RULE_DEFINITION.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_RULE_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_RULE_OBJECT.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_RULE_OBJECT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_RULE_OBJECT_DEF.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_RULE_OBJECT_DEF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_TERM.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHEDULE_TERM_DATE.cs">
+    <Compile Include="ExtractAspen\SCHEDULE_TERM_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL.cs">
+    <Compile Include="ExtractAspen\SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_ATTRIBUTES.cs">
+    <Compile Include="ExtractAspen\SCHOOL_ATTRIBUTES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_CAPACITY.cs">
+    <Compile Include="ExtractAspen\SCHOOL_CAPACITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_GRID_CODE.cs">
+    <Compile Include="ExtractAspen\SCHOOL_GRID_CODE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_LOCKER.cs">
+    <Compile Include="ExtractAspen\SCHOOL_LOCKER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_ROOM.cs">
+    <Compile Include="ExtractAspen\SCHOOL_ROOM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_SCHEDULE_CONTEXT.cs">
+    <Compile Include="ExtractAspen\SCHOOL_SCHEDULE_CONTEXT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SCHOOL_STANDARD.cs">
+    <Compile Include="ExtractAspen\SCHOOL_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECTION_REPORTING_STANDARD.cs">
+    <Compile Include="ExtractAspen\SECTION_REPORTING_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_ACCESS.cs">
+    <Compile Include="ExtractAspen\SECURITY_ACCESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_CONTEXT.cs">
+    <Compile Include="ExtractAspen\SECURITY_CONTEXT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_PRIVILEGE.cs">
+    <Compile Include="ExtractAspen\SECURITY_PRIVILEGE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_ROLE.cs">
+    <Compile Include="ExtractAspen\SECURITY_ROLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_TAG.cs">
+    <Compile Include="ExtractAspen\SECURITY_TAG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_TAG_ACCESS.cs">
+    <Compile Include="ExtractAspen\SECURITY_TAG_ACCESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SECURITY_TAG_FIELD.cs">
+    <Compile Include="ExtractAspen\SECURITY_TAG_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SELECTION.cs">
+    <Compile Include="ExtractAspen\SELECTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SELECTION_OBJECT.cs">
+    <Compile Include="ExtractAspen\SELECTION_OBJECT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SERVICE_PROVIDER.cs">
+    <Compile Include="ExtractAspen\SERVICE_PROVIDER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SERVICE_PROVIDER_TYPE.cs">
+    <Compile Include="ExtractAspen\SERVICE_PROVIDER_TYPE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SORT_ORDER.cs">
+    <Compile Include="ExtractAspen\SORT_ORDER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SORT_ORDER_FIELD.cs">
+    <Compile Include="ExtractAspen\SORT_ORDER_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF.cs">
+    <Compile Include="ExtractAspen\STAFF.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_ACCRUAL.cs">
+    <Compile Include="ExtractAspen\STAFF_ACCRUAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_ACTIVITY.cs">
+    <Compile Include="ExtractAspen\STAFF_ACTIVITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\STAFF_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_ATTENDANCE_SUB.cs">
+    <Compile Include="ExtractAspen\STAFF_ATTENDANCE_SUB.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_CERTIFICATION.cs">
+    <Compile Include="ExtractAspen\STAFF_CERTIFICATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_COURSE_WORK.cs">
+    <Compile Include="ExtractAspen\STAFF_COURSE_WORK.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_DEGREE.cs">
+    <Compile Include="ExtractAspen\STAFF_DEGREE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_LEAVE.cs">
+    <Compile Include="ExtractAspen\STAFF_LEAVE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTION_GOAL_ALIGN.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTION_GOAL_ALIGN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTION_PLAN.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTION_PLAN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_ACTION_ALIGN.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_ACTION_ALIGN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_APPROVAL.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_APPROVAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_LOG.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_REQUEST.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_REQUEST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_ACTIVITY_VERIFICATION.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_ACTIVITY_VERIFICATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_PLAN.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_PLAN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_PLAN_GOAL.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_PLAN_GOAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_PLAN_GOAL_ALIGN.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_PLAN_GOAL_ALIGN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_PD_PLAN_REVIEW.cs">
+    <Compile Include="ExtractAspen\STAFF_PD_PLAN_REVIEW.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_POSITION.cs">
+    <Compile Include="ExtractAspen\STAFF_POSITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_POST_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\STAFF_POST_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_SCHEDULE_ASSIGNMENT.cs">
+    <Compile Include="ExtractAspen\STAFF_SCHEDULE_ASSIGNMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_SCHEDULE_ATTRIBUTES.cs">
+    <Compile Include="ExtractAspen\STAFF_SCHEDULE_ATTRIBUTES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_SCHOOL.cs">
+    <Compile Include="ExtractAspen\STAFF_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_STANDARD.cs">
+    <Compile Include="ExtractAspen\STAFF_STANDARD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STAFF_SUPPORT.cs">
+    <Compile Include="ExtractAspen\STAFF_SUPPORT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT.cs">
+    <Compile Include="ExtractAspen\STUDENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ACCOMMODATION.cs">
+    <Compile Include="ExtractAspen\STUDENT_ACCOMMODATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ALERT.cs">
+    <Compile Include="ExtractAspen\STUDENT_ALERT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ASSESSMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_ASSESSMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ASSESSMENT_RESPONSE.cs">
+    <Compile Include="ExtractAspen\STUDENT_ASSESSMENT_RESPONSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\STUDENT_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ATTENDANCE_BATCH.cs">
+    <Compile Include="ExtractAspen\STUDENT_ATTENDANCE_BATCH.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ATTENDANCE_TIME.cs">
+    <Compile Include="ExtractAspen\STUDENT_ATTENDANCE_TIME.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CASE.cs">
+    <Compile Include="ExtractAspen\STUDENT_CASE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CASE_CHILD.cs">
+    <Compile Include="ExtractAspen\STUDENT_CASE_CHILD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CASE_PERSON.cs">
+    <Compile Include="ExtractAspen\STUDENT_CASE_PERSON.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CONDUCT_ACTION.cs">
+    <Compile Include="ExtractAspen\STUDENT_CONDUCT_ACTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CONDUCT_ACTION_DATE.cs">
+    <Compile Include="ExtractAspen\STUDENT_CONDUCT_ACTION_DATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CONDUCT_INCIDENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_CONDUCT_INCIDENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CONDUCT_OFFENSE.cs">
+    <Compile Include="ExtractAspen\STUDENT_CONDUCT_OFFENSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CONTACT.cs">
+    <Compile Include="ExtractAspen\STUDENT_CONTACT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_COURSE_REQUEST.cs">
+    <Compile Include="ExtractAspen\STUDENT_COURSE_REQUEST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_CREDIT_ADJUSTMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_CREDIT_ADJUSTMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_DISABILITY.cs">
+    <Compile Include="ExtractAspen\STUDENT_DISABILITY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_ASSESSMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_ASSESSMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_COURSE.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_COURSE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_EVALUATION.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_EVALUATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_JOURNAL.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_JOURNAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_MEETING.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_MEETING.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_MEETING_PART.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_MEETING_PART.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ED_PLAN_TRANSCRIPT.cs">
+    <Compile Include="ExtractAspen\STUDENT_ED_PLAN_TRANSCRIPT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_ENROLLMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_ENROLLMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_EVENT_TRACKING.cs">
+    <Compile Include="ExtractAspen\STUDENT_EVENT_TRACKING.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_FEE.cs">
+    <Compile Include="ExtractAspen\STUDENT_FEE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_GRADE_POINT.cs">
+    <Compile Include="ExtractAspen\STUDENT_GRADE_POINT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_GRADE_POINT_ADJUSTMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_GRADE_POINT_ADJUSTMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_JOURNAL.cs">
+    <Compile Include="ExtractAspen\STUDENT_JOURNAL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_LUNCH.cs">
+    <Compile Include="ExtractAspen\STUDENT_LUNCH.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_PERIOD_ATTENDANCE.cs">
+    <Compile Include="ExtractAspen\STUDENT_PERIOD_ATTENDANCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_PROGRAM_DETAIL.cs">
+    <Compile Include="ExtractAspen\STUDENT_PROGRAM_DETAIL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_PROGRAM_PARTICIPATION.cs">
+    <Compile Include="ExtractAspen\STUDENT_PROGRAM_PARTICIPATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_QUALIFICATION_LIST.cs">
+    <Compile Include="ExtractAspen\STUDENT_QUALIFICATION_LIST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_REQUEST_ADJUSTMENT.cs">
+    <Compile Include="ExtractAspen\STUDENT_REQUEST_ADJUSTMENT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_REQUEST_TRANSACTION.cs">
+    <Compile Include="ExtractAspen\STUDENT_REQUEST_TRANSACTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_ATTRIBUTES.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_ATTRIBUTES.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_CHANGE.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_CHANGE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_CHANGE_MATRIX.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_CHANGE_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_CHANGE_TERM.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_CHANGE_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_GROUP.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_GROUP.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_MATRIX.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_MATRIX.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHEDULE_TERM.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHEDULE_TERM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHOOL.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_SCHOOL_CHOICE.cs">
+    <Compile Include="ExtractAspen\STUDENT_SCHOOL_CHOICE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_TRANSCRIPT.cs">
+    <Compile Include="ExtractAspen\STUDENT_TRANSCRIPT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_TRANSCRIPT_RUBRIC.cs">
+    <Compile Include="ExtractAspen\STUDENT_TRANSCRIPT_RUBRIC.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_TRANSPORTATION.cs">
+    <Compile Include="ExtractAspen\STUDENT_TRANSPORTATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_TRANSPORTATION_SESSION.cs">
+    <Compile Include="ExtractAspen\STUDENT_TRANSPORTATION_SESSION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_VERSION_HISTORY.cs">
+    <Compile Include="ExtractAspen\STUDENT_VERSION_HISTORY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="STUDENT_WAIT_LIST.cs">
+    <Compile Include="ExtractAspen\STUDENT_WAIT_LIST.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SUBSCRIPTION.cs">
+    <Compile Include="ExtractAspen\SUBSCRIPTION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SUBSCRIPTION_DEFINITION.cs">
+    <Compile Include="ExtractAspen\SUBSCRIPTION_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SYS_CONFIG.cs">
+    <Compile Include="ExtractAspen\SYS_CONFIG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SYS_PREFERENCE.cs">
+    <Compile Include="ExtractAspen\SYS_PREFERENCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="SYS_PREFERENCE_DEFINITION.cs">
+    <Compile Include="ExtractAspen\SYS_PREFERENCE_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TARGET_GRADE.cs">
+    <Compile Include="ExtractAspen\TARGET_GRADE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TARGET_GRADE_ADJUSTED.cs">
+    <Compile Include="ExtractAspen\TARGET_GRADE_ADJUSTED.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TOOL_NAV.cs">
+    <Compile Include="ExtractAspen\TOOL_NAV.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TOOL_ROLE.cs">
+    <Compile Include="ExtractAspen\TOOL_ROLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TOOL_SCHOOL.cs">
+    <Compile Include="ExtractAspen\TOOL_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="TRANSPORTATION_RESOURCE.cs">
+    <Compile Include="ExtractAspen\TRANSPORTATION_RESOURCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_ACCESS_LOG.cs">
+    <Compile Include="ExtractAspen\USER_ACCESS_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_INFO.cs">
+    <Compile Include="ExtractAspen\USER_INFO.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_ORGANIZATION.cs">
+    <Compile Include="ExtractAspen\USER_ORGANIZATION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_ROLE.cs">
+    <Compile Include="ExtractAspen\USER_ROLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_ROLE_SCHOOL.cs">
+    <Compile Include="ExtractAspen\USER_ROLE_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_SCHOOL.cs">
+    <Compile Include="ExtractAspen\USER_SCHOOL.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="USER_TOOL_LOG.cs">
+    <Compile Include="ExtractAspen\USER_TOOL_LOG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="VIEW_TEMPLATE.cs">
+    <Compile Include="ExtractAspen\VIEW_TEMPLATE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WIDGET_DEFINITION.cs">
+    <Compile Include="ExtractAspen\WIDGET_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW.cs">
+    <Compile Include="ExtractAspen\WORKFLOW.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_ACCESS.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_ACCESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_COMPLIANCE_RULE.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_COMPLIANCE_RULE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_DEFINITION.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_DEFINITION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PARTICIPANT.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PARTICIPANT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PHASE.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PHASE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PHASE_OUTCOME.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PHASE_OUTCOME.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PHASE_OUTCOME_FORM.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PHASE_OUTCOME_FORM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PROGRESS.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PROGRESS.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_PROGRESS_FORM.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_PROGRESS_FORM.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_ROLE.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_ROLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="WORKFLOW_ROLE_USER.cs">
+    <Compile Include="ExtractAspen\WORKFLOW_ROLE_USER.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_CONFIG.cs">
+    <Compile Include="ExtractAspen\Z_CONFIG.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_CONVERSION.cs">
+    <Compile Include="ExtractAspen\Z_CONVERSION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_CONVERSION_FIELD_STAT.cs">
+    <Compile Include="ExtractAspen\Z_CONVERSION_FIELD_STAT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_CONVERSION_LOG_ENTRY.cs">
+    <Compile Include="ExtractAspen\Z_CONVERSION_LOG_ENTRY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_CONVERSION_TABLE_STAT.cs">
+    <Compile Include="ExtractAspen\Z_CONVERSION_TABLE_STAT.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_EXPRESSION.cs">
+    <Compile Include="ExtractAspen\Z_EXPRESSION.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_JOB.cs">
+    <Compile Include="ExtractAspen\Z_JOB.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_JOB_MAP_TABLE.cs">
+    <Compile Include="ExtractAspen\Z_JOB_MAP_TABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_JOB_PROCEDURE.cs">
+    <Compile Include="ExtractAspen\Z_JOB_PROCEDURE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_MAP_FIELD.cs">
+    <Compile Include="ExtractAspen\Z_MAP_FIELD.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_MAP_REFERENCE.cs">
+    <Compile Include="ExtractAspen\Z_MAP_REFERENCE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_MAP_TABLE.cs">
+    <Compile Include="ExtractAspen\Z_MAP_TABLE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Z_PROCEDURE.cs">
+    <Compile Include="ExtractAspen\Z_PROCEDURE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -1852,7 +1852,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="ExtractAspen.edmx">
+    <EntityDeploy Include="ExtractAspen\ExtractAspen.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ExtractAspen.Designer.cs</LastGenOutput>
     </EntityDeploy>
@@ -1863,7 +1863,7 @@
     <None Include="BPSInterface\BPSInterface.edmx.diagram">
       <DependentUpon>BPSInterface.edmx</DependentUpon>
     </None>
-    <None Include="ExtractAspen.edmx.diagram">
+    <None Include="ExtractAspen\ExtractAspen.edmx.diagram">
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -1879,12 +1879,12 @@
       <DependentUpon>BPSInterface.edmx</DependentUpon>
       <LastGenOutput>BPSInterface.cs</LastGenOutput>
     </Content>
-    <Content Include="ExtractAspen.Context.tt">
+    <Content Include="ExtractAspen\ExtractAspen.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
       <LastGenOutput>ExtractAspen.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ExtractAspen.tt">
+    <Content Include="ExtractAspen\ExtractAspen.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
       <LastGenOutput>ExtractAspen.cs</LastGenOutput>

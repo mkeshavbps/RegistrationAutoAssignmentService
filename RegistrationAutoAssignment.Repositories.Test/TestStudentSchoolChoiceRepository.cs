@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Tests.Interfaces;
 using RegistrationAutoAssignment.Setup;
 

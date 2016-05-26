@@ -1,5 +1,5 @@
 ﻿using System;
-using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 
 namespace RegistrationAutoAssignment.Repositories.Interfaces
 {

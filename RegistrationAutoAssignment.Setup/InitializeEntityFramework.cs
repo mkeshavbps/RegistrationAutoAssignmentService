@@ -2,13 +2,10 @@ using System.Data.Common;
 using System.Data.Entity.Core.EntityClient;
 using System.Data.SqlClient;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 using Moq;
-
-using RegistrationAutoAssignment.Entities;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Units.UnitOfWork;
-
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 
