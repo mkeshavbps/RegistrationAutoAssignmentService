@@ -48,6 +48,17 @@ namespace RegistrationAutoAssignment.Repositories.Tests
 
         }
 
+
+        /// <summary>
+        /// Gets all the students.
+        /// </summary>
+        [TestMethod]
+        public void Test_StudentSchoolChoicesRepositoryFake()
+        {
+            var fakeRepository = StudentScoolChoicesRepositoryFake();
+            Assert.IsNotNull(fakeRepository.Object.GetAllStudents);
+        }
+
         /// <summary>
         /// Test to assert the fake repository instance creation.
         /// </summary>
