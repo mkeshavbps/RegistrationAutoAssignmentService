@@ -7,7 +7,6 @@ using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Units.UnitOfWork;
 using RegistrationAutoAssignment.Repositories.Interfaces;
-using RegistrationAutoAssignment.Repositories.StudentSchoolChoices;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces;
 
@@ -82,7 +81,7 @@ namespace RegistrationAutoAssignment.Setup
             //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient("name=ExtractAspenEntities");
             //_cntxEntityConnect = Effort.EntityConnectionFactory.CreateTransient(new EntityConnectionStringBuilder().ToString());
             //_cntxEntityConnect =
-            //    Effort.EntityConnectionFactory.CreateTransient(BuildEntityConnString("ExtractAspen", "ExtractAspen",
+            //    Effort.EntityConnectionFactory.CreateTransient(BuildEntityConnString("ExtractAspen", "ExtractAspen.ExtractAspen",
             //        string.Empty));
 
             ContextUsingEntityConnect = new ExtractAspenEntities(CntxEntityConnect);
@@ -128,12 +127,12 @@ namespace RegistrationAutoAssignment.Setup
         [TestCleanup]
         public void CleanUp()
         {
-            CntxDbConnect.Dispose();
-            CntxEntityConnect.Dispose();
-            ContextUsingEntityConnect.Dispose();
-            ContextUsingDbConnect.Dispose();
-            Repository.Dispose();
-            UnitOfWork.Dispose();
+            CntxDbConnect?.Dispose();
+            CntxEntityConnect?.Dispose();
+            ContextUsingEntityConnect?.Dispose();
+            ContextUsingDbConnect?.Dispose();
+            Repository?.Dispose();
+            UnitOfWork?.Dispose();
         }
     }
 
@@ -148,7 +147,7 @@ namespace RegistrationAutoAssignment.Setup
     public interface IFakeUnitOfWork : IStudentSchoolChoicesUnitOfWork
     { }
 
-    public interface IFakeService : IService
+    public interface IFakeService : IServiceLayer
     { }
 
     #endregion

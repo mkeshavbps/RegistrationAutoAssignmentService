@@ -20,6 +20,9 @@
         <dependencyFromLayerToLayer Id="c0b6d96d-0380-45f8-9899-a9d1cc9dd8be" direction="Forward">
           <layerMoniker Id="ec1ab43c-53e0-46b2-a6b0-0b83276dcbc3" />
         </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="174dd6b7-04c5-4814-8a6f-d32bcc43e339" direction="Forward">
+          <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
+        </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
         <reference Id="d053289d-c298-4821-a70d-9c3aab7a592c" name="RegistrationAutoAssignment">
@@ -52,6 +55,11 @@
       </references>
     </layer>
     <layer Id="791b6039-b6cc-492d-941d-70c854282956" name="RegistrationAutoAssignment.Repositories">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="19817ccb-87b0-42ba-9d6a-dbba12868903" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
       <references>
         <reference Id="9c3724e7-4f42-4966-bea0-c2051930e303" name="RegistrationAutoAssignment.Repositories">
           <ArtifactNode Label="RegistrationAutoAssignment.Repositories" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Repositories/RegistrationAutoAssignment.Repositories.csproj)">
@@ -92,6 +100,9 @@
         <dependencyFromLayerToLayer Id="26e360c1-6534-4d3e-ad95-28695020d372" direction="Forward">
           <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
         </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="cac30831-b0f2-4c14-a686-b8fbf9b94298" direction="Forward">
+          <layerMoniker Id="d873f3cc-ea84-40aa-a7e1-3d0013b5a56c" />
+        </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
         <reference Id="f04fecf3-91fb-4bd5-b667-a2996f00b2eb" name="RegistrationAutoAssignment.Entities.Tests">
@@ -114,6 +125,9 @@
         <dependencyFromLayerToLayer Id="883c5097-66a6-499b-b114-a85c478eada6" direction="Forward">
           <layerMoniker Id="791b6039-b6cc-492d-941d-70c854282956" />
         </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="8cd93d85-305b-4d96-9279-fdb32b851e7b" direction="Forward">
+          <layerMoniker Id="d873f3cc-ea84-40aa-a7e1-3d0013b5a56c" />
+        </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
         <reference Id="8b8d5712-90b8-49e9-889c-432edd48e7d2" name="RegistrationAutoAssignment.Repositories.Tests">
@@ -135,6 +149,12 @@
         </dependencyFromLayerToLayer>
         <dependencyFromLayerToLayer Id="39e77ca9-f80c-4c67-9e5a-36e71b179629" direction="Forward">
           <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="74105f1f-7adb-4ec8-8219-3c03ed439df7" direction="Forward">
+          <layerMoniker Id="d873f3cc-ea84-40aa-a7e1-3d0013b5a56c" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="f0651379-f77e-4ca9-b5ee-fbd6c7f52b15" direction="Forward">
+          <layerMoniker Id="791b6039-b6cc-492d-941d-70c854282956" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
@@ -170,12 +190,42 @@
       </references>
     </layer>
     <layer Id="5df3fa4e-f3d1-4b7f-8ea5-407405d9d773" name="RegistrationAutoAssignment.Services.Tests">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2b06a34b-83ab-437c-8567-ad4a254ae0dd" direction="Forward">
+          <layerMoniker Id="d873f3cc-ea84-40aa-a7e1-3d0013b5a56c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
       <references>
         <reference Id="77c7b8f8-28a2-4d83-a24e-b66a49e4b02f" name="RegistrationAutoAssignment.Services.Tests">
           <ArtifactNode Label="RegistrationAutoAssignment.Services.Tests" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Services.Tests/RegistrationAutoAssignment.Services.Tests.csproj)">
             <Category Ref="File" />
           </ArtifactNode>
           <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Services.Tests)" Label="RegistrationAutoAssignment.Services.Tests.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="d873f3cc-ea84-40aa-a7e1-3d0013b5a56c" name="RegistrationAutoAssignment.Setup">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9cfba38b-dc28-4140-8734-630f9584fa10" direction="Forward">
+          <layerMoniker Id="7810124a-b68b-4240-9d20-1f87fd7572a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="599fd09c-150f-4492-b431-173f861d3aa7" direction="Forward">
+          <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="dc536a0c-bda5-45f6-a311-ced2c5347c32" direction="Forward">
+          <layerMoniker Id="791b6039-b6cc-492d-941d-70c854282956" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="37c3c82a-1722-431d-a01a-dfa5dd3114d0" name="RegistrationAutoAssignment.Setup">
+          <ArtifactNode Label="RegistrationAutoAssignment.Setup" Category="CodeSchema_Project" Id="(Assembly=../RegistrationAutoAssignment.Setup/RegistrationAutoAssignment.Setup.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RegistrationAutoAssignment.Setup)" Label="RegistrationAutoAssignment.Setup.dll" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.dll" />
             <LinkCategory Ref="Produces" />
             <LinkCategory Ref="Represents" />

@@ -65,6 +65,10 @@
       <Name>RegistrationAutoAssignment.Services.Tests</Name>
       <Project>{af9864bb-b760-416e-b468-86de47fdc636}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Setup\RegistrationAutoAssignment.Setup.csproj">
+      <Name>RegistrationAutoAssignment.Setup</Name>
+      <Project>{1779f0af-332d-46ff-816d-607e4045df2b}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\RegistrationAutoAssignment.Tests\RegistrationAutoAssignment.Tests.csproj">
       <Name>RegistrationAutoAssignment.Tests</Name>
       <Project>{9f1c6c43-07ce-451e-a050-b3f3db0e42ed}</Project>
