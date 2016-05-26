@@ -25,7 +25,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         public void Test_UnitOfWorkWithFakeRepository_InvokingWebServiceCall()
         {
 
-            using (Initialize.Mocked.Object.Repository as IFakeRepository)
+            using (Initialize.MockedUnitOfWork.Object.Repository as IFakeRepository)
             {
                 var paramMock = new Mock<StudentSchoolChoicesParameters>(MockBehavior.Loose);
                 paramMock.Object.AddressId = "326371";

@@ -7,7 +7,9 @@ using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Units.UnitOfWork;
 using RegistrationAutoAssignment.Repositories.Interfaces;
+using RegistrationAutoAssignment.Repositories.StudentSchoolChoices;
 using RegistrationAutoAssignment.Units.Interfaces;
+using RegistrationAutoAssignment.Services.Interfaces;
 
 //using NMemory.Linq;
 //using Effort.DataLoaders;
@@ -24,7 +26,9 @@ namespace RegistrationAutoAssignment.Setup
         public IUnitOfWork UnitOfWork { get; private set; }
         public IRepository Repository { get; private set; }
 
-        public Mock<IFakeUnitOfWork> Mocked { get; private set; }
+        public Mock<IFakeUnitOfWork> MockedUnitOfWork { get; private set; }
+
+        public Mock<IServiceLayer> MockedService { get; private set; }
 
 
         [TestInitialize]
@@ -36,8 +40,10 @@ namespace RegistrationAutoAssignment.Setup
             CntxDbConnect = Effort.DbConnectionFactory.CreateTransient();
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
 
-            Mocked = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
+            MockedUnitOfWork = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
             UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect);
+
+            MockedService = new Mock<IServiceLayer>(MockBehavior.Default);
 
             // Specify the provider name, server and database.
             const string providerName = "System.Data.SqlClient";
@@ -135,6 +141,9 @@ namespace RegistrationAutoAssignment.Setup
     { }
 
     public interface IFakeUnitOfWork : IStudentSchoolChoicesUnitOfWork
+    { }
+
+    public interface IFakeService : IService
     { }
 
     #endregion
