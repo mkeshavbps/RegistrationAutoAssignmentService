@@ -70,8 +70,6 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             #endregion
 
             ContextUsingEntityConnect = new ExtractAspenEntities(CntxEntityConnect);
-
-
             Repository = new SchoolChoiceRepository(CntxDbConnect);
 
         }
@@ -94,10 +92,14 @@ namespace RegistrationAutoAssignment.Repositories.Tests
 
         }
 
+        /// <summary>
+        /// Test to assert the fake repository instance creation.
+        /// </summary>
         [TestMethod]
         public void TestStudentSchoolRepositoryInstance()
         {
-          Assert.IsNotNull(FakeStudentSchoolChoiceMock.Object);
+            FakeStudentSchoolChoiceMock = new Mock<IFakeStudentSchoolChoiceRepository>();
+            Assert.IsNotNull(FakeStudentSchoolChoiceMock.Object);
         }
 
         /// <summary>
@@ -134,6 +136,9 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             Assert.IsNotNull(returnedString);
         }
 
+        /// <summary>
+        /// Dispose all objects.
+        /// </summary>
         [TestCleanup]
         public void CleanUp()
         {
@@ -144,14 +149,18 @@ namespace RegistrationAutoAssignment.Repositories.Tests
             ContextUsingDbConnect.Dispose();
         }
 
+        #region "Implemented interface IFakeStudentSchoolChoiceRepository 
+
         public void AddStudent(STUDENT student)
         {
-            FakeStudentSchoolChoiceMock.Object.AspenDbContext?.STUDENTs.Add(new STUDENT() { STD_OID = "1234" });
+            FakeStudentSchoolChoiceMock.Object.AspenDbContext?.STUDENTs.Add(new STUDENT { STD_OID = "1234" });
         }
        
         public IEnumerable<STUDENT> GetAllStudents { get; set; }
 
         public ExtractAspenEntities AspenDbContext { get; set; }
+
+        #endregion
     }
 
    

@@ -7,12 +7,10 @@ namespace RegistrationAutoAssignment.Repositories.Tests.Interfaces
     /// <summary>
     /// Created a fake repository.
     /// </summary>
-    public interface IFakeStudentSchoolChoiceRepository : IRepository
+    public interface IFakeStudentSchoolChoiceRepository : ISchoolChoicesRepository
     {
 
         void AddStudent(STUDENT student);
         IEnumerable<STUDENT> GetAllStudents { get; set; }
-
-        string GetNewSchoolChoicesForStudent(StudentSchoolChoicesParameters studentChoicesParameters);
     }
 }

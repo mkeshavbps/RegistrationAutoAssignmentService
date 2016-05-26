@@ -20,7 +20,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
 
         public IUnitOfWork UnitOfWork { get; private set; }
-        public Mock<IUnitOfWork> Mocked { get; private set; }
+        public Mock<IFakeUnitOfWork> Mocked { get; private set; }
 
         [TestInitialize]
         public void UnitOfWorkInitialize()
@@ -31,7 +31,7 @@ namespace RegistrationAutoAssignment.Units.Tests
             CntxDbConnect = Effort.DbConnectionFactory.CreateTransient();
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
 
-            Mocked = new Mock<IUnitOfWork>(MockBehavior.Default);
+            Mocked = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
             UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect);
             
 
@@ -71,6 +71,17 @@ namespace RegistrationAutoAssignment.Units.Tests
             //        string.Empty));
 
             ContextUsingEntityConnect = new ExtractAspenEntities(CntxEntityConnect);
+        }
+
+
+        /// <summary>
+        /// Test to assert the fake Uow instance creation
+        /// </summary>
+        [TestMethod]
+        public void TestUnitOfWorkWithFakeRepositoryInstance()
+        {
+           var fakeStudentSchoolChoiceUoWMock = new Mock<IFakeUnitOfWork>();
+            Assert.IsNotNull(fakeStudentSchoolChoiceUoWMock.Object);
         }
 
         [TestMethod]
@@ -121,6 +132,9 @@ namespace RegistrationAutoAssignment.Units.Tests
         /// Mock interface to invoke the service call.
         /// </summary>
         public interface IFakeRepository : ISchoolChoicesRepository
+        { }
+
+        public interface IFakeUnitOfWork: IStudentSchoolChoicesUnitOfWork
         { }
 
         
