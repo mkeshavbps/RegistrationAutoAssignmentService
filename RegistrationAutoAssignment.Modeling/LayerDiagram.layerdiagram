@@ -36,7 +36,7 @@
         </reference>
       </references>
     </layer>
-    <layer Id="ec1ab43c-53e0-46b2-a6b0-0b83276dcbc3" name="RegistrationAndAutoAssignment.Services">
+    <layer Id="ec1ab43c-53e0-46b2-a6b0-0b83276dcbc3" name="RegistrationAutoAssignment.Services">
       <dependencyToLayers>
         <dependencyFromLayerToLayer Id="895cc436-a3b9-43a8-aabe-2fbdf5982a74" direction="Forward">
           <layerMoniker Id="b2ccc278-dc2f-4a5e-b4ce-d415660c7aa7" />
