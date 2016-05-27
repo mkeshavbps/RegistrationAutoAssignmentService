@@ -102,8 +102,6 @@ namespace RegistrationAutoAssignment.Entities.Tests
             schoolToUpdate.SKL_NUMBER_OF_GRADES = 5.0m;
             schoolToUpdate.SKL_START_GRADE = 3.2m;
 
-
-            Initialize.ContextUsingEntityConnect.SCHOOLs.AddOrUpdate(schoolToUpdate);
             Initialize.ContextUsingEntityConnect.SaveChanges();
 
 
