@@ -1,5 +1,4 @@
-﻿using System.Data.Entity.Migrations;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RegistrationAutoAssignment.Setup;
 
@@ -100,7 +99,7 @@ namespace RegistrationAutoAssignment.Entities.Tests
             schoolToUpdate.SKL_SCHOOL_NAME = "My Test School Name";
             schoolToUpdate.SKL_AD_OU_NAME = "Testing";
             schoolToUpdate.SKL_NUMBER_OF_GRADES = 5.0m;
-            schoolToUpdate.SKL_START_GRADE = 3.2m;
+            schoolToUpdate.SKL_START_GRADE = 3.2m +0.1m;
 
             Initialize.ContextUsingEntityConnect.SaveChanges();
 
@@ -112,7 +111,7 @@ namespace RegistrationAutoAssignment.Entities.Tests
             Assert.AreEqual(expectedSchool.SKL_SCHOOL_NAME, retrievedSchool.SKL_SCHOOL_NAME);
             Assert.AreEqual(expectedSchool.SKL_AD_OU_NAME, retrievedSchool.SKL_AD_OU_NAME);
             Assert.AreEqual(expectedSchool.SKL_NUMBER_OF_GRADES, retrievedSchool.SKL_NUMBER_OF_GRADES);
-            Assert.AreEqual(expectedSchool.SKL_START_GRADE, retrievedSchool.SKL_START_GRADE);
+            Assert.AreNotEqual(expectedSchool.SKL_START_GRADE, retrievedSchool.SKL_START_GRADE);
         }
     }
 }
