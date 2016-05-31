@@ -63,7 +63,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="StudentSchoolChoicesParameters.cs" />
+    <Compile Include="StudentSchoolParameters.cs" />
     <Compile Include="Utilities\Serializer.cs" />
   </ItemGroup>
   <ItemGroup>
