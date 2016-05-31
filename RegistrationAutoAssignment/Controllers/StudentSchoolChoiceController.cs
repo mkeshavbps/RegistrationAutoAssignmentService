@@ -2,7 +2,7 @@
 using System.Web.Http;
 using System.Web.Http.Description;
 using RegistrationAutoAssignment.Attributes.Exceptions;
-using RegistrationAutoAssignment.Services.Interfaces;
+using RegistrationAutoAssignment.Services.Interfaces.Requests;
 using RegistrationAutoAssignment.Services.Interfaces.Services;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.ServiceRequests;
@@ -13,11 +13,11 @@ namespace RegistrationAutoAssignment.Controllers
     [BpsException]
     public class StudentSchoolChoiceController : ApiController
     {
-        internal IServiceLayer StudentSchoolChoicesService { get; }
+        internal IStudentSchoolChoicesService StudentSchoolChoicesService { get; }
 
         public StudentSchoolChoiceController(IStudentSchoolChoicesService service)
         {
-            StudentSchoolChoicesService = service as IServiceLayer;
+            StudentSchoolChoicesService = service;
         }
 
         #region " Contructor to work with unit of work.
@@ -42,7 +42,7 @@ namespace RegistrationAutoAssignment.Controllers
         [ResponseType(typeof(string))]
         public IHttpActionResult GetSchoolChoicesForNewStudent()
         {
-            var request = new StudentSchoolChoicesRequest
+            var  request = new StudentSchoolChoicesRequest
             {
                 AddressId = "326371",
                 CaseId = "635359",
@@ -76,12 +76,13 @@ namespace RegistrationAutoAssignment.Controllers
         /// Gets the student school choices and Waitlist information for a student.
         /// </summary>
         /// <returns></returns>
-        public IHttpActionResult GetStudentSchoolChoiceAndWaitList()
+        [HttpPost]
+        public IHttpActionResult GetStudentSchoolChoiceAndWaitList(StudentSchoolChoicesAndWaitListRequest request)
         {
             if (StudentSchoolChoicesService == null)
                 return NotFound();
 
-            var returnString = StudentSchoolChoicesService.InvokeService(request);
+            var returnString = StudentSchoolChoicesService.GetStudentSchoolChoicesAndWaitList(request);
 
             return Ok(returnString);
         }

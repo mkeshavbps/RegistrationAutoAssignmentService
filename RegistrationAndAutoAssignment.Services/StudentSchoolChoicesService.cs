@@ -32,6 +32,11 @@ namespace RegistrationAutoAssignment.Services
         public IUnitOfWork UnitOfWork { get; }
 
         /// <summary>
+        /// Specific repository
+        /// </summary>
+        public IRepository Repository { get; }
+
+        /// <summary>
         /// Service constructor with unit of work.
         /// </summary>
         /// <param name="unitOfWork"></param>
@@ -61,6 +66,7 @@ namespace RegistrationAutoAssignment.Services
         public StudentSchoolChoicesService(IRepository repository)
         {
             AllRepositories?.Add(repository.GetType(), repository);
+            Repository = repository;
         }
 
 
@@ -152,6 +158,28 @@ namespace RegistrationAutoAssignment.Services
             };
             return repository?.GetNewSchoolChoicesForStudent(parameters);
         }
+
+
+        /// <summary>
+        /// Gets the student school choices and wait list information for a student.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public string GetStudentSchoolChoicesAndWaitList(IStudentSchoolChoicesAndWaitListRequest request)
+        {
+            var repository = UnitOfWork.Repository as ISchoolWaitListRepository;
+
+            var parameters = new StudentSchoolParameters
+            {
+                SchoolYear = request?.SchoolYear,
+                StudentNo = request?.StudentNo,
+           
+            };
+
+            var waitListNumbers = repository?.GetStudentSchoolWaitList(parameters);
+            return waitListNumbers;
+        }
+
     }
 }
 

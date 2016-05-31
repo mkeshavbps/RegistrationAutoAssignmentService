@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Requests\IStudentSchoolChoicesAndWaitListRequest.cs" />
     <Compile Include="Interfaces\Services\ILogMessageService.cs" />
     <Compile Include="Interfaces\Requests\IRequest.cs" />
     <Compile Include="Interfaces\IRequestFacade.cs" />
     <Compile Include="Interfaces\IServiceLayer.cs" />
     <Compile Include="Interfaces\Services\IStudentSchoolChoicesService.cs" />
+    <Compile Include="ServiceRequests\StudentSchoolChoicesAndWaitListRequest.cs" />
     <Compile Include="StudentSchoolChoicesService.cs" />
     <Compile Include="LogMessageService.cs" />
     <Compile Include="Interfaces\Requests\IStudentSchoolChoicesRequest.cs" />

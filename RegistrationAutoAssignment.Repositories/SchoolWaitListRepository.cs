@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Common;
+using System.Linq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 
@@ -38,9 +39,26 @@ namespace RegistrationAutoAssignment.Repositories
         /// </summary>
         /// <param name="stdRequest"></param>
         /// <returns></returns>
-        public int GetStudentSchoolWaitList(StudentSchoolParameters stdRequest)
+        public string GetStudentSchoolWaitList(StudentSchoolParameters stdRequest)
         {
-            throw new NotImplementedException();
+            var waitListByStudentSchool = (from waitList in AspenDbContext.STUDENT_WAIT_LIST
+                join std in AspenDbContext.STUDENTs on waitList.SWL_STD_OID equals std.STD_OID
+                join capacity in AspenDbContext.SCHOOL_CAPACITY on waitList.SWL_SCA_OID equals capacity.SCA_OID
+                join context in AspenDbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on capacity.SCA_CTX_OID equals
+                    context.CTX_OID
+                join school in AspenDbContext.SCHOOLs on capacity.SCA_SKL_OID equals school.SKL_OID
+                where stdRequest.SchoolYear != null && (waitList.SWL_ACTION_CODE == null && context.CTX_SCHOOL_YEAR == decimal.Parse(stdRequest.SchoolYear))
+                orderby std.STD_ID_LOCAL, waitList.SWL_RANK
+                select
+                    new
+                    {
+                        StudentLocalId = std.STD_ID_LOCAL,
+                        ProgramCode = capacity.SCA_PROGRAM_CODE,
+                        GradeLevel = capacity.SCA_GRADE_LEVEL,
+                        SchoolId = school.SKL_SCHOOL_ID,
+                        Rank = waitList.SWL_RANK
+                    }).ToList();
+            return null;
         }
 
         #region IDisposable Support

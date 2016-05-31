@@ -7,6 +7,6 @@
         /// </summary>
         /// <param name="stdRequest"></param>
         /// <returns></returns>
-        int GetStudentSchoolWaitList(StudentSchoolParameters stdRequest);
+        string GetStudentSchoolWaitList(StudentSchoolParameters stdRequest);
     }
 }
