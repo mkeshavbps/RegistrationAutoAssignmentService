@@ -116,7 +116,7 @@ namespace RegistrationAutoAssignment.Services
         {
             var studentSchoolChoicesRequest = request as IStudentChoicesRequest;
             var repository = UnitOfWork.Repository as ISchoolChoicesRepository;
-            var parameters = new StudentSchoolChoicesParameters()
+            var parameters = new StudentSchoolParameters()
             {
                 AddressId = studentSchoolChoicesRequest?.AddressId,
                 CaseId = studentSchoolChoicesRequest?.CaseId,

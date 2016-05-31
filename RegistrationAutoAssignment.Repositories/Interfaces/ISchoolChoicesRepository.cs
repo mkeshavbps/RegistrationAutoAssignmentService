@@ -2,6 +2,11 @@
 {
     public interface ISchoolChoicesRepository:IRepository
     {
-        string GetNewSchoolChoicesForStudent(StudentSchoolChoicesParameters stdRequest);
+        /// <summary>
+        /// Gets the student school choices for a student information passed in.
+        /// </summary>
+        /// <param name="stdRequest"></param>
+        /// <returns></returns>
+        string GetNewSchoolChoicesForStudent(StudentSchoolParameters stdRequest);
     }
 }

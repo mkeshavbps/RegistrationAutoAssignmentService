@@ -36,7 +36,7 @@ namespace RegistrationAutoAssignment.Repositories
 
         public ExtractAspenEntities AspenDbContext { get; set; }
 
-        public string GetNewSchoolChoicesForStudent(StudentSchoolChoicesParameters stdRequest)
+        public string GetNewSchoolChoicesForStudent(StudentSchoolParameters stdRequest)
         {
           var client = new StudentSchoolChoices.ServiceClient();
 

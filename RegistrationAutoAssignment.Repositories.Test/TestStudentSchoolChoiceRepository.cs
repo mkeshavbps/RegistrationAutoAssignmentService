@@ -77,7 +77,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         public void Test_StudentSchoolChoicesWebService()
         {
             FakeStudentSchoolChoiceMock = new Mock<IFakeStudentSchoolChoiceRepository>();
-            var paramMock = new Mock<StudentSchoolChoicesParameters>(MockBehavior.Loose);
+            var paramMock = new Mock<StudentSchoolParameters>(MockBehavior.Loose);
             paramMock.Object.AddressId = "326371";
             paramMock.Object.CaseId = "635359";
             paramMock.Object.DoBparam = "2007-09-13 00:00:00.000";

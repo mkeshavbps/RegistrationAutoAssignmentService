@@ -1,6 +1,6 @@
 ﻿namespace RegistrationAutoAssignment.Repositories
 {
-    public class StudentSchoolChoicesParameters
+    public class StudentSchoolParameters
     {
         public string SchoolYear { get; set; }
         public string Type { get; set; }
