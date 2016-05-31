@@ -1,6 +1,6 @@
 ﻿namespace RegistrationAutoAssignment.Services.Interfaces.Services
 {
-    public interface ILogMessageService
+    public interface ILogMessageService : IServiceLayer
     {
     }
 }

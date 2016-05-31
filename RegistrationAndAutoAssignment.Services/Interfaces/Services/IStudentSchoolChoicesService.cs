@@ -1,6 +1,6 @@
 ﻿namespace RegistrationAutoAssignment.Services.Interfaces.Services
 {
-    public interface IStudentSchoolChoicesService
+    public interface IStudentSchoolChoicesService : IServiceLayer
     {
     }
 }

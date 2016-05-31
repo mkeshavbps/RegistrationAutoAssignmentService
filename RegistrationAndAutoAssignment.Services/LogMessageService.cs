@@ -3,7 +3,6 @@ using System.Collections;
 using System.IO;
 using System.Net;
 using System.Text;
-using RegistrationAutoAssignment.Services.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using System.Web;
 using RegistrationAutoAssignment.Services.Interfaces.Requests;
@@ -15,7 +14,7 @@ namespace RegistrationAutoAssignment.Services
     /// <summary>
     /// This service container has a unit of work/s composed with one or more repositiories.
     /// </summary>
-    public class LogMessageService : ILogMessageService, IDisposable, IServiceLayer
+    public class LogMessageService : ILogMessageService
     {
         private bool _disposed;
 

@@ -26,7 +26,10 @@ namespace RegistrationAutoAssignment
 			GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
 
 			GetLogByServiceInterfaceWithUow(container);
+
 			GetStdSchByServiceInterfaceWithUow(container);
+			GetStdSchByServiceInterfaceWithRepository(container);
+
 
 		}
 
@@ -40,6 +43,18 @@ namespace RegistrationAutoAssignment
 				.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IUnitOfWork)))
 					.RegisterType<IUnitOfWork, StudentSchoolChoicesUnitOfWork>(new InjectionConstructor(typeof(IRepository)))
 						.RegisterType<IRepository, SchoolChoiceRepository>(new InjectionConstructor());
+		}
+
+
+		/// <summary>
+		/// Using Service interface with Unit of work creating the context and repositories.
+		/// </summary>
+		/// <param name="container"></param>
+		private static void GetStdSchByServiceInterfaceWithRepository(IUnityContainer container)
+		{
+			container.RegisterType<StudentSchoolChoiceController>(new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
+				.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IRepository)))
+						.RegisterType<IRepository, SchoolWaitListRepository>(new InjectionConstructor());
 		}
 
 		/// <summary>

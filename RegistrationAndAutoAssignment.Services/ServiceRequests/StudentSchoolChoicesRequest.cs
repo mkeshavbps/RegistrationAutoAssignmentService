@@ -2,7 +2,7 @@
 
 namespace RegistrationAutoAssignment.Services.ServiceRequests
 {
-    public class StudentChoicesRequest : IStudentChoicesRequest
+    public class StudentSchoolChoicesRequest : IStudentSchoolChoicesRequest
 {
         public string SchoolYear { get; set; }
         public string Type { get; set; }

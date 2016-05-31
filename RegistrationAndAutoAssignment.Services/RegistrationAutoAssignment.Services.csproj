@@ -50,10 +50,10 @@
     <Compile Include="Interfaces\Services\IStudentSchoolChoicesService.cs" />
     <Compile Include="StudentSchoolChoicesService.cs" />
     <Compile Include="LogMessageService.cs" />
-    <Compile Include="Interfaces\Requests\IStudentChoicesRequest.cs" />
+    <Compile Include="Interfaces\Requests\IStudentSchoolChoicesRequest.cs" />
     <Compile Include="ServiceRequests\LogMessageRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceRequests\StudentChoicesRequest.cs" />
+    <Compile Include="ServiceRequests\StudentSchoolChoicesRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">

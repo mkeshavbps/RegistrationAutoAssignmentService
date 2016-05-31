@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using RegistrationAutoAssignment.Repositories;
-using RegistrationAutoAssignment.Services.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces.Requests;
@@ -12,7 +11,7 @@ namespace RegistrationAutoAssignment.Services
     /// <summary>
     /// This service container has a unit of work/s composed with one or more repositiories.
     /// </summary>
-    public class StudentSchoolChoicesService : IStudentSchoolChoicesService, IServiceLayer, IDisposable
+    public class StudentSchoolChoicesService : IStudentSchoolChoicesService
     {
         private bool _disposed;
 
@@ -32,6 +31,10 @@ namespace RegistrationAutoAssignment.Services
         /// </summary>
         public IUnitOfWork UnitOfWork { get; }
 
+        /// <summary>
+        /// Service constructor with unit of work.
+        /// </summary>
+        /// <param name="unitOfWork"></param>
         public StudentSchoolChoicesService(IUnitOfWork unitOfWork )
         {
             UnitOfWork = unitOfWork;
@@ -48,6 +51,16 @@ namespace RegistrationAutoAssignment.Services
 
             //AddUnitOfWork(typeof(StudentSchoolChoicesUnitOfWork));
             //AddRepository(typeof(SchoolChoiceRepository));
+        }
+
+
+        /// <summary>
+        /// Service constructor with repository.
+        /// </summary>
+        /// <param name="repository"></param>
+        public StudentSchoolChoicesService(IRepository repository)
+        {
+            AllRepositories?.Add(repository.GetType(), repository);
         }
 
 
@@ -114,7 +127,7 @@ namespace RegistrationAutoAssignment.Services
         /// <returns></returns>
         public string InvokeService(IRequest request)
         {
-            var studentSchoolChoicesRequest = request as IStudentChoicesRequest;
+            var studentSchoolChoicesRequest = request as IStudentSchoolChoicesRequest;
             var repository = UnitOfWork.Repository as ISchoolChoicesRepository;
             var parameters = new StudentSchoolParameters()
             {

@@ -42,7 +42,7 @@ namespace RegistrationAutoAssignment.Controllers
         [ResponseType(typeof(string))]
         public IHttpActionResult GetSchoolChoicesForNewStudent()
         {
-            var request = new StudentChoicesRequest
+            var request = new StudentSchoolChoicesRequest
             {
                 AddressId = "326371",
                 CaseId = "635359",
@@ -64,7 +64,20 @@ namespace RegistrationAutoAssignment.Controllers
                 Type = "Testing"
             };
 
+            if (StudentSchoolChoicesService == null)
+                return NotFound();
 
+            var returnString = StudentSchoolChoicesService.InvokeService(request);
+
+            return Ok(returnString);
+        }
+
+        /// <summary>
+        /// Gets the student school choices and Waitlist information for a student.
+        /// </summary>
+        /// <returns></returns>
+        public IHttpActionResult GetStudentSchoolChoiceAndWaitList()
+        {
             if (StudentSchoolChoicesService == null)
                 return NotFound();
 

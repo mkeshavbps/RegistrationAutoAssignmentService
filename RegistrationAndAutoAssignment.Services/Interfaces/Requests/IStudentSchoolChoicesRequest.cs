@@ -1,6 +1,6 @@
 ﻿namespace RegistrationAutoAssignment.Services.Interfaces.Requests
 {
-    public interface IStudentChoicesRequest :IRequest
+    public interface IStudentSchoolChoicesRequest :IRequest
     {
         string AddressId { get; set; }
         string CaseId { get; set; }

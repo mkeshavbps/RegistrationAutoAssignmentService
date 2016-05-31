@@ -11,13 +11,13 @@ namespace RegistrationAutoAssignment.Services.Tests
     {
         public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
         private Mock<IServiceLayer> MockedService { get; set; }
-        private Mock<IStudentChoicesRequest> MockedRequest { get; set; }
+        private Mock<IStudentSchoolChoicesRequest> MockedRequest { get; set; }
 
         [TestInitialize]
         public void MoreToInitialize()
         {
             MockedService = new Mock<IServiceLayer>(MockBehavior.Default);
-            MockedRequest = new Mock<IStudentChoicesRequest>();
+            MockedRequest = new Mock<IStudentSchoolChoicesRequest>();
         }
 
         [TestMethod]
