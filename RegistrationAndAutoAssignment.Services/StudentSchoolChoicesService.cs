@@ -18,23 +18,23 @@ namespace RegistrationAutoAssignment.Services
         /// <summary>
         /// Access all unit of works that the StudentChoicesService service uses to access.
         /// </summary>
-        internal Hashtable AllUnitOfWorks { get; set; } = new Hashtable();
+        private Hashtable AllUnitOfWorks { get; set; } = new Hashtable();
 
 
         /// <summary>
         /// Access all repositories that the StudentChoicesService service uses to access.
         /// </summary>
-        internal Hashtable AllRepositories { get; set; } = new Hashtable();
+        private Hashtable AllRepositories { get; set; } = new Hashtable();
 
         /// <summary>
         /// Specific unit of work 
         /// </summary>
-        public IUnitOfWork UnitOfWork { get; }
+        private IUnitOfWork UnitOfWork { get; }
 
         /// <summary>
         /// Specific repository
         /// </summary>
-        public IRepository Repository { get; }
+        private IRepository Repository { get; }
 
         /// <summary>
         /// Service constructor with unit of work.
@@ -68,7 +68,6 @@ namespace RegistrationAutoAssignment.Services
             AllRepositories?.Add(repository.GetType(), repository);
             Repository = repository;
         }
-
 
         #region "IDisposable pattern"
         public void Dispose()
@@ -167,13 +166,11 @@ namespace RegistrationAutoAssignment.Services
         /// <returns></returns>
         public string GetStudentSchoolChoicesAndWaitList(IStudentSchoolChoicesAndWaitListRequest request)
         {
-            var repository = UnitOfWork.Repository as ISchoolWaitListRepository;
-
+            var repository = Repository as ISchoolWaitListRepository;
             var parameters = new StudentSchoolParameters
             {
                 SchoolYear = request?.SchoolYear,
-                StudentNo = request?.StudentNo,
-           
+                StudentNo = request?.StudentNo
             };
 
             var waitListNumbers = repository?.GetStudentSchoolWaitList(parameters);

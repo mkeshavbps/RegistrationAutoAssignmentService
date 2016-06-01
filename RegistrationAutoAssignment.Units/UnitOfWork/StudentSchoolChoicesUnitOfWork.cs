@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Data.Common;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
-using System.Data.Common;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories;
 
