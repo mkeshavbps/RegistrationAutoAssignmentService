@@ -1,6 +1,4 @@
-﻿using RegistrationAutoAssignment.Services.Interfaces.Requests;
-
-namespace RegistrationAutoAssignment.Services.Interfaces
+﻿namespace RegistrationAutoAssignment.Services.Interfaces
 {
     /// <summary>
     /// Place holder for the service transport/message level implementation 

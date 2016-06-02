@@ -26,9 +26,9 @@ namespace RegistrationAutoAssignment
 			GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
 
 			GetLogByServiceInterfaceWithUow(container);
-            //GetStdSchByServiceInterfaceWithUow(container);
-            GetStdSchByServiceInterfaceWithRepository(container);
-        }
+			//GetStdSchByServiceInterfaceWithUow(container);
+			GetStdSchByServiceInterfaceWithRepository(container);
+		}
 
 		/// <summary>
 		/// Using Service interface with Unit of work creating the context and repositories.

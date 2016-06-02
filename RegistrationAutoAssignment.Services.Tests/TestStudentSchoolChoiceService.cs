@@ -2,14 +2,15 @@
 using Moq;
 using RegistrationAutoAssignment.Services.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces.Requests;
-using RegistrationAutoAssignment.Setup;
 
 namespace RegistrationAutoAssignment.Services.Tests
 {
     [TestClass]
     public class TestStudentSchoolChoiceService
     {
-        public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+/*
+        private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+*/
         private Mock<IServiceLayer> MockedService { get; set; }
         private Mock<IStudentSchoolChoicesRequest> MockedRequest { get; set; }
 

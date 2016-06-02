@@ -7,7 +7,7 @@ namespace RegistrationAutoAssignment.Entities.Tests
     [TestClass]
     public class UnitTestEntityFramework
     {
-        public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+        private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
 
         [TestMethod]
         public void Test_GetSchools()

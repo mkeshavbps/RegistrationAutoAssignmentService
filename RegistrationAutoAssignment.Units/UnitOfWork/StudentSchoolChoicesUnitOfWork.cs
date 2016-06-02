@@ -86,7 +86,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             Context.SaveChanges();
         }
 
-        public virtual void Dispose(bool disposing)
+        protected virtual void Dispose(bool disposing)
         {
             if (!_disposed)
                 if (disposing)

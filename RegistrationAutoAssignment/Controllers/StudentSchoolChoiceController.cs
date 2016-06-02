@@ -2,7 +2,6 @@
 using System.Web.Http;
 using System.Web.Http.Description;
 using RegistrationAutoAssignment.Attributes.Exceptions;
-using RegistrationAutoAssignment.Services.Interfaces.Requests;
 using RegistrationAutoAssignment.Services.Interfaces.Services;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.ServiceRequests;
@@ -13,7 +12,7 @@ namespace RegistrationAutoAssignment.Controllers
     [BpsException]
     public class StudentSchoolChoiceController : ApiController
     {
-        internal IStudentSchoolChoicesService StudentSchoolChoicesService { get; }
+        private IStudentSchoolChoicesService StudentSchoolChoicesService { get; }
 
         public StudentSchoolChoiceController(IStudentSchoolChoicesService service)
         {

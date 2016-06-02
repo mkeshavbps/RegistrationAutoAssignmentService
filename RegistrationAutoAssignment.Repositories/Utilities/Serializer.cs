@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Schema;
 using System.Xml.Serialization;
 
 namespace RegistrationAutoAssignment.Repositories.Utilities
@@ -64,19 +65,19 @@ namespace RegistrationAutoAssignment.Repositories.Utilities
             var dataTable = new DataTable(typeof(T).Name);
 
             //Get all the properties
-            PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            foreach (PropertyInfo prop in Props)
+            PropertyInfo[] props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (var prop in props)
             {
                 //Setting column names as Property names
                 dataTable.Columns.Add(prop.Name);
             }
             foreach (var item in items)
             {
-                var values = new object[Props.Length];
-                for (var i = 0; i < Props.Length; i++)
+                var values = new object[props.Length];
+                for (var i = 0; i < props.Length; i++)
                 {
                     //inserting property values to datatable rows
-                    values[i] = Props[i].GetValue(item, null);
+                    values[i] = props[i].GetValue(item, null);
                 }
                 dataTable.Rows.Add(values);
             }
@@ -131,6 +132,7 @@ namespace RegistrationAutoAssignment.Repositories.Utilities
         {
             try
             {
+                if (xml == null) throw new ArgumentNullException(nameof(xml));
                 var document = XDocument.Load(xml);
                 return true;
             }
@@ -138,7 +140,6 @@ namespace RegistrationAutoAssignment.Repositories.Utilities
             {
                 return false;
             }
-
         }
     }
 }

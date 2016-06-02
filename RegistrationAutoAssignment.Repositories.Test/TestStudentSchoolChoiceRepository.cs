@@ -3,7 +3,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Tests.Interfaces;
-using RegistrationAutoAssignment.Setup;
 
 
 namespace RegistrationAutoAssignment.Repositories.Tests
@@ -11,10 +10,12 @@ namespace RegistrationAutoAssignment.Repositories.Tests
     [TestClass]
     public class TestStudentSchoolChoiceRepository 
     {
-        public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+/*
+        private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+*/
 
-        public List<STUDENT> Students { get; set; } = new List<STUDENT>();
-        public Mock<IFakeStudentSchoolChoiceRepository> FakeStudentSchoolChoiceMock { get; private set; }
+        private List<STUDENT> Students { get; set; } = new List<STUDENT>();
+        private Mock<IFakeStudentSchoolChoiceRepository> FakeStudentSchoolChoiceMock { get; set; }
 
 
         #region "Implemented interface IFakeStudentSchoolChoiceRepository 

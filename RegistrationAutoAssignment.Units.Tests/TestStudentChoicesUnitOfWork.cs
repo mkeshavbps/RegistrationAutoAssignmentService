@@ -8,8 +8,7 @@ namespace RegistrationAutoAssignment.Units.Tests
     [TestClass]
     public class TestStudentChoicesUnitOfWork
     {
-
-        public InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+        private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
 
         /// <summary>
         /// Test to assert the fake Uow instance creation

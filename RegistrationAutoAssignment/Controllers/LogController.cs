@@ -1,6 +1,5 @@
 ﻿using System.Web.Http;
 using RegistrationAutoAssignment.Attributes.Exceptions;
-using RegistrationAutoAssignment.Services.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces.Requests;
 using RegistrationAutoAssignment.Services.Interfaces.Services;
 using RegistrationAutoAssignment.Services.ServiceRequests;
@@ -12,11 +11,11 @@ namespace RegistrationAutoAssignment.Controllers
     {
         public IRequest MessageRequest { get; }
 
-        internal IServiceLayer LogService { get; }
+        internal ILogMessageService LogService { get; }
 
         public LogController(ILogMessageService service)
         {
-            LogService = service as IServiceLayer;
+            LogService = service;
         }
 
         public LogController(IRequest logMessageRequest)
