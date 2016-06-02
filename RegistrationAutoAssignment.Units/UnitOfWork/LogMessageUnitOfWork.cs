@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections;
+using System.Data.Common;
+
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
-using System.Data.Common;
+
 using RegistrationAutoAssignment.Entities.ExtractAspen;
-using RegistrationAutoAssignment.Repositories;
 
 namespace RegistrationAutoAssignment.Units.UnitOfWork
 {
@@ -31,44 +32,35 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// </summary>
         internal Hashtable Repositories { get; set; } = new Hashtable();
 
-    #endregion
+        #endregion
 
-    public LogMessageUnitOfWork(ExtractAspenEntities context)
+        public LogMessageUnitOfWork(ExtractAspenEntities context, IRepository schoolChoicesRepository)
         {
             Context = context;
-            Repository = new SchoolChoiceRepository(context);
+            Repository = schoolChoicesRepository;
             Repositories?.Add("ISchoolChoicesRepository", Repository);
         }
-
-        /// <summary>
-        /// Creates an instance of the unit of work along with concrete context and repository implementations.
-        /// </summary>
-        public LogMessageUnitOfWork()
-        {
-            Repository = AddRepository(typeof(SchoolChoiceRepository));
-            Context = Repository.AspenDbContext;
-            Repositories?.Add("ISchoolChoicesRepository", Repository);
-        }
-
 
         /// <summary>
         /// Creates an instance using the DbConnection.
         /// </summary>
         /// <param name="cntxDbConnect"></param>
-        public LogMessageUnitOfWork(DbConnection cntxDbConnect)
+        /// <param name="schoolChoicesRepository"></param>
+        public LogMessageUnitOfWork(DbConnection cntxDbConnect, IRepository schoolChoicesRepository)
         {
             CntxDbConnect = cntxDbConnect;
-            Repository = new SchoolChoiceRepository(CntxDbConnect);
+            Repository = schoolChoicesRepository;
             Repositories?.Add("ISchoolChoicesRepository", Repository);
         }
 
         /// <summary>
         /// Creates an instance using the repository
         /// </summary>
+        /// <param name="factory"></param>
         /// <param name="repository"></param>
-        public LogMessageUnitOfWork(IRepository repository)
+        public LogMessageUnitOfWork(IDbContextFactory factory, IRepository repository)
         {
-            Context = repository.AspenDbContext;
+            Context = factory.GetContext();
             Repository = repository;
             Repositories?.Add("ISchoolChoicesRepository", Repository);
             

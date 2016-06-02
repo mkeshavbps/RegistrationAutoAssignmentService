@@ -92,7 +92,7 @@ namespace RegistrationAutoAssignment.Services
         /// Adds the other unit of works to the read only collection.
         /// </summary>
         /// <returns></returns>
-        public IUnitOfWork AddUnitOfWork(Type typeOfWork) 
+        private IUnitOfWork AddUnitOfWork(Type typeOfWork) 
         {
             if (AllUnitOfWorks == null)
                 AllUnitOfWorks = new Hashtable();
@@ -110,7 +110,7 @@ namespace RegistrationAutoAssignment.Services
         /// Adds the repositories to the read only collection.
         /// </summary>
         /// <returns></returns>
-        public IRepository AddRepository(Type typeOfRepository)
+        private IRepository AddRepository(Type typeOfRepository)
         {
             if (AllRepositories == null)
                 AllRepositories = new Hashtable();

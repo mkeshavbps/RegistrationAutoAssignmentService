@@ -8,6 +8,6 @@ namespace RegistrationAutoAssignment.Repositories.Interfaces
     /// </summary>
     public interface IRepository :IDisposable
     {
-        ExtractAspenEntities AspenDbContext { get; set; }
+        ExtractAspenEntities AspenDbContext { get; }
     }
 }
