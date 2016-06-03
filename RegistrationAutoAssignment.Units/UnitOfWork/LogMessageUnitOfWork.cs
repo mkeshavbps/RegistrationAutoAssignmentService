@@ -30,9 +30,12 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// <summary>
         /// Repositories specific to StudentSchoolChoices uow.
         /// </summary>
-        internal Hashtable Repositories { get; set; } = new Hashtable();
+        public Hashtable Repositories { get; set; } = new Hashtable();
 
         #endregion
+
+        public LogMessageUnitOfWork()
+        { }
 
         public LogMessageUnitOfWork(ExtractAspenEntities context, IRepository schoolChoicesRepository)
         {
@@ -79,7 +82,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             Context.SaveChanges();
         }
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (!_disposed)
                 if (disposing)

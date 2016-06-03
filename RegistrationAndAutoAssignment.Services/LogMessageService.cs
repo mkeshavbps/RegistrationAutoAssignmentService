@@ -18,9 +18,9 @@ namespace RegistrationAutoAssignment.Services
     {
         private bool _disposed;
 
-        internal Hashtable AllUnitOfWorks { get; } = new Hashtable();
+        private Hashtable AllUnitOfWorks { get; } = new Hashtable();
 
-        public IUnitOfWork UnitOfWork { get; }
+        private IUnitOfWork UnitOfWork { get; }
 
         public LogMessageService()
         { }
@@ -40,7 +40,7 @@ namespace RegistrationAutoAssignment.Services
         }
 
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (!_disposed)
                 if (disposing)

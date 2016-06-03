@@ -71,13 +71,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
-      <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
-      <Name>RegistrationAutoAssignment.Repositories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
       <Project>{16387f70-970f-43bd-959c-0d6ccba56c6b}</Project>
       <Name>RegistrationAutoAssignment.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
+      <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
+      <Name>RegistrationAutoAssignment.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

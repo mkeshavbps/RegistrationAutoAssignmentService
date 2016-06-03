@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Data.Common;
 
 using RegistrationAutoAssignment.Repositories.Interfaces;
@@ -21,53 +20,37 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
         /// <summary>
         /// Aspen extracted entities.
         /// </summary>
-        public ExtractAspenEntities Context { get; }
+        private ExtractAspenEntities Context { get; }
 
-        public IRepository Repository { get; set; }
+        private IRepository Repository { get; set; }
 
         public DbConnection CntxDbConnect { get; }
 
-        /// <summary>
-        /// Repositories specific to StudentSchoolChoices uow.
-        /// </summary>
-        internal Hashtable Repositories { get; set; } = new Hashtable();
+        IRepository IUnitOfWork.Repository { get; set; }
 
         #endregion
 
-        public StudentSchoolChoicesUnitOfWork(ExtractAspenEntities context, IRepository schoolChoicesRepository)
-        {
-            Context = context;
-            Repository = schoolChoicesRepository;
-            Repositories?.Add("ISchoolChoicesRepository", Repository);
-        }
-
         /// <summary>
         /// Creates an instance of the unit of work along with concrete context and repository implementations.
+        /// Used by the test framework.
         /// </summary>
         /// <summary>
         /// Creates an instance using the DbConnection.
         /// </summary>
         /// <param name="cntxDbConnect"></param>
         /// <param name="schoolChoicesRepository"></param>
-        public StudentSchoolChoicesUnitOfWork(DbConnection cntxDbConnect, IRepository schoolChoicesRepository)
+        public StudentSchoolChoicesUnitOfWork(DbConnection cntxDbConnect, ISchoolChoicesRepository schoolChoicesRepository)
         {
             CntxDbConnect = cntxDbConnect;
-            Repository = schoolChoicesRepository;
-            Repositories?.Add("ISchoolChoicesRepository", Repository);
         }
 
         /// <summary>
-        /// Creates an instance using the repository
+        /// Creates an instance using the factory to get the instance of the context and repositories
         /// </summary>
         /// <param name="factory"></param>
-        /// <param name="schoolChoicesRepository"></param>
-        /// <param name="schoolWaitListRepository"></param>
-        public StudentSchoolChoicesUnitOfWork(IDbContextFactory factory, ISchoolChoicesRepository schoolChoicesRepository, ISchoolWaitListRepository schoolWaitListRepository)
+        public StudentSchoolChoicesUnitOfWork(IDbContextFactory factory)
         {
             Context = factory.GetContext();
-            Repository = schoolChoicesRepository;
-            Repositories?.Add("ISchoolChoicesRepository", Repository);
-            Repositories?.Add("ISchoolWaitListRepository", schoolWaitListRepository);
         }
 
 
@@ -83,7 +66,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             Context.SaveChanges();
         }
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (!_disposed)
                 if (disposing)
@@ -94,50 +77,8 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
 
         #endregion
 
-        #region " Commented code - can be used later"
 
-        /// <summary>
-        /// Adds the repositories to the read only collection.
-        /// </summary>
-        /// <returns></returns>
-        /// <summary>
-        /// Adds the Unit of work to the read only collection.
-        /// </summary>
-        /// <returns></returns>
-        //public IUnitOfWork AddUnitOfWork<T>() where T : class
-        //{
-        //    if (UnitOfWorks == null)
-        //        UnitOfWorks = new Hashtable();
 
-        //    var type = typeof(T).Name;
-
-        //    if (UnitOfWorks.ContainsKey(type)) return (IUnitOfWork)UnitOfWorks[type];
-        //    var unitOfWorkType = typeof(IUnitOfWork);
-
-        //    var uowInstance =
-        //        Activator.CreateInstance(unitOfWorkType
-        //            .MakeGenericType(typeof(T)), UnitOfWork);
-
-        //    UnitOfWorks.Add(type, uowInstance);
-
-        //    return (IUnitOfWork)UnitOfWorks[type];
-        //}
-
-        #endregion
-        public IRepository AddRepository(Type typeOfRepository)
-        {
-            if (Repositories == null)
-                Repositories = new Hashtable();
-
-            var type = typeOfRepository.Name;
-            if (Repositories.ContainsKey(type)) return (IRepository)Repositories[type];
-
-            var repositoryInstance =
-                Activator.CreateInstance(typeOfRepository);
-            Repositories.Add(type, repositoryInstance);
-
-            return (IRepository)Repositories[type];
-        }
 
 
         /// <summary>

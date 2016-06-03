@@ -1,6 +1,8 @@
-﻿namespace RegistrationAutoAssignment.Repositories.Interfaces
+﻿using System;
+
+namespace RegistrationAutoAssignment.Repositories.Interfaces
 {
-    public interface ISchoolChoicesRepository:IRepository
+    public interface ISchoolChoicesRepository:IDisposable
     {
         /// <summary>
         /// Gets the student school choices for a student information passed in.

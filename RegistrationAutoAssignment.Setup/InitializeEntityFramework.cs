@@ -19,17 +19,17 @@ namespace RegistrationAutoAssignment.Setup
 {
     public class InitializeEntityFramework
     {
-        public DbConnection CntxDbConnect { get; private set; }
+        private DbConnection CntxDbConnect { get; set; }
         public ExtractAspenEntities ContextUsingDbConnect { get; private set; }
-        public System.Data.EntityClient.EntityConnection CntxEntityConnect { get; private set; }
+        private System.Data.EntityClient.EntityConnection CntxEntityConnect { get; set; }
         public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
 
-        public IUnitOfWork UnitOfWork { get; private set; }
-        public IRepository Repository { get; private set; }
+        private IUnitOfWork UnitOfWork { get; set; }
+        private ISchoolChoicesRepository Repository { get; set; }
 
         public Mock<IFakeUnitOfWork> MockedUnitOfWork { get; private set; }
 
-        public Mock<IServiceLayer> MockedService { get; private set; }
+        private Mock<IServiceLayer> MockedService { get; set; }
 
 
         public InitializeEntityFramework()
@@ -131,8 +131,8 @@ namespace RegistrationAutoAssignment.Setup
         {
             CntxDbConnect?.Dispose();
             CntxEntityConnect?.Dispose();
-            ContextUsingEntityConnect?.Dispose();
-            ContextUsingDbConnect?.Dispose();
+            //ContextUsingEntityConnect?.Dispose();
+            //ContextUsingDbConnect?.Dispose();
             Repository?.Dispose();
             UnitOfWork?.Dispose();
         }

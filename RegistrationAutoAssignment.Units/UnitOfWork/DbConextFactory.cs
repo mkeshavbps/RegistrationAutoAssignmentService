@@ -5,7 +5,7 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
 {
     public class DbContextFactory : IDbContextFactory
     {
-        public ExtractAspenEntities Context { get; }
+        private ExtractAspenEntities Context { get; }
 
         public DbContextFactory()
         {

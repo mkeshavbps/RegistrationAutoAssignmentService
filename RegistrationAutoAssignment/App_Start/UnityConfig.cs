@@ -10,6 +10,7 @@ using RegistrationAutoAssignment.Services.Interfaces.Services;
 using RegistrationAutoAssignment.Services.ServiceRequests;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Units.UnitOfWork;
+using RegistrationAutoAssignment.Entities.ExtractAspen;
 
 namespace RegistrationAutoAssignment
 {
@@ -26,33 +27,36 @@ namespace RegistrationAutoAssignment
 			GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
 
 			GetLogByServiceInterfaceWithUow(container);
-			//GetStdSchByServiceInterfaceWithUow(container);
-			GetStdSchByServiceInterfaceWithRepository(container);
+			GetStdSchByServiceInterfaceWithUow(container);
+			//GetStdSchByServiceInterfaceWithRepository(container);
 		}
 
-		/// <summary>
-		/// Using Service interface with Unit of work creating the context and repositories.
-		/// </summary>
-		/// <param name="container"></param>
-		private static void GetStdSchByServiceInterfaceWithUow(IUnityContainer container)
-		{
-			container.RegisterType<StudentSchoolChoiceController>(new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
-				.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IUnitOfWork)))
-					.RegisterType<IUnitOfWork, StudentSchoolChoicesUnitOfWork>(new InjectionConstructor(typeof(IRepository)))
-						.RegisterType<IRepository, SchoolChoiceRepository>(new InjectionConstructor());
-		}
+        /// <summary>
+        /// Using Service interface with Unit of work creating the context and repositories.
+        /// </summary>
+        private static void GetStdSchByServiceInterfaceWithUow(IUnityContainer container)
+        {
+            container.RegisterType<StudentSchoolChoiceController>(
+                new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
+                .RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(
+                    new InjectionConstructor(typeof(IStudentSchoolChoicesUnitOfWork)))
+                .RegisterType<IStudentSchoolChoicesUnitOfWork, StudentSchoolChoicesUnitOfWork>(
+                    new InjectionConstructor(typeof(DbContextFactory), typeof(SchoolChoiceRepository),
+                        typeof(SchoolWaitListRepository)));
+           
+
+        }
 
 
-		/// <summary>
-		/// Using Service interface with Unit of work creating the context and repositories.
-		/// </summary>
-		/// <param name="container"></param>
-		private static void GetStdSchByServiceInterfaceWithRepository(IUnityContainer container)
-		{
-			container.RegisterType<StudentSchoolChoiceController>(new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
-				.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IRepository)))
-						.RegisterType<IRepository, SchoolWaitListRepository>(new InjectionConstructor());
-		}
+        /// <summary>
+        /// Using Service interface with Unit of work creating the context and repositories.
+        /// </summary>
+        //private static void GetStdSchByServiceInterfaceWithRepository(IUnityContainer container)
+		//{
+		//	container.RegisterType<StudentSchoolChoiceController>(new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
+		//		.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IRepository)))
+		//				.RegisterType<IRepository, SchoolWaitListRepository>(new InjectionConstructor());
+		//}
 
 		/// <summary>
 		/// Using Request Interface

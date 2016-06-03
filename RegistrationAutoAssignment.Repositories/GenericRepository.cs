@@ -1,21 +1,39 @@
 ﻿using System;
+using System.Data.Common;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
-using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories
 {
-    public class GenericRepository<TEntity> :
+    public abstract class GenericRepository<TEntity> :
       IGenericRepository<TEntity> where TEntity : class
     {
-        protected ExtractAspenEntities DbContext;
+        protected readonly ExtractAspenEntities DbContext;
 
-        public GenericRepository(IUnitOfWork unitOfWork)
+        public DbConnection CntxDbConnect { get; }
+
+     
+
+
+        /// <summary>
+        /// Create repository using DbContext injection.
+        /// </summary>
+        /// <param name="context"></param>
+        protected GenericRepository(ExtractAspenEntities context)
         {
-            DbContext = unitOfWork.Context;
+            DbContext = context;
+        }
+        /// <summary>
+        /// Create repository with DbConnection injection.
+        /// </summary>
+        /// <param name="cntxDbConnect"></param>
+        protected GenericRepository(DbConnection cntxDbConnect)
+        {
+            CntxDbConnect = cntxDbConnect;
+            DbContext = new ExtractAspenEntities(cntxDbConnect);
         }
 
         public IQueryable<TEntity> GetAll()

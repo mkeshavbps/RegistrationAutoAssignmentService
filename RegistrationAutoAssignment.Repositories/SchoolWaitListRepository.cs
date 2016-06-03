@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.Common;
 using System.Linq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
@@ -7,31 +6,14 @@ using RegistrationAutoAssignment.Repositories.Utilities;
 
 namespace RegistrationAutoAssignment.Repositories
 {
-    public class SchoolWaitListRepository : ISchoolWaitListRepository
+    public class SchoolWaitListRepository : GenericRepository<STUDENT_WAIT_LIST>, ISchoolWaitListRepository
     {
         private bool _disposedValue;
-        public DbConnection CntxDbConnect { get; }
+ 
 
-        /// <summary>
-        /// Creates entity context internally.
-        /// </summary>
-        public SchoolWaitListRepository()
-        { AspenDbContext = new ExtractAspenEntities(); }
-
-
-        public SchoolWaitListRepository(ExtractAspenEntities context)
-        {
-            AspenDbContext = context;
-        }
-        /// <summary>
-        /// Passing DbConnection to create context.
-        /// </summary>
-        /// <param name="cntxDbConnect"></param>
-        public SchoolWaitListRepository(DbConnection cntxDbConnect)
-        {
-            CntxDbConnect = cntxDbConnect;
-            AspenDbContext = new ExtractAspenEntities(cntxDbConnect);
-        }
+        public SchoolWaitListRepository(ExtractAspenEntities context) : base(context)
+        { }
+  
 
         public ExtractAspenEntities AspenDbContext { get; set; }
 
@@ -69,7 +51,7 @@ namespace RegistrationAutoAssignment.Repositories
 
         #region IDisposable Support
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (_disposedValue) return;
             if (disposing)

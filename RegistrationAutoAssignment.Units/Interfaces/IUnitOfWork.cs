@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 
@@ -12,7 +13,8 @@ namespace RegistrationAutoAssignment.Units.Interfaces
     {
         int Save();
 
-        ExtractAspenEntities Context { get; }
+        
         IRepository Repository { get; set; }
+
     }
 }
