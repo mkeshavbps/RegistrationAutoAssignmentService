@@ -1,24 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
+using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories
 {
-    public class SchoolCapacityRepository : ISchoolCapacityRepository
+    public class SchoolCapacityRepository : GenericRepository<SCHOOL_CAPACITY>, ISchoolCapacityRepository, IDisposable
     {
         private bool _disposedValue;
 
-        public SchoolCapacityRepository(ExtractAspenEntities context)
-        {
-            AspenDbContext = context;
-        }
+        /// <summary>
+        /// Use this constructor to inject the context directly to create repository.
+        /// </summary>
+        /// <param name="context"></param>
+        public SchoolCapacityRepository(DbContext context) : base(context)
+        { }
 
-        public ExtractAspenEntities AspenDbContext { get; set; }
+        /// <summary>
+        /// Use this constructor to set the context for the repository
+        /// Also, the repository knows the parent unit of work.
+        /// </summary>
+        /// <param name="unitOfWork"></param>
+        public SchoolCapacityRepository(IUnitOfWork unitOfWork):base(unitOfWork)
+        { }
 
 
+        /// <summary>
+        /// Gets teh school Capacity
+        /// </summary>
+        /// <param name="dataRows"></param>
+        /// <returns></returns>
         public List<SCHOOL_CAPACITY> GetSchoolCapacity(List<DataRow> dataRows)
         {
             var list = new List<SCHOOL_CAPACITY>();
@@ -37,9 +52,9 @@ namespace RegistrationAutoAssignment.Repositories
             var programCode = obj.Field<string>("ProgramCode");
             var schoolId = obj.Field<string>("Sch");
 
-            var query = from schoolCapacity in AspenDbContext.SCHOOL_CAPACITY
-                            join sch in AspenDbContext.SCHOOLs on schoolCapacity.SCA_SKL_OID equals sch.SKL_OID
-                            join disCtx in AspenDbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on schoolCapacity.SCA_CTX_OID equals
+            var query = from schoolCapacity in DbContext.SCHOOL_CAPACITY
+                            join sch in DbContext.SCHOOLs on schoolCapacity.SCA_SKL_OID equals sch.SKL_OID
+                            join disCtx in DbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on schoolCapacity.SCA_CTX_OID equals
                                 disCtx.CTX_OID
                             where schoolCapacity.SCA_GRADE_LEVEL == grade && schoolCapacity.SCA_PROGRAM_CODE == programCode
                                   && sch.SKL_SCHOOL_ID == schoolId && disCtx.CTX_SCHOOL_YEAR == schoolYear
@@ -50,12 +65,13 @@ namespace RegistrationAutoAssignment.Repositories
 
 
         #region IDisposable Support
-        protected virtual void Dispose(bool disposing)
+
+        private void Dispose(bool disposing)
         {
             if (_disposedValue) return;
             if (disposing)
             {
-                AspenDbContext.Dispose();
+                Dispose();
             }
             _disposedValue = true;
         }

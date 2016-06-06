@@ -1,39 +1,32 @@
 ﻿using System;
-using System.Data.Common;
+using System.Data.Entity;
 using System.Linq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Repositories.Utilities;
+using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories
 {
-    public class SchoolWaitListRepository : ISchoolWaitListRepository
+    public class SchoolWaitListRepository : GenericRepository<STUDENT_WAIT_LIST>, ISchoolWaitListRepository
     {
         private bool _disposedValue;
-        public DbConnection CntxDbConnect { get; }
+ 
+        /// <summary>
+        /// Create the repository using the context injected.
+        /// </summary>
+        /// <param name="context"></param>
+        public SchoolWaitListRepository(DbContext context) : base(context)
+        { }
 
         /// <summary>
-        /// Creates entity context internally.
+        /// Use this constructor to set the context for the repository
+        /// Also, the repository knows the parent unit of work.
         /// </summary>
-        public SchoolWaitListRepository()
-        { AspenDbContext = new ExtractAspenEntities(); }
+        /// <param name="unitOfWork"></param>
+        public SchoolWaitListRepository(IUnitOfWork unitOfWork):base(unitOfWork)
+        { }
 
-
-        public SchoolWaitListRepository(ExtractAspenEntities context)
-        {
-            AspenDbContext = context;
-        }
-        /// <summary>
-        /// Passing DbConnection to create context.
-        /// </summary>
-        /// <param name="cntxDbConnect"></param>
-        public SchoolWaitListRepository(DbConnection cntxDbConnect)
-        {
-            CntxDbConnect = cntxDbConnect;
-            AspenDbContext = new ExtractAspenEntities(cntxDbConnect);
-        }
-
-        public ExtractAspenEntities AspenDbContext { get; set; }
 
         /// <summary>
         /// Gets the student school waitlist for a specific student info.
@@ -45,12 +38,12 @@ namespace RegistrationAutoAssignment.Repositories
             if (stdRequest == null) throw new ArgumentNullException(nameof(stdRequest));
 
             var schYear = decimal.Parse(stdRequest.SchoolYear);
-            var waitListByStudentSchool = (from waitList in AspenDbContext.STUDENT_WAIT_LIST
-                join std in AspenDbContext.STUDENTs on waitList.SWL_STD_OID equals std.STD_OID
-                join capacity in AspenDbContext.SCHOOL_CAPACITY on waitList.SWL_SCA_OID equals capacity.SCA_OID
-                join context in AspenDbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on capacity.SCA_CTX_OID equals
+            var waitListByStudentSchool = (from waitList in DbContext.STUDENT_WAIT_LIST
+                join std in DbContext.STUDENTs on waitList.SWL_STD_OID equals std.STD_OID
+                join capacity in DbContext.SCHOOL_CAPACITY on waitList.SWL_SCA_OID equals capacity.SCA_OID
+                join context in DbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on capacity.SCA_CTX_OID equals
                     context.CTX_OID
-                join school in AspenDbContext.SCHOOLs on capacity.SCA_SKL_OID equals school.SKL_OID
+                join school in DbContext.SCHOOLs on capacity.SCA_SKL_OID equals school.SKL_OID
                 where waitList.SWL_ACTION_CODE == null && context.CTX_SCHOOL_YEAR == schYear && std.STD_ID_LOCAL == stdRequest.StudentNo
                 orderby std.STD_ID_LOCAL, waitList.SWL_RANK
                 select
@@ -69,12 +62,12 @@ namespace RegistrationAutoAssignment.Repositories
 
         #region IDisposable Support
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (_disposedValue) return;
             if (disposing)
             {
-                AspenDbContext.Dispose();
+                DbContext.Dispose();
             }
             _disposedValue = true;
         }

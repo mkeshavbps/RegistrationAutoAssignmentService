@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.Common;
 using System.Linq;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
+
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Repositories.Utilities;
 
@@ -11,31 +11,32 @@ namespace RegistrationAutoAssignment.Repositories
     public class SchoolChoiceRepository : ISchoolChoicesRepository
     {
         private bool _disposedValue;
-        public DbConnection CntxDbConnect { get; }
+
+        private DbConnection CntxDbConnect { get; set; }
+
+
 
         /// <summary>
-        /// Creates entity context internally.
+        /// This constructor is being used by the Test framework.
         /// </summary>
         public SchoolChoiceRepository()
-        { AspenDbContext = new ExtractAspenEntities(); }
+        { }
 
-       
-        public SchoolChoiceRepository(ExtractAspenEntities context)
-        {
-            AspenDbContext = context;
-        }
         /// <summary>
-        /// Passing DbConnection to create context.
+        /// This constructor is being used by the Test framework.
+        /// Passing DbConnection to create repository.
         /// </summary>
         /// <param name="cntxDbConnect"></param>
         public SchoolChoiceRepository(DbConnection cntxDbConnect)
         {
             CntxDbConnect = cntxDbConnect;
-            AspenDbContext = new ExtractAspenEntities(cntxDbConnect);
         }
 
-        public ExtractAspenEntities AspenDbContext { get; set; }
-
+        /// <summary>
+        /// Gets the student school choices for a student information passed in.
+        /// </summary>
+        /// <param name="stdRequest"></param>
+        /// <returns></returns>
         public string GetNewSchoolChoicesForStudent(StudentSchoolParameters stdRequest)
         {
           var client = new StudentSchoolChoices.ServiceClient();
@@ -49,27 +50,19 @@ namespace RegistrationAutoAssignment.Repositories
                 stdRequest.EldLevelParam, stdRequest.SifeStatusParam,
                 stdRequest.FirstLangParam, stdRequest.SiblingsList,
                 stdRequest.TierVersion);
+            return returnedXml;
 
-            var ds = Serializer.ConvertXmlToDataSet(returnedXml);
-            var myData = ds.Tables[0].AsEnumerable().ToList();
-
-            var capacityRepository = new SchoolCapacityRepository(AspenDbContext);
-            var schoolCapacityList = capacityRepository.GetSchoolCapacity(myData);
-
-
-            var table = Serializer.ToDataTable(schoolCapacityList);
-            ds.Tables.Add(table);
-            return ds.GetXml();
         }
+
 
         #region IDisposable Support
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (_disposedValue) return;
             if (disposing)
             {
-                AspenDbContext.Dispose();
+                Dispose();
             }
             _disposedValue = true;
         }

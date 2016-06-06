@@ -21,15 +21,12 @@ namespace RegistrationAutoAssignment.Controllers
 
         #region " Contructor to work with unit of work.
 
-        internal IUnitOfWork StudentUnitOfWork { get; }
-
         /// <summary>
         /// This constructor's need will be injected by Unity IOC container to provide constructor injection.  
         /// </summary>
         /// <param name="unitOfWork"></param>
         public StudentSchoolChoiceController(IUnitOfWork unitOfWork)
         {
-            StudentUnitOfWork = unitOfWork;
         }
         #endregion
 

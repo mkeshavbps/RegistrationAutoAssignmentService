@@ -4,7 +4,7 @@ using RegistrationAutoAssignment.Entities.ExtractAspen;
 
 namespace RegistrationAutoAssignment.Repositories.Interfaces
 {
-    public interface ISchoolCapacityRepository : IRepository
+    public interface ISchoolCapacityRepository
     {
         /// <summary>
         /// use the rows to create school capacity based on schYear,grade,program code and school Id

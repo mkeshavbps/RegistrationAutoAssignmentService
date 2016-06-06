@@ -311,6 +311,10 @@
       <Project>{2B3FB6B1-C117-4FDA-933E-3564AAA7154E}</Project>
       <Name>RegistrationAutoAssignment.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
+      <Project>{16387F70-970F-43BD-959C-0D6CCBA56C6B}</Project>
+      <Name>RegistrationAutoAssignment.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
       <Project>{F4923DDC-B39B-4524-9A2C-0AC00B628A79}</Project>
       <Name>RegistrationAutoAssignment.Repositories</Name>
@@ -334,16 +338,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51750</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51750/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

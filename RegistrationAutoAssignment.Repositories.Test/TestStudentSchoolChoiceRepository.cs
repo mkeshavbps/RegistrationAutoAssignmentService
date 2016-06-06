@@ -22,7 +22,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
 
         public void AddStudent(STUDENT student)
         {
-            FakeStudentSchoolChoiceMock.Object.AspenDbContext?.STUDENTs.Add(new STUDENT { STD_OID = "1234" });
+            FakeStudentSchoolChoiceMock.Object.DbContext?.STUDENTs.Add(new STUDENT { STD_OID = "1234" });
         }
 
         public IEnumerable<STUDENT> GetAllStudents { get; set; }
