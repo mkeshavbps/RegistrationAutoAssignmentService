@@ -41,6 +41,11 @@ namespace RegistrationAutoAssignment.Units.UnitOfWork
             Repositories?.Add("ISchoolChoicesRepository", Repository);
         }
 
+        public LogMessageUnitOfWork()
+        {
+         
+        }
+
         /// <summary>
         /// Creates an instance using the DbConnection.
         /// </summary>
