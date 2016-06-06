@@ -13,9 +13,15 @@ namespace RegistrationAutoAssignment.Repositories
         private bool _disposedValue;
 
         private DbConnection CntxDbConnect { get; set; }
-       
 
-      
+
+
+        /// <summary>
+        /// This constructor is being used by the Test framework.
+        /// </summary>
+        public SchoolChoiceRepository()
+        { }
+
         /// <summary>
         /// This constructor is being used by the Test framework.
         /// Passing DbConnection to create repository.
@@ -25,13 +31,6 @@ namespace RegistrationAutoAssignment.Repositories
         {
             CntxDbConnect = cntxDbConnect;
         }
-
-        /// <summary>
-        /// This constructor is being used by the Test framework.
-        /// </summary>
-        public SchoolChoiceRepository()
-        { }
-
 
         /// <summary>
         /// Gets the student school choices for a student information passed in.

@@ -5,9 +5,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
 using RegistrationAutoAssignment.Entities.ExtractAspen;
-using RegistrationAutoAssignment.Repositories;
-using RegistrationAutoAssignment.Units.UnitOfWork;
 
+using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces;
@@ -47,7 +46,7 @@ namespace RegistrationAutoAssignment.Setup
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
 
             MockedUnitOfWork = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
-            UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect, new SchoolChoiceRepository());
+            //UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect, new SchoolChoiceRepository());
 
             MockedService = new Mock<IServiceLayer>(MockBehavior.Default);
 
@@ -131,8 +130,8 @@ namespace RegistrationAutoAssignment.Setup
         {
             CntxDbConnect?.Dispose();
             CntxEntityConnect?.Dispose();
-            //ContextUsingEntityConnect?.Dispose();
-            //ContextUsingDbConnect?.Dispose();
+            ContextUsingEntityConnect?.Dispose();
+            ContextUsingDbConnect?.Dispose();
             Repository?.Dispose();
             UnitOfWork?.Dispose();
         }
@@ -147,7 +146,9 @@ namespace RegistrationAutoAssignment.Setup
     { }
 
     public interface IFakeUnitOfWork : IStudentSchoolChoicesUnitOfWork
-    { }
+    {
+        IFakeRepository Repository { get; set; }
+    }
 
     public interface IFakeService : IServiceLayer
     { }

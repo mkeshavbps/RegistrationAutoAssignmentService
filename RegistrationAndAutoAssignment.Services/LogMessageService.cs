@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.IO;
 using System.Net;
 using System.Text;
-using RegistrationAutoAssignment.Units.Interfaces;
 using System.Web;
+
+using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces.Requests;
 using RegistrationAutoAssignment.Services.Interfaces.Services;
 using RegistrationAutoAssignment.Services.ServiceRequests;
@@ -18,7 +18,6 @@ namespace RegistrationAutoAssignment.Services
     {
         private bool _disposed;
 
-        private Hashtable AllUnitOfWorks { get; } = new Hashtable();
 
         private IUnitOfWork UnitOfWork { get; }
 
@@ -29,7 +28,6 @@ namespace RegistrationAutoAssignment.Services
         public LogMessageService(IUnitOfWork unitOfWork)
         {
             UnitOfWork = unitOfWork;
-            AllUnitOfWorks?.Add(unitOfWork.GetType(), unitOfWork);
         }
         
         #region "IDisposable pattern"

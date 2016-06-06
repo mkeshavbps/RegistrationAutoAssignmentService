@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
+using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories
 {
@@ -11,7 +13,19 @@ namespace RegistrationAutoAssignment.Repositories
     {
         private bool _disposedValue;
 
-        public SchoolCapacityRepository(ExtractAspenEntities context) : base(context)
+        /// <summary>
+        /// Use this constructor to inject the context directly to create repository.
+        /// </summary>
+        /// <param name="context"></param>
+        public SchoolCapacityRepository(DbContext context) : base(context)
+        { }
+
+        /// <summary>
+        /// Use this constructor to set the context for the repository
+        /// Also, the repository knows the parent unit of work.
+        /// </summary>
+        /// <param name="unitOfWork"></param>
+        public SchoolCapacityRepository(IUnitOfWork unitOfWork):base(unitOfWork)
         { }
 
 

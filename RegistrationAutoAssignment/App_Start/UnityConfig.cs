@@ -1,16 +1,13 @@
 using Microsoft.Practices.Unity;
 using System.Web.Http;
 using RegistrationAutoAssignment.Controllers;
-using RegistrationAutoAssignment.Repositories;
-using RegistrationAutoAssignment.Repositories.Interfaces;
+
 using Unity.WebApi;
 using RegistrationAutoAssignment.Services;
-using RegistrationAutoAssignment.Services.Interfaces.Requests;
 using RegistrationAutoAssignment.Services.Interfaces.Services;
-using RegistrationAutoAssignment.Services.ServiceRequests;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Units.UnitOfWork;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
+using RegistrationAutoAssignment.Repositories;
 
 namespace RegistrationAutoAssignment
 {
@@ -26,9 +23,8 @@ namespace RegistrationAutoAssignment
 
 			GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
 
-			GetLogByServiceInterfaceWithUow(container);
+            GetLogByServiceInterface(container);
 			GetStdSchByServiceInterfaceWithUow(container);
-			//GetStdSchByServiceInterfaceWithRepository(container);
 		}
 
         /// <summary>
@@ -36,39 +32,26 @@ namespace RegistrationAutoAssignment
         /// </summary>
         private static void GetStdSchByServiceInterfaceWithUow(IUnityContainer container)
         {
+            container.RegisterType<IStudentSchoolChoicesUnitOfWork, StudentSchoolChoicesUnitOfWork>(new HierarchicalLifetimeManager(),
+                new InjectionConstructor(typeof(DbContextFactory)));
+
+            container.RegisterType<SchoolChoiceRepository>(new InjectionConstructor());
+            container.RegisterType<SchoolCapacityRepository>(new InjectionConstructor(typeof(StudentSchoolChoicesUnitOfWork)));
+            container.RegisterType<SchoolWaitListRepository>(new InjectionConstructor(typeof(StudentSchoolChoicesUnitOfWork)));
+
+            container.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(
+                new InjectionConstructor(typeof(IStudentSchoolChoicesUnitOfWork), typeof(SchoolChoiceRepository),
+                    typeof(SchoolCapacityRepository), typeof(SchoolWaitListRepository)));
+
             container.RegisterType<StudentSchoolChoiceController>(
-                new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
-                .RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(
-                    new InjectionConstructor(typeof(IStudentSchoolChoicesUnitOfWork)))
-                .RegisterType<IStudentSchoolChoicesUnitOfWork, StudentSchoolChoicesUnitOfWork>(
-                    new InjectionConstructor(typeof(DbContextFactory), typeof(SchoolChoiceRepository),
-                        typeof(SchoolWaitListRepository)));
-           
+                new InjectionConstructor(typeof(IStudentSchoolChoicesService)));
+
+
 
         }
 
 
-        /// <summary>
-        /// Using Service interface with Unit of work creating the context and repositories.
-        /// </summary>
-        //private static void GetStdSchByServiceInterfaceWithRepository(IUnityContainer container)
-		//{
-		//	container.RegisterType<StudentSchoolChoiceController>(new InjectionConstructor(typeof(IStudentSchoolChoicesService)))
-		//		.RegisterType<IStudentSchoolChoicesService, StudentSchoolChoicesService>(new InjectionConstructor(typeof(IRepository)))
-		//				.RegisterType<IRepository, SchoolWaitListRepository>(new InjectionConstructor());
-		//}
-
-		/// <summary>
-		/// Using Request Interface
-		/// </summary>
-		/// <param name="container"></param>
-		private static void GetLogByRequestInterface(IUnityContainer container)
-		{
-			container.RegisterType<LogController>(new InjectionConstructor(typeof(IRequest)))
-				.RegisterType<IRequest, LogMessageRequest>(new HierarchicalLifetimeManager());
-		}
-
-		/// <summary>
+	    /// <summary>
 		/// Using Service Interface 
 		/// </summary>
 		/// <param name="container"></param>
@@ -76,18 +59,6 @@ namespace RegistrationAutoAssignment
 		{
 			container.RegisterType<LogController>(new InjectionConstructor(typeof(ILogMessageService)))
 						.RegisterType<ILogMessageService, LogMessageService>(new InjectionConstructor());
-		}
-
-		/// <summary>
-		/// Using Service interface with Unit of work creating the context and repositories.
-		/// </summary>
-		/// <param name="container"></param>
-		private static void GetLogByServiceInterfaceWithUow(IUnityContainer container)
-		{
-			container.RegisterType<LogController>(new InjectionConstructor(typeof(ILogMessageService)))
-				.RegisterType<ILogMessageService, LogMessageService>(new InjectionConstructor(typeof(IUnitOfWork)))
-					.RegisterType<IUnitOfWork, LogMessageUnitOfWork>(new InjectionConstructor());
-
 		}
 	}
 }

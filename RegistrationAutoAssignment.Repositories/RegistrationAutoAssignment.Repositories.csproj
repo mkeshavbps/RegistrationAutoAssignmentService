@@ -58,8 +58,8 @@
     <Compile Include="Interfaces\ISchoolChoicesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolCapacityRepository.cs" />
-    <Compile Include="SchoolWaitListRepository.cs" />
     <Compile Include="SchoolChoiceRepository.cs" />
+    <Compile Include="SchoolWaitListRepository.cs" />
     <Compile Include="Service References\StudentSchoolChoices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,6 +72,10 @@
     <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
       <Project>{16387f70-970f-43bd-959c-0d6ccba56c6b}</Project>
       <Name>RegistrationAutoAssignment.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationAutoAssignment.Units\RegistrationAutoAssignment.Units.csproj">
+      <Project>{b2c65760-4810-4aca-b3ea-c7ad596aa6e8}</Project>
+      <Name>RegistrationAutoAssignment.Units</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
