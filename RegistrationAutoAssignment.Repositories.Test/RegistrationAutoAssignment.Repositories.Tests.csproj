@@ -76,7 +76,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Interfaces\IFakeStudentSchoolChoiceRepository.cs" />
-    <Compile Include="TestStudentSchoolChoiceRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

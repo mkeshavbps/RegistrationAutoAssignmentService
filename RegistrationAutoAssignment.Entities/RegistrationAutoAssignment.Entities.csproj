@@ -61,45 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtractAspen\ACADEMIC_TRACK.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ACADEMIC_TRACK_COURSE.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ACADEMIC_TRACK_GRADE.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ACADEMIC_TRACK_SELECTION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ACCESS_LOG.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ADDRESS_GRID_CODE.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ANALYTIC_COLUMN_DEFINITION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ANALYTIC_DEFINITION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ANALYTIC_RESULT.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ASSESSMENT_COLUMN_DEFINITION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ASSESSMENT_DEFINITION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ASSESSMENT_RESPONSE_DEFINITION.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExtractAspen\ASSIGNMENT_REPOSITORY_ITEM.cs">
-      <DependentUpon>ExtractAspen.tt</DependentUpon>
-    </Compile>
     <Compile Include="BPSInterface\AddressFile.cs">
       <DependentUpon>BPSInterface.tt</DependentUpon>
     </Compile>
@@ -520,6 +481,45 @@
     <Compile Include="BPSInterface\ziptable.cs">
       <DependentUpon>BPSInterface.tt</DependentUpon>
     </Compile>
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_COURSE.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_GRADE.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ACADEMIC_TRACK_SELECTION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ACCESS_LOG.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ADDRESS_GRID_CODE.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ANALYTIC_COLUMN_DEFINITION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ANALYTIC_DEFINITION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ANALYTIC_RESULT.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ASSESSMENT_COLUMN_DEFINITION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ASSESSMENT_DEFINITION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ASSESSMENT_RESPONSE_DEFINITION.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractAspen\ASSIGNMENT_REPOSITORY_ITEM.cs">
+      <DependentUpon>ExtractAspen.tt</DependentUpon>
+    </Compile>
     <Compile Include="ExtractAspen\CALENDAR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
@@ -758,19 +758,19 @@
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
     <Compile Include="ExtractAspen\ExtractAspen.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="ExtractAspen\ExtractAspen.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="ExtractAspen\ExtractAspen.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="ExtractAspen\FAMILY.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
@@ -1162,7 +1162,6 @@
     <Compile Include="ExtractAspen\PROCEDURE_INFO.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExtractAspen\QUERY_OPERATOR.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
@@ -1847,15 +1846,16 @@
     <Compile Include="ExtractAspen\Z_PROCEDURE.cs">
       <DependentUpon>ExtractAspen.tt</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
     <EntityDeploy Include="ExtractAspen\ExtractAspen.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ExtractAspen.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="BPSInterface\BPSInterface.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BPSInterface.Designer.cs</LastGenOutput>
@@ -1880,13 +1880,13 @@
       <LastGenOutput>BPSInterface.cs</LastGenOutput>
     </Content>
     <Content Include="ExtractAspen\ExtractAspen.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ExtractAspen.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ExtractAspen\ExtractAspen.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ExtractAspen.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ExtractAspen.cs</LastGenOutput>
     </Content>
   </ItemGroup>

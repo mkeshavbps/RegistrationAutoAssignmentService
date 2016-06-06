@@ -5,9 +5,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
 using RegistrationAutoAssignment.Entities.ExtractAspen;
-using RegistrationAutoAssignment.Repositories;
-using RegistrationAutoAssignment.Units.UnitOfWork;
 
+using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces;
@@ -19,17 +18,17 @@ namespace RegistrationAutoAssignment.Setup
 {
     public class InitializeEntityFramework
     {
-        public DbConnection CntxDbConnect { get; private set; }
+        private DbConnection CntxDbConnect { get; set; }
         public ExtractAspenEntities ContextUsingDbConnect { get; private set; }
-        public System.Data.EntityClient.EntityConnection CntxEntityConnect { get; private set; }
+        private System.Data.EntityClient.EntityConnection CntxEntityConnect { get; set; }
         public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
 
-        public IUnitOfWork UnitOfWork { get; private set; }
-        public IRepository Repository { get; private set; }
+        private IUnitOfWork UnitOfWork { get; set; }
+        private ISchoolChoicesRepository Repository { get; set; }
 
         public Mock<IFakeUnitOfWork> MockedUnitOfWork { get; private set; }
 
-        public Mock<IServiceLayer> MockedService { get; private set; }
+        private Mock<IServiceLayer> MockedService { get; set; }
 
 
         public InitializeEntityFramework()
@@ -47,7 +46,7 @@ namespace RegistrationAutoAssignment.Setup
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
 
             MockedUnitOfWork = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
-            UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect, new SchoolChoiceRepository());
+            //UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect, new SchoolChoiceRepository());
 
             MockedService = new Mock<IServiceLayer>(MockBehavior.Default);
 
@@ -147,7 +146,9 @@ namespace RegistrationAutoAssignment.Setup
     { }
 
     public interface IFakeUnitOfWork : IStudentSchoolChoicesUnitOfWork
-    { }
+    {
+        IFakeRepository Repository { get; set; }
+    }
 
     public interface IFakeService : IServiceLayer
     { }
