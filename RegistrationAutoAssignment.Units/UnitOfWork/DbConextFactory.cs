@@ -1,18 +1,18 @@
-﻿using RegistrationAutoAssignment.Entities.ExtractAspen;
+﻿using RegistrationAutoAssignment.Entities.BPSInterface;
 using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Units.UnitOfWork
 {
     public class DbContextFactory : IDbContextFactory
     {
-        private ExtractAspenEntities Context { get; }
+        private BPSInterfaceEntities Context { get; }
 
         public DbContextFactory()
         {
-            Context = new ExtractAspenEntities();
+            Context = new BPSInterfaceEntities();
         }
 
-        public ExtractAspenEntities GetContext()
+        public BPSInterfaceEntities GetContext()
         {
             return Context;
         }

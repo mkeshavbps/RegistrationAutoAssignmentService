@@ -75,10 +75,6 @@
     <Compile Include="UnitTestEntityFramework.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
-      <Project>{16387f70-970f-43bd-959c-0d6ccba56c6b}</Project>
-      <Name>RegistrationAutoAssignment.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RegistrationAutoAssignment.Setup\RegistrationAutoAssignment.Setup.csproj">
       <Project>{1779f0af-332d-46ff-816d-607e4045df2b}</Project>
       <Name>RegistrationAutoAssignment.Setup</Name>

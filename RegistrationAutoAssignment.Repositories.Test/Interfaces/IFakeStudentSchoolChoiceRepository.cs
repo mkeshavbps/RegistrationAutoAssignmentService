@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
+using RegistrationAutoAssignment.Setup.ExtractAspen;
 
 namespace RegistrationAutoAssignment.Repositories.Tests.Interfaces
 {
@@ -12,8 +11,8 @@ namespace RegistrationAutoAssignment.Repositories.Tests.Interfaces
     {
 
         ExtractAspenEntities DbContext { get; set; }
-
         void AddStudent(STUDENT student);
         IEnumerable<STUDENT> GetAllStudents { get; set; }
+
     }
 }

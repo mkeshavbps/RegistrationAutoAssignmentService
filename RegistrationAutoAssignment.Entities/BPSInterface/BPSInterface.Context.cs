@@ -14,14 +14,22 @@ namespace RegistrationAutoAssignment.Entities.BPSInterface
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+    using System.Data.Common;
+
     public partial class BPSInterfaceEntities : DbContext
     {
+        private DbConnection cntxDbConnect;
+
         public BPSInterfaceEntities()
             : base("name=BPSInterfaceEntities")
         {
         }
-    
+
+        public BPSInterfaceEntities(DbConnection cntxDbConnect)
+        {
+            this.cntxDbConnect = cntxDbConnect;
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

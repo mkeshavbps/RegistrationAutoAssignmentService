@@ -77,12 +77,9 @@
   <ItemGroup>
     <Compile Include="Interfaces\IFakeStudentSchoolChoiceRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestStudentSchoolChoiceRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegistrationAutoAssignment.Entities\RegistrationAutoAssignment.Entities.csproj">
-      <Project>{16387F70-970F-43BD-959C-0D6CCBA56C6B}</Project>
-      <Name>RegistrationAutoAssignment.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RegistrationAutoAssignment.Repositories\RegistrationAutoAssignment.Repositories.csproj">
       <Project>{f4923ddc-b39b-4524-9a2c-0ac00b628a79}</Project>
       <Name>RegistrationAutoAssignment.Repositories</Name>

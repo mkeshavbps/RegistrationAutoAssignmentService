@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
+using RegistrationAutoAssignment.Entities.BPSInterface;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 
@@ -13,17 +13,17 @@ namespace RegistrationAutoAssignment.Repositories
     public abstract class GenericRepository<TEntity> :
       IGenericRepository<TEntity> where TEntity : class
     {
-        protected readonly ExtractAspenEntities DbContext;
-        public DbContext Context { get; }
+        protected readonly BPSInterfaceEntities DbContext;
+        protected DbContext Context { get; }
 
-        public DbConnection CntxDbConnect { get; }
+        protected DbConnection CntxDbConnect { get; }
 
 
-       /// <summary>
-       /// Create generic repository using ExtractAspenContext. 
-       /// </summary>
-       /// <param name="context"></param>
-        protected GenericRepository(ExtractAspenEntities context)
+        /// <summary>
+        /// Create generic repository using ExtractAspenContext. 
+        /// </summary>
+        /// <param name="context"></param>
+        protected GenericRepository(BPSInterfaceEntities context)
         {
             DbContext = context;
         }
@@ -34,7 +34,7 @@ namespace RegistrationAutoAssignment.Repositories
         protected GenericRepository(DbConnection cntxDbConnect)
         {
             CntxDbConnect = cntxDbConnect;
-            DbContext = new ExtractAspenEntities(cntxDbConnect);
+            DbContext = new BPSInterfaceEntities(cntxDbConnect);
         }
 
         /// <summary>
@@ -52,18 +52,18 @@ namespace RegistrationAutoAssignment.Repositories
         /// <param name="unitOfWork"></param>
         protected GenericRepository(IUnitOfWork unitOfWork)
         {
-            DbContext = unitOfWork.CreatedContext as ExtractAspenEntities;
+            DbContext = unitOfWork.CreatedContext as BPSInterfaceEntities;
         }
 
         public IQueryable<TEntity> GetAll()
         {
-            IQueryable<TEntity> query = DbContext.Set<TEntity>();
+            var query = DbContext.Set<TEntity>();
             return query;
         }
 
         public IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate)
         {
-            IQueryable<TEntity> query = DbContext.Set<TEntity>().Where(predicate);
+            var query = DbContext.Set<TEntity>().Where(predicate);
             return query;
         }
 

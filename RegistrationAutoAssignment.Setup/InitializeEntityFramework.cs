@@ -4,18 +4,22 @@ using System.Data.SqlClient;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-using RegistrationAutoAssignment.Entities.ExtractAspen;
-
 using RegistrationAutoAssignment.Repositories;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 using RegistrationAutoAssignment.Services.Interfaces;
+using RegistrationAutoAssignment.Setup.ExtractAspen;
 
 //using NMemory.Linq;
 //using Effort.DataLoaders;
 
+
 namespace RegistrationAutoAssignment.Setup
 {
+    /// <summary>
+    /// This class uses the in-memory context. 
+    /// The use of the ExtractAspen is not connecting or hitting the actual database for read/write functionality.
+    /// </summary>
     public class InitializeEntityFramework
     {
         private DbConnection CntxDbConnect { get; set; }
@@ -23,7 +27,7 @@ namespace RegistrationAutoAssignment.Setup
         private System.Data.EntityClient.EntityConnection CntxEntityConnect { get; set; }
         public ExtractAspenEntities ContextUsingEntityConnect { get; private set; }
 
-        private IUnitOfWork UnitOfWork { get; set; }
+        private IFakeUnitOfWork UnitOfWork { get; set; }
         private ISchoolChoicesRepository Repository { get; set; }
 
         public Mock<IFakeUnitOfWork> MockedUnitOfWork { get; private set; }
@@ -46,8 +50,6 @@ namespace RegistrationAutoAssignment.Setup
             ContextUsingDbConnect = new ExtractAspenEntities(CntxDbConnect);
 
             MockedUnitOfWork = new Mock<IFakeUnitOfWork>(MockBehavior.Default);
-            //UnitOfWork = new StudentSchoolChoicesUnitOfWork(CntxDbConnect, new SchoolChoiceRepository());
-
             MockedService = new Mock<IServiceLayer>(MockBehavior.Default);
 
             // Specify the provider name, server and database.

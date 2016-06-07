@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Data;
 using System.Data.Common;
-using System.Linq;
-
 using RegistrationAutoAssignment.Repositories.Interfaces;
-using RegistrationAutoAssignment.Repositories.Utilities;
 
 namespace RegistrationAutoAssignment.Repositories
 {
@@ -39,7 +35,7 @@ namespace RegistrationAutoAssignment.Repositories
         /// <returns></returns>
         public string GetNewSchoolChoicesForStudent(StudentSchoolParameters stdRequest)
         {
-          var client = new StudentSchoolChoices.ServiceClient();
+            var client = new StudentSchoolChoices.ServiceClient();
 
             var returnedXml = client.GetNewSchoolChoicesForStudent(stdRequest.SchoolYear,
                 stdRequest.Type, stdRequest.StudentNo, stdRequest.CaseId,
@@ -73,7 +69,7 @@ namespace RegistrationAutoAssignment.Repositories
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-      
+
         #endregion
     }
 }

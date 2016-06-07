@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
-using System.Linq;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
 using RegistrationAutoAssignment.Repositories.Interfaces;
 using RegistrationAutoAssignment.Units.Interfaces;
 
 namespace RegistrationAutoAssignment.Repositories
 {
-    public class SchoolCapacityRepository : GenericRepository<SCHOOL_CAPACITY>, ISchoolCapacityRepository, IDisposable
+    public class SchoolCapacityRepository : GenericRepository<SchoolCapacity>, ISchoolCapacityRepository, IDisposable
     {
         private bool _disposedValue;
 
@@ -25,7 +23,7 @@ namespace RegistrationAutoAssignment.Repositories
         /// Also, the repository knows the parent unit of work.
         /// </summary>
         /// <param name="unitOfWork"></param>
-        public SchoolCapacityRepository(IUnitOfWork unitOfWork):base(unitOfWork)
+        public SchoolCapacityRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         { }
 
 
@@ -34,33 +32,35 @@ namespace RegistrationAutoAssignment.Repositories
         /// </summary>
         /// <param name="dataRows"></param>
         /// <returns></returns>
-        public List<SCHOOL_CAPACITY> GetSchoolCapacity(List<DataRow> dataRows)
+        public List<SchoolCapacity> GetSchoolCapacity(List<DataRow> dataRows)
         {
-            var list = new List<SCHOOL_CAPACITY>();
+            var list = new List<SchoolCapacity>();
             dataRows.ForEach(item => GetSchoolCapacityByGradePrgCodeAndSchYear(item, list));
             return list;
         }
 
-        private void GetSchoolCapacityByGradePrgCodeAndSchYear(DataRow obj, List<SCHOOL_CAPACITY> list)
+        private void GetSchoolCapacityByGradePrgCodeAndSchYear(DataRow obj, List<SchoolCapacity> list)
         {
-            decimal schoolYear = 0;
-            var schYear = obj.Field<string>("SchoolYear");
-            if (!string.IsNullOrWhiteSpace(schYear))
-                decimal.TryParse(schYear.Split(Convert.ToChar("-")).Last(), out schoolYear);
+            throw new NotImplementedException("This method has not functionality");
 
-            var grade = obj.Field<string>("Grade");
-            var programCode = obj.Field<string>("ProgramCode");
-            var schoolId = obj.Field<string>("Sch");
+            //decimal schoolYear = 0;
+            //var schYear = obj.Field<string>("SchoolYear");
+            //if (!string.IsNullOrWhiteSpace(schYear))
+            //    decimal.TryParse(schYear.Split(Convert.ToChar("-")).Last(), out schoolYear);
 
-            var query = from schoolCapacity in DbContext.SCHOOL_CAPACITY
-                            join sch in DbContext.SCHOOLs on schoolCapacity.SCA_SKL_OID equals sch.SKL_OID
-                            join disCtx in DbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on schoolCapacity.SCA_CTX_OID equals
-                                disCtx.CTX_OID
-                            where schoolCapacity.SCA_GRADE_LEVEL == grade && schoolCapacity.SCA_PROGRAM_CODE == programCode
-                                  && sch.SKL_SCHOOL_ID == schoolId && disCtx.CTX_SCHOOL_YEAR == schoolYear
-                            select schoolCapacity;
+            //var grade = obj.Field<string>("Grade");
+            //var programCode = obj.Field<string>("ProgramCode");
+            //var schoolId = obj.Field<string>("Sch");
 
-            list?.AddRange(query.AsEnumerable());
+            //var query = from schoolCapacity in DbContext.SCHOOL_CAPACITY
+            //                join sch in DbContext.SCHOOLs on schoolCapacity.SCA_SKL_OID equals sch.SKL_OID
+            //                join disCtx in DbContext.DISTRICT_SCHOOL_YEAR_CONTEXT on schoolCapacity.SCA_CTX_OID equals
+            //                    disCtx.CTX_OID
+            //                where schoolCapacity.SCA_GRADE_LEVEL == grade && schoolCapacity.SCA_PROGRAM_CODE == programCode
+            //                      && sch.SKL_SCHOOL_ID == schoolId && disCtx.CTX_SCHOOL_YEAR == schoolYear
+            //                select schoolCapacity;
+
+            //list?.AddRange(query.AsEnumerable());
         }
 
 
@@ -84,4 +84,11 @@ namespace RegistrationAutoAssignment.Repositories
         }
         #endregion
     }
+
+    /// <summary>
+    /// A dummy class created to make sure no errors within the solution.
+    /// This class do not have any functionality.
+    /// </summary>
+    public class SchoolCapacity
+    { }
 }

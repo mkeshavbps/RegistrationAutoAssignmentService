@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
 
 namespace RegistrationAutoAssignment.Repositories.Interfaces
 {
@@ -11,8 +10,6 @@ namespace RegistrationAutoAssignment.Repositories.Interfaces
         /// </summary>
         /// <param name="dataRows"></param>
         /// <returns></returns>
-        List<SCHOOL_CAPACITY> GetSchoolCapacity(List<DataRow> dataRows);
+        List<SchoolCapacity> GetSchoolCapacity(List<DataRow> dataRows);
     }
-
-   
 }

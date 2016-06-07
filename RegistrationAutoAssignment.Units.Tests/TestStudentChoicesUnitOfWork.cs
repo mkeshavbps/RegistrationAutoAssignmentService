@@ -16,7 +16,7 @@ namespace RegistrationAutoAssignment.Units.Tests
         [TestMethod]
         public void Test_UnitOfWorkWithFakeRepositoryInstance()
         {
-           var fakeStudentSchoolChoiceUoWMock = new Mock<IFakeUnitOfWork>();
+            var fakeStudentSchoolChoiceUoWMock = new Mock<IFakeUnitOfWork>();
             Assert.IsNotNull(fakeStudentSchoolChoiceUoWMock.Object);
         }
 

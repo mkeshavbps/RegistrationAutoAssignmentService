@@ -1,18 +1,19 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using RegistrationAutoAssignment.Entities.ExtractAspen;
+
 using RegistrationAutoAssignment.Repositories.Tests.Interfaces;
+using RegistrationAutoAssignment.Setup.ExtractAspen;
 
 
 namespace RegistrationAutoAssignment.Repositories.Tests
 {
     [TestClass]
-    public class TestStudentSchoolChoiceRepository 
+    public class TestStudentSchoolChoiceRepository
     {
-/*
-        private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
-*/
+
+        //private InitializeEntityFramework Initialize { get; } = new InitializeEntityFramework();
+
 
         private List<STUDENT> Students { get; set; } = new List<STUDENT>();
         private Mock<IFakeStudentSchoolChoiceRepository> FakeStudentSchoolChoiceMock { get; set; }
@@ -57,7 +58,7 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         public void Test_StudentSchoolChoicesRepositoryFake()
         {
             var fakeRepository = StudentScoolChoicesRepositoryFake();
-            fakeRepository.Object.AddStudent(new STUDENT {STD_OID = "2345"});
+            fakeRepository.Object.AddStudent(new STUDENT { STD_OID = "2345" });
             Assert.IsNotNull(fakeRepository.Object.GetAllStudents);
         }
 
@@ -106,6 +107,6 @@ namespace RegistrationAutoAssignment.Repositories.Tests
         }
     }
 
-   
+
 
 }
